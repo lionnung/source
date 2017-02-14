@@ -1,0 +1,208 @@
+alias ll="ls -l -a"
+alias l="ls"
+
+sudo date -s "03/21/2016 00:00"
+
+sudo ln -s /home/pi/Downloads/src/linux-rpi-4.1.y/ /lib/modules/$(uname -r)/build
+sudo ln -s /home/pi/Downloads/src/linux-rpi-4.1.y/arch/arm /home/pi/Downloads/src/linux-rpi-4.1.y/arch/armv6l
+
+make mrproper
+make bcmrpi_defconfig
+make modules_prepare
+cp ../firmware-master/extra/Module.symvers .
+
+https://code.visualstudio.com/download
+http://www.hanselman.com/blog/BuildingVisualStudioCodeOnARaspberryPi3.aspx
+
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo rpi-update
+sudo apt-get install ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
+sudo apt-get install scim scim-tables-zh scim-chewing
+https://launchpad.net/ubuntu/+source/chromium-browser
+sudo apt-get install firefox-esr
+sudo apt-get install deluge
+sudo apt-get install transmission
+sudo apt-get install evince
+sudo apt-get install okular
+sudo raspi-config
+
+sudo apt-get install wicd-curses
+sudo wicd-curses
+
+sudo easy_install3 -U pip
+
+sudo mount -t nfs 192.168.2.100:/ /mnt
+
+sudo apt-get install sshfs
+sshfs pi@192.168.2.101: r
+
+sudo apt-get install gparted
+dd bs=4M if=~/2012-12-16-wheezy-raspbian.img of=/dev/sdd
+
+Python
+sudo apt-get install build-essential openssl libc6-dev tk-dev libffi-dev
+sudo apt-get install libncurses5-dev libncursesw5-dev libreadline6-dev
+sudo apt-get install libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev
+sudo apt-get install libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev
+./configure
+make
+sudo make install
+
+Swift
+http://dev.iachieved.it/iachievedit/swift-3-0-on-raspberry-pi-2-and-3/
+http://dev.iachieved.it/iachievedit/swift-for-arm-systems/
+https://github.com/apple/swift#system-requirements
+https://github.com/uraimo/SwiftyGPIO
+
+sudo pip3 install --upgrade youtube-dl
+sudo omxplayer --win '1440 810 1920 1080' -o hdmi $(sudo youtube-dl -g https://youtu.be/YykjpeuMNEk)
+
+--win '1 810 480 1080'
+https://www.youtube.com/watch?v=hgIfZz8STLk
+https://www.youtube.com/watch?v=jMN4cxyhJjk
+https://www.youtube.com/watch?v=xUbhjcH7w5k
+https://www.youtube.com/watch?v=qq82Q_oxzfw
+https://www.youtube.com/watch?v=y60wDzZt8yg
+https://www.youtube.com/watch?v=JuIIVkAF-1s
+
+cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+cat /sys/class/thermal/thermal_zone0/temp
+
+for src in arm core h264 isp v3d uart pwm emmc pixel vec hdmi dpi ; do echo -e "$src:\t$(vcgencmd measure_clock $src)" ; done
+
+http://downloads.eltechs.com/exagear-desktop-v-1-4-1/exagear-desktop-rpi3.tar.gz
+http://downloads.eltechs.com/exagear-desktop-v-1-5/exagear-desktop-rpi2.tar.gz
+http://downloads.eltechs.com/exagear-desktop-v-1-5/exagear-desktop-rpi3.tar.gz
+sudo apt-get install libgtk2.0-0:i386
+
+http://tunein.com/radio/Calm-Radio---Solo-Piano--Guitar-s132811/
+
+https://github.com/taxigps/xbmc-addons-chinese
+https://superrepo.org/get-started/
+https://github.com/Kolifanes/plugin.video.youtube/releases
+https://addons.tvaddons.ag/show/plugin.video.youtube/
+https://addons.tvaddons.ag/show/plugin.video.world.news.live/
+AtMovies
+
+https://github.com/foosel/OctoPrint/wiki/Webcams-known-to-work
+http://tpy.tw/?p=91
+http://oz9aec.net/software/gstreamer/using-the-logitech-c920-webcam-with-gstreamer
+http://wiki.oz9aec.net/index.php/Raspberry_Pi_Camera
+http://wiki.oz9aec.net/index.php/Building_Gstreamer_1.2_from_source
+http://elelinux.blogspot.tw/2015/11/live-streaming-with-logitech-c920-and-gstreamer.html
+http://elelinux.blogspot.tw/2015/11/dash-streaming-using-nginx.html
+http://blogger.gtwang.org/2015/03/raspberry-pi-nginx-rtmp-server-live-streaming.html
+http://dz.plala.jp/wiki/index.php/RaspberryPi%E3%81%A7%E9%AB%98%E7%94%BB%E8%B3%AA%E3%83%A9%E3%82%A4%E3%83%96%E9%85%8D%E4%BF%A1
+http://uavmatrix.com/Blog/13/0
+http://www.oz9aec.net/index.php/gstreamer/365-pulseaudio-device-names
+http://thebigdoc.readthedocs.io/en/latest/gstreamer/index.html
+
+https://lazka.github.io/pgi-docs/
+https://gist.github.com/sqwk/096d789f789335019756
+https://github.com/rubenrua/GstreamerCodeSnippets
+http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/
+http://www.pyimagesearch.com/2016/05/02/accessing-rpi-gpio-and-gpio-zero-with-opencv-python/
+http://www.pyimagesearch.com/2014/11/24/detecting-barcodes-images-python-opencv/
+http://www.pyimagesearch.com/2014/12/15/real-time-barcode-detection-video-python-opencv/
+http://www.idealsoftware.com/opensource/scan-1d-2d-barcodes-webcam-zxing-opencv-visual-c.html
+https://github.com/zxing/zxing
+
+mjpg_streamer -i "input_uvc.so -d /dev/video0 -r 1280x720 -f 24" -o "output_http.so -p 8080 -n -w /tmp"
+mkfifo /tmp/stream.mjpeg
+wget -O /tmp/stream.mjpeg http://192.168.2.101:8080/?action=stream &> /dev/null &
+omxplayer --live /tmp/stream.mjpeg
+
+sudo apt-get install libglib2.0-dev bison flex libtool autoconf automake autopoint libx264-dev nasm yasm cmake libmicrohttpd-dev libjansson-dev libnice-dev librtmp-dev libgudev-1.0-dev libusb-1.0-0-dev libasound2-dev libvo-aacenc-dev libpulse-dev pulseaudio
+sudo apt-get install libx11-dev libxv-dev libopus-dev libogg-dev libmp3lame-dev libmad0-dev libpango1.0-dev libmpeg2-4-dev libmpg123-dev python3-dev python-gi-dev libgirepository1.0-dev gir1.2-gstreamer-1.0 gir1.2-gst-plugins-base-1.0 gir1.2-gtk-3.0 libgtk-3-dev
+
+https://github.com/thaytan/gst-rpicamsrc
+
+--disable-gtk-doc --prefix=/home/pi/gst/runtime
+--disable-gtk-doc --prefix=/home/pi/gst/runtime --exec-prefix=/home/pi/gst/runtime --datarootdir=/home/pi/gst/runtime
+--enable-orc --disable-gtk-doc --prefix=/home/pi/gst/runtime --exec-prefix=/home/pi/gst/runtime --datarootdir=/home/pi/gst/runtime
+--disable-gtk-doc --prefix=/home/pi/gst/runtime --exec-prefix=/home/pi/gst/runtime --datarootdir=/home/pi/gst/runtime --with-omx-target=rpi --with-omx-header-path=/opt/vc/include/IL
+
+sudo apt-get install nginx
+sudo apt-get remove nginx
+sudo rm -rf /etc/nginx/*
+sudo apt-get install curl build-essential libpcre3-dev libpcre++-dev zlib1g-dev libcurl4-openssl-dev libssl-dev
+sudo mkdir -p /var/www
+sudo mkdir -p nginx_src
+cd nginx_src
+sudo git clone https://github.com/nginx/nginx.git
+sudo git clone https://github.com/arut/nginx-rtmp-module.git
+cd nginx
+sudo auto/configure --prefix=/var/www --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-http_ssl_module --without-http_proxy_module --add-module=/home/pi/Downloads/nginx_src/nginx-rtmp-module
+sudo nano /etc/nginx/nginx.conf
+rtmp {
+  server {
+    listen 1935;
+    ping 30s;
+    notify_method get;
+    publish_time_fix off;
+    chunk_size 8192;
+    application rtmp {
+      live on;
+    }
+  }
+}
+sudo /etc/init.d/nginx start
+
+gst-launch-1.0 -v -e uvch264src initial-bitrate=3000000 average-bitrate=3000000 peak-bitrate=3000000 rate-control=cbr entropy=cabac iframe-period=2000 device=/dev/video0 name=src auto-start=true src.vfsrc ! queue ! video/x-raw,format=\(string\)YUY2,width=320,height=240,framerate=10/1 ! fakesink sync=false src.vidsrc ! queue ! video/x-h264,width=1280,height=720,framerate=24/1,level=\(string\)'4.1',profile=high ! h264parse ! queue ! flvmux name=mux streamable=true alsasrc device=hw:1 ! queue ! volume volume=0.9 ! audio/x-raw,format=S16LE,rate=32000,channels=2 ! voaacenc bitrate=128000 ! queue max-size-buffers=6000 max-size-time=0 max-size-bytes=0 flush-on-eos=true ! mux. mux. ! rtmpsink location="rtmp://a.rtmp.youtube.com/live2/40f9-9188-5gq2-4q4g live=true"
+gst-launch-1.0 -v -e uvch264src initial-bitrate=4500000 average-bitrate=4500000 peak-bitrate=4500000 rate-control=cbr entropy=cabac iframe-period=2000 device=/dev/video0 name=src auto-start=true src.vfsrc ! queue ! video/x-raw,format=\(string\)YUY2,width=320,height=240,framerate=10/1 ! fakesink sync=false src.vidsrc ! queue ! video/x-h264,width=1920,height=1080,framerate=24/1,level=\(string\)'4.1',profile=high ! h264parse ! queue ! flvmux name=mux streamable=true alsasrc device=hw:1 ! queue ! volume volume=0.9 ! audio/x-raw,format=S16LE,rate=32000,channels=2 ! voaacenc bitrate=128000 ! queue max-size-buffers=6000 max-size-time=0 max-size-bytes=0 flush-on-eos=true ! mux. mux. ! rtmpsink location="rtmp://a.rtmp.youtube.com/live2/40f9-9188-5gq2-4q4g live=true"
+omxplayer --live rtmp://192.168.2.101/rtmp/live
+
+raspivid -w 1280 -h 720 -t 0 -o - | nc 192.168.2.102 5001
+nc -l -p 5001 > /tmp/stream.h264 | omxplayer --win '1440 810 1920 1080' -o hdmi /tmp/stream.h264
+gst-launch-1.0 -v -e rpicamsrc bitrate=4500000 annotation-mode=0x0d annotation-text="Raspberry Pi 3 " preview=false ! video/x-h264,width=1280,height=720,framerate=30/1,profile=high ! h264parse ! queue ! flvmux name=mux streamable=true audiotestsrc ! queue ! volume volume=0.9 ! audio/x-raw,format=S16LE,rate=44100,channels=2 ! voaacenc bitrate=128000 ! queue max-size-buffers=6000 max-size-time=0 max-size-bytes=0 flush-on-eos=true ! mux. mux. ! rtmpsink location="rtmp://a.rtmp.youtube.com/live2/40f9-9188-5gq2-4q4g live=true"
+
+sudo kill $(ps -ef | awk '/[u]vch264src/{print $2}')
+sudo pip3 install --upgrade speedtest-cli
+
+http://makezine.com/projects/build-a-compact-4-node-raspberry-pi-cluster/
+https://blogs.nvidia.com/blog/2013/07/19/secret-recipe-for-raspberry-pi-server-cluster-unleashed/
+https://www.raspberrypi.org/magpi/pi-spark-supercomputer/
+
+sudo apt-get install build-essential cmake pkg-config
+sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+sudo apt-get install libxvidcore-dev libx264-dev
+sudo apt-get install libgtk2.0-dev
+sudo apt-get install libatlas-base-dev gfortran
+sudo apt-get install python2.7-dev python3-dev
+
+sudo pip install virtualenv virtualenvwrapper
+sudo rm -rf ~/.cache/pip
+
+echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
+echo "export WORKON_HOME=~/.virtualenvs" >> ~/.profile
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
+
+source ~/.profile
+mkvirtualenv cv -p python3
+workon cv
+
+pip3 install numpy
+
+cd ~/opencv-3.1.0/
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=~/opencv -D INSTALL_PYTHON_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=~/Downloads/opencv_contrib-master/modules -D BUILD_EXAMPLES=ON ..
+
+make -j3
+sudo make install
+sudo ldconfig
+
+http://codeandlife.com/2012/07/03/benchmarking-raspberry-pi-gpio-speed/
+https://sourceforge.net/p/raspberry-gpio-python/wiki/Home/
+http://elinux.org/RPi_Low-level_peripherals
+
+https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/overview
+https://github.com/burnash/gspread
+http://gspread.readthedocs.io/en/latest/oauth2.html
+
+UART
+http://spellfoundry.com/2016/05/29/configuring-gpio-serial-port-raspbian-jessie-including-pi-3/
+https://openenergymonitor.org/emon/node/12311
+https://www.hackster.io/fvdbosch/uart-for-serial-console-or-hat-on-raspberry-pi-3-5be0c2
