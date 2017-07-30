@@ -40,6 +40,8 @@ sshfs pi@192.168.2.101: r
 sudo apt-get install gparted
 dd bs=4M if=~/2012-12-16-wheezy-raspbian.img of=/dev/sdd
 
+sudo dpkg --configure -a
+
 Python
 sudo apt-get install build-essential openssl libc6-dev tk-dev libffi-dev
 sudo apt-get install libncurses5-dev libncursesw5-dev libreadline6-dev
