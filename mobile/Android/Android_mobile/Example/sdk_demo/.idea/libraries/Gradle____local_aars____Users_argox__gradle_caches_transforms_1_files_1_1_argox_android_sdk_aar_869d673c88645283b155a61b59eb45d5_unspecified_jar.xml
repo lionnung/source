@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:/Users/argox/.gradle/caches/transforms-1/files-1.1/argox-android-sdk.aar/869d673c88645283b155a61b59eb45d5:unspecified@jar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/argox-android-sdk.aar/869d673c88645283b155a61b59eb45d5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/argox-android-sdk.aar/869d673c88645283b155a61b59eb45d5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
