@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2007/11/28 11:08:02.315.cpp,C:\Documents and Settings\lion\My Documents\Borland Studio Projects\Unit1.cpp=C:\Documents and Settings\lion\My Documents\Borland Studio Projects\xtea\main.cpp</Transaction>
+    <Transaction>2007/11/28 11:08:02.315.h,C:\Documents and Settings\lion\My Documents\Borland Studio Projects\Unit1.h=C:\Documents and Settings\lion\My Documents\Borland Studio Projects\xtea\main.h</Transaction>
+    <Transaction>2007/11/28 11:08:02.315.dfm,C:\Documents and Settings\lion\My Documents\Borland Studio Projects\Unit1.dfm=C:\Documents and Settings\lion\My Documents\Borland Studio Projects\xtea\main.dfm</Transaction>
+    <Transaction>2007/11/28 11:08:11.221.bdsproj,C:\Documents and Settings\lion\My Documents\Borland Studio Projects\Project1.bdsproj=C:\Documents and Settings\lion\My Documents\Borland Studio Projects\xtea\xtea.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,3704 @@
+# 1 "at91sam9260_boot.x"
+# 1 "Z:\\FreeRTOS\\FW\\ARGOX//"
+# 1 "<built-in>"
+#define __STDC__ 1
+#define __STDC_HOSTED__ 1
+#define __GNUC__ 4
+#define __GNUC_MINOR__ 5
+#define __GNUC_PATCHLEVEL__ 2
+#define __SIZE_TYPE__ unsigned int
+#define __PTRDIFF_TYPE__ int
+#define __WCHAR_TYPE__ unsigned int
+#define __WINT_TYPE__ unsigned int
+#define __INTMAX_TYPE__ long long int
+#define __UINTMAX_TYPE__ long long unsigned int
+#define __CHAR16_TYPE__ short unsigned int
+#define __CHAR32_TYPE__ long unsigned int
+#define __SIG_ATOMIC_TYPE__ int
+#define __INT8_TYPE__ signed char
+#define __INT16_TYPE__ short int
+#define __INT32_TYPE__ long int
+#define __INT64_TYPE__ long long int
+#define __UINT8_TYPE__ unsigned char
+#define __UINT16_TYPE__ short unsigned int
+#define __UINT32_TYPE__ long unsigned int
+#define __UINT64_TYPE__ long long unsigned int
+#define __INT_LEAST8_TYPE__ signed char
+#define __INT_LEAST16_TYPE__ short int
+#define __INT_LEAST32_TYPE__ long int
+#define __INT_LEAST64_TYPE__ long long int
+#define __UINT_LEAST8_TYPE__ unsigned char
+#define __UINT_LEAST16_TYPE__ short unsigned int
+#define __UINT_LEAST32_TYPE__ long unsigned int
+#define __UINT_LEAST64_TYPE__ long long unsigned int
+#define __INT_FAST8_TYPE__ int
+#define __INT_FAST16_TYPE__ int
+#define __INT_FAST32_TYPE__ int
+#define __INT_FAST64_TYPE__ long long int
+#define __UINT_FAST8_TYPE__ unsigned int
+#define __UINT_FAST16_TYPE__ unsigned int
+#define __UINT_FAST32_TYPE__ unsigned int
+#define __UINT_FAST64_TYPE__ long long unsigned int
+#define __INTPTR_TYPE__ int
+#define __UINTPTR_TYPE__ unsigned int
+#define __GXX_ABI_VERSION 1002
+#define __SCHAR_MAX__ 127
+#define __SHRT_MAX__ 32767
+#define __INT_MAX__ 2147483647
+#define __LONG_MAX__ 2147483647L
+#define __LONG_LONG_MAX__ 9223372036854775807LL
+#define __WCHAR_MAX__ 4294967295U
+#define __WCHAR_MIN__ 0U
+#define __WINT_MAX__ 4294967295U
+#define __WINT_MIN__ 0U
+#define __PTRDIFF_MAX__ 2147483647
+#define __SIZE_MAX__ 4294967295U
+#define __CHAR_BIT__ 8
+#define __INTMAX_MAX__ 9223372036854775807LL
+#define __INTMAX_C(c) c ## LL
+#define __UINTMAX_MAX__ 18446744073709551615ULL
+#define __UINTMAX_C(c) c ## ULL
+#define __SIG_ATOMIC_MAX__ 2147483647
+#define __SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1)
+#define __INT8_MAX__ 127
+#define __INT16_MAX__ 32767
+#define __INT32_MAX__ 2147483647L
+#define __INT64_MAX__ 9223372036854775807LL
+#define __UINT8_MAX__ 255
+#define __UINT16_MAX__ 65535
+#define __UINT32_MAX__ 4294967295UL
+#define __UINT64_MAX__ 18446744073709551615ULL
+#define __INT_LEAST8_MAX__ 127
+#define __INT8_C(c) c
+#define __INT_LEAST16_MAX__ 32767
+#define __INT16_C(c) c
+#define __INT_LEAST32_MAX__ 2147483647L
+#define __INT32_C(c) c ## L
+#define __INT_LEAST64_MAX__ 9223372036854775807LL
+#define __INT64_C(c) c ## LL
+#define __UINT_LEAST8_MAX__ 255
+#define __UINT8_C(c) c
+#define __UINT_LEAST16_MAX__ 65535
+#define __UINT16_C(c) c
+#define __UINT_LEAST32_MAX__ 4294967295UL
+#define __UINT32_C(c) c ## UL
+#define __UINT_LEAST64_MAX__ 18446744073709551615ULL
+#define __UINT64_C(c) c ## ULL
+#define __INT_FAST8_MAX__ 2147483647
+#define __INT_FAST16_MAX__ 2147483647
+#define __INT_FAST32_MAX__ 2147483647
+#define __INT_FAST64_MAX__ 9223372036854775807LL
+#define __UINT_FAST8_MAX__ 4294967295U
+#define __UINT_FAST16_MAX__ 4294967295U
+#define __UINT_FAST32_MAX__ 4294967295U
+#define __UINT_FAST64_MAX__ 18446744073709551615ULL
+#define __INTPTR_MAX__ 2147483647
+#define __UINTPTR_MAX__ 4294967295U
+#define __FLT_EVAL_METHOD__ 0
+#define __DEC_EVAL_METHOD__ 2
+#define __FLT_RADIX__ 2
+#define __FLT_MANT_DIG__ 24
+#define __FLT_DIG__ 6
+#define __FLT_MIN_EXP__ (-125)
+#define __FLT_MIN_10_EXP__ (-37)
+#define __FLT_MAX_EXP__ 128
+#define __FLT_MAX_10_EXP__ 38
+#define __FLT_MAX__ 3.4028234663852886e+38F
+#define __FLT_MIN__ 1.1754943508222875e-38F
+#define __FLT_EPSILON__ 1.1920928955078125e-7F
+#define __FLT_DENORM_MIN__ 1.4012984643248171e-45F
+#define __FLT_HAS_DENORM__ 1
+#define __FLT_HAS_INFINITY__ 1
+#define __FLT_HAS_QUIET_NAN__ 1
+#define __DBL_MANT_DIG__ 53
+#define __DBL_DIG__ 15
+#define __DBL_MIN_EXP__ (-1021)
+#define __DBL_MIN_10_EXP__ (-307)
+#define __DBL_MAX_EXP__ 1024
+#define __DBL_MAX_10_EXP__ 308
+#define __DBL_MAX__ ((double)1.7976931348623157e+308L)
+#define __DBL_MIN__ ((double)2.2250738585072014e-308L)
+#define __DBL_EPSILON__ ((double)2.2204460492503131e-16L)
+#define __DBL_DENORM_MIN__ ((double)4.9406564584124654e-324L)
+#define __DBL_HAS_DENORM__ 1
+#define __DBL_HAS_INFINITY__ 1
+#define __DBL_HAS_QUIET_NAN__ 1
+#define __LDBL_MANT_DIG__ 53
+#define __LDBL_DIG__ 15
+#define __LDBL_MIN_EXP__ (-1021)
+#define __LDBL_MIN_10_EXP__ (-307)
+#define __LDBL_MAX_EXP__ 1024
+#define __LDBL_MAX_10_EXP__ 308
+#define __DECIMAL_DIG__ 17
+#define __LDBL_MAX__ 1.7976931348623157e+308L
+#define __LDBL_MIN__ 2.2250738585072014e-308L
+#define __LDBL_EPSILON__ 2.2204460492503131e-16L
+#define __LDBL_DENORM_MIN__ 4.9406564584124654e-324L
+#define __LDBL_HAS_DENORM__ 1
+#define __LDBL_HAS_INFINITY__ 1
+#define __LDBL_HAS_QUIET_NAN__ 1
+#define __DEC32_MANT_DIG__ 7
+#define __DEC32_MIN_EXP__ (-94)
+#define __DEC32_MAX_EXP__ 97
+#define __DEC32_MIN__ 1E-95DF
+#define __DEC32_MAX__ 9.999999E96DF
+#define __DEC32_EPSILON__ 1E-6DF
+#define __DEC32_SUBNORMAL_MIN__ 0.000001E-95DF
+#define __DEC64_MANT_DIG__ 16
+#define __DEC64_MIN_EXP__ (-382)
+#define __DEC64_MAX_EXP__ 385
+#define __DEC64_MIN__ 1E-383DD
+#define __DEC64_MAX__ 9.999999999999999E384DD
+#define __DEC64_EPSILON__ 1E-15DD
+#define __DEC64_SUBNORMAL_MIN__ 0.000000000000001E-383DD
+#define __DEC128_MANT_DIG__ 34
+#define __DEC128_MIN_EXP__ (-6142)
+#define __DEC128_MAX_EXP__ 6145
+#define __DEC128_MIN__ 1E-6143DL
+#define __DEC128_MAX__ 9.999999999999999999999999999999999E6144DL
+#define __DEC128_EPSILON__ 1E-33DL
+#define __DEC128_SUBNORMAL_MIN__ 0.000000000000000000000000000000001E-6143DL
+#define __SFRACT_FBIT__ 7
+#define __SFRACT_IBIT__ 0
+#define __SFRACT_MIN__ (-0.5HR-0.5HR)
+#define __SFRACT_MAX__ 0X7FP-7HR
+#define __SFRACT_EPSILON__ 0x1P-7HR
+#define __USFRACT_FBIT__ 8
+#define __USFRACT_IBIT__ 0
+#define __USFRACT_MIN__ 0.0UHR
+#define __USFRACT_MAX__ 0XFFP-8UHR
+#define __USFRACT_EPSILON__ 0x1P-8UHR
+#define __FRACT_FBIT__ 15
+#define __FRACT_IBIT__ 0
+#define __FRACT_MIN__ (-0.5R-0.5R)
+#define __FRACT_MAX__ 0X7FFFP-15R
+#define __FRACT_EPSILON__ 0x1P-15R
+#define __UFRACT_FBIT__ 16
+#define __UFRACT_IBIT__ 0
+#define __UFRACT_MIN__ 0.0UR
+#define __UFRACT_MAX__ 0XFFFFP-16UR
+#define __UFRACT_EPSILON__ 0x1P-16UR
+#define __LFRACT_FBIT__ 31
+#define __LFRACT_IBIT__ 0
+#define __LFRACT_MIN__ (-0.5LR-0.5LR)
+#define __LFRACT_MAX__ 0X7FFFFFFFP-31LR
+#define __LFRACT_EPSILON__ 0x1P-31LR
+#define __ULFRACT_FBIT__ 32
+#define __ULFRACT_IBIT__ 0
+#define __ULFRACT_MIN__ 0.0ULR
+#define __ULFRACT_MAX__ 0XFFFFFFFFP-32ULR
+#define __ULFRACT_EPSILON__ 0x1P-32ULR
+#define __LLFRACT_FBIT__ 63
+#define __LLFRACT_IBIT__ 0
+#define __LLFRACT_MIN__ (-0.5LLR-0.5LLR)
+#define __LLFRACT_MAX__ 0X7FFFFFFFFFFFFFFFP-63LLR
+#define __LLFRACT_EPSILON__ 0x1P-63LLR
+#define __ULLFRACT_FBIT__ 64
+#define __ULLFRACT_IBIT__ 0
+#define __ULLFRACT_MIN__ 0.0ULLR
+#define __ULLFRACT_MAX__ 0XFFFFFFFFFFFFFFFFP-64ULLR
+#define __ULLFRACT_EPSILON__ 0x1P-64ULLR
+#define __SACCUM_FBIT__ 7
+#define __SACCUM_IBIT__ 8
+#define __SACCUM_MIN__ (-0X1P7HK-0X1P7HK)
+#define __SACCUM_MAX__ 0X7FFFP-7HK
+#define __SACCUM_EPSILON__ 0x1P-7HK
+#define __USACCUM_FBIT__ 8
+#define __USACCUM_IBIT__ 8
+#define __USACCUM_MIN__ 0.0UHK
+#define __USACCUM_MAX__ 0XFFFFP-8UHK
+#define __USACCUM_EPSILON__ 0x1P-8UHK
+#define __ACCUM_FBIT__ 15
+#define __ACCUM_IBIT__ 16
+#define __ACCUM_MIN__ (-0X1P15K-0X1P15K)
+#define __ACCUM_MAX__ 0X7FFFFFFFP-15K
+#define __ACCUM_EPSILON__ 0x1P-15K
+#define __UACCUM_FBIT__ 16
+#define __UACCUM_IBIT__ 16
+#define __UACCUM_MIN__ 0.0UK
+#define __UACCUM_MAX__ 0XFFFFFFFFP-16UK
+#define __UACCUM_EPSILON__ 0x1P-16UK
+#define __LACCUM_FBIT__ 31
+#define __LACCUM_IBIT__ 32
+#define __LACCUM_MIN__ (-0X1P31LK-0X1P31LK)
+#define __LACCUM_MAX__ 0X7FFFFFFFFFFFFFFFP-31LK
+#define __LACCUM_EPSILON__ 0x1P-31LK
+#define __ULACCUM_FBIT__ 32
+#define __ULACCUM_IBIT__ 32
+#define __ULACCUM_MIN__ 0.0ULK
+#define __ULACCUM_MAX__ 0XFFFFFFFFFFFFFFFFP-32ULK
+#define __ULACCUM_EPSILON__ 0x1P-32ULK
+#define __LLACCUM_FBIT__ 63
+#define __LLACCUM_IBIT__ 64
+#define __LLACCUM_MIN__ (-0X1P63LLK-0X1P63LLK)
+#define __LLACCUM_MAX__ 0X7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFP-63LLK
+#define __LLACCUM_EPSILON__ 0x1P-63LLK
+#define __ULLACCUM_FBIT__ 64
+#define __ULLACCUM_IBIT__ 64
+#define __ULLACCUM_MIN__ 0.0ULLK
+#define __ULLACCUM_MAX__ 0XFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFP-64ULLK
+#define __ULLACCUM_EPSILON__ 0x1P-64ULLK
+#define __QQ_FBIT__ 7
+#define __QQ_IBIT__ 0
+#define __HQ_FBIT__ 15
+#define __HQ_IBIT__ 0
+#define __SQ_FBIT__ 31
+#define __SQ_IBIT__ 0
+#define __DQ_FBIT__ 63
+#define __DQ_IBIT__ 0
+#define __TQ_FBIT__ 127
+#define __TQ_IBIT__ 0
+#define __UQQ_FBIT__ 8
+#define __UQQ_IBIT__ 0
+#define __UHQ_FBIT__ 16
+#define __UHQ_IBIT__ 0
+#define __USQ_FBIT__ 32
+#define __USQ_IBIT__ 0
+#define __UDQ_FBIT__ 64
+#define __UDQ_IBIT__ 0
+#define __UTQ_FBIT__ 128
+#define __UTQ_IBIT__ 0
+#define __HA_FBIT__ 7
+#define __HA_IBIT__ 8
+#define __SA_FBIT__ 15
+#define __SA_IBIT__ 16
+#define __DA_FBIT__ 31
+#define __DA_IBIT__ 32
+#define __TA_FBIT__ 63
+#define __TA_IBIT__ 64
+#define __UHA_FBIT__ 8
+#define __UHA_IBIT__ 8
+#define __USA_FBIT__ 16
+#define __USA_IBIT__ 16
+#define __UDA_FBIT__ 32
+#define __UDA_IBIT__ 32
+#define __UTA_FBIT__ 64
+#define __UTA_IBIT__ 64
+#define __REGISTER_PREFIX__ 
+#define __USER_LABEL_PREFIX__ 
+#define __VERSION__ "4.5.2"
+#define __GNUC_GNU_INLINE__ 1
+#define __NO_INLINE__ 1
+#define __FINITE_MATH_ONLY__ 0
+#define __CHAR_UNSIGNED__ 1
+#define __PRAGMA_REDEFINE_EXTNAME 1
+#define __SIZEOF_INT__ 4
+#define __SIZEOF_LONG__ 4
+#define __SIZEOF_LONG_LONG__ 8
+#define __SIZEOF_SHORT__ 2
+#define __SIZEOF_FLOAT__ 4
+#define __SIZEOF_DOUBLE__ 8
+#define __SIZEOF_LONG_DOUBLE__ 8
+#define __SIZEOF_SIZE_T__ 4
+#define __SIZEOF_WCHAR_T__ 4
+#define __SIZEOF_WINT_T__ 4
+#define __SIZEOF_PTRDIFF_T__ 4
+#define __SIZEOF_POINTER__ 4
+#define __arm__ 1
+#define __APCS_32__ 1
+#define __ARMEL__ 1
+#define __SOFTFP__ 1
+#define __VFP_FP__ 1
+#define __THUMB_INTERWORK__ 1
+#define __ARM_ARCH_5TEJ__ 1
+#define __ARM_PCS 1
+#define __ARM_EABI__ 1
+#define __GXX_TYPEINFO_EQUALITY_INLINE 0
+#define __ELF__ 1
+#define __BIGGEST_ALIGNMENT__ 8
+# 1 "<command-line>"
+#define __USES_INITFINI__ 1
+#define __ASSEMBLY__ 1
+#define SAM9_GCC 1
+#define at91sam9260 1
+#define __CS_SOURCERYGXX_MAJ__ 2011
+#define __CS_SOURCERYGXX_MIN__ 3
+#define __CS_SOURCERYGXX_REV__ 42
+# 1 "at91sam9260_boot.x"
+# 34 "at91sam9260_boot.x"
+# 1 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h" 1
+# 61 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h"
+#define BOARD_H 
+
+
+
+
+
+
+# 1 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/chip.h" 1
+# 43 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/chip.h"
+#define CHIP_H 
+# 61 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/chip.h"
+#define arm926ej_s 
+# 77 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/chip.h"
+#define CHIP_USB_UDP 
+
+
+#define CHIP_USB_UHP_OHCI 
+
+
+#define CHIP_USB_PULLUP_INTERNAL 
+
+
+#define CHIP_USB_NUMENDPOINTS 6
+
+
+#define CHIP_USB_ENDPOINTS_MAXPACKETSIZE(i) ((i == 0) ? 64 : ((i == 1) ? 64 : ((i == 2) ? 64 : ((i == 3) ? 64 : ((i == 4) ? 512 : ((i == 5) ? 512 : 0 ))))))
+# 98 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/chip.h"
+#define CHIP_USB_ENDPOINTS_BANKS(i) ((i == 0) ? 1 : ((i == 1) ? 2 : ((i == 2) ? 2 : ((i == 3) ? 1 : ((i == 4) ? 2 : ((i == 5) ? 2 : 0 ))))))
+# 69 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h" 2
+# 1 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h" 1
+# 65 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define AT91SAM9260_H 
+
+
+
+
+
+#define AT91_CAST(a) 
+# 367 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define SYS_GPBR (AT91_CAST(AT91_REG *) 0x00003D50)
+
+
+
+#define AT91C_GPBR_GPRV (0x0 << 0)
+# 381 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define EBI_DUMMY (AT91_CAST(AT91_REG *) 0x00000000)
+# 399 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define ECC_CR (AT91_CAST(AT91_REG *) 0x00000000)
+#define ECC_MR (AT91_CAST(AT91_REG *) 0x00000004)
+#define ECC_SR (AT91_CAST(AT91_REG *) 0x00000008)
+#define ECC_PR (AT91_CAST(AT91_REG *) 0x0000000C)
+#define ECC_NPR (AT91_CAST(AT91_REG *) 0x00000010)
+#define ECC_VR (AT91_CAST(AT91_REG *) 0x000000FC)
+
+
+
+#define AT91C_ECC_RST (0x1 << 0)
+
+#define AT91C_ECC_PAGE_SIZE (0x3 << 0)
+
+#define AT91C_ECC_RECERR (0x1 << 0)
+#define AT91C_ECC_ECCERR (0x1 << 1)
+#define AT91C_ECC_MULERR (0x1 << 2)
+
+#define AT91C_ECC_BITADDR (0xF << 0)
+#define AT91C_ECC_WORDADDR (0xFFF << 4)
+
+#define AT91C_ECC_NPARITY (0xFFFF << 0)
+
+#define AT91C_ECC_VR (0xF << 0)
+# 440 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define SDRAMC_MR (AT91_CAST(AT91_REG *) 0x00000000)
+#define SDRAMC_TR (AT91_CAST(AT91_REG *) 0x00000004)
+#define SDRAMC_CR (AT91_CAST(AT91_REG *) 0x00000008)
+#define SDRAMC_HSR (AT91_CAST(AT91_REG *) 0x0000000C)
+#define SDRAMC_LPR (AT91_CAST(AT91_REG *) 0x00000010)
+#define SDRAMC_IER (AT91_CAST(AT91_REG *) 0x00000014)
+#define SDRAMC_IDR (AT91_CAST(AT91_REG *) 0x00000018)
+#define SDRAMC_IMR (AT91_CAST(AT91_REG *) 0x0000001C)
+#define SDRAMC_ISR (AT91_CAST(AT91_REG *) 0x00000020)
+#define SDRAMC_MDR (AT91_CAST(AT91_REG *) 0x00000024)
+
+
+
+#define AT91C_SDRAMC_MODE (0xF << 0)
+#define AT91C_SDRAMC_MODE_NORMAL_CMD (0x0)
+#define AT91C_SDRAMC_MODE_NOP_CMD (0x1)
+#define AT91C_SDRAMC_MODE_PRCGALL_CMD (0x2)
+#define AT91C_SDRAMC_MODE_LMR_CMD (0x3)
+#define AT91C_SDRAMC_MODE_RFSH_CMD (0x4)
+#define AT91C_SDRAMC_MODE_EXT_LMR_CMD (0x5)
+#define AT91C_SDRAMC_MODE_DEEP_CMD (0x6)
+
+#define AT91C_SDRAMC_COUNT (0xFFF << 0)
+
+#define AT91C_SDRAMC_NC (0x3 << 0)
+#define AT91C_SDRAMC_NC_8 (0x0)
+#define AT91C_SDRAMC_NC_9 (0x1)
+#define AT91C_SDRAMC_NC_10 (0x2)
+#define AT91C_SDRAMC_NC_11 (0x3)
+#define AT91C_SDRAMC_NR (0x3 << 2)
+#define AT91C_SDRAMC_NR_11 (0x0 << 2)
+#define AT91C_SDRAMC_NR_12 (0x1 << 2)
+#define AT91C_SDRAMC_NR_13 (0x2 << 2)
+#define AT91C_SDRAMC_NB (0x1 << 4)
+#define AT91C_SDRAMC_NB_2_BANKS (0x0 << 4)
+#define AT91C_SDRAMC_NB_4_BANKS (0x1 << 4)
+#define AT91C_SDRAMC_CAS (0x3 << 5)
+#define AT91C_SDRAMC_CAS_2 (0x2 << 5)
+#define AT91C_SDRAMC_CAS_3 (0x3 << 5)
+#define AT91C_SDRAMC_DBW (0x1 << 7)
+#define AT91C_SDRAMC_DBW_32_BITS (0x0 << 7)
+#define AT91C_SDRAMC_DBW_16_BITS (0x1 << 7)
+#define AT91C_SDRAMC_TWR (0xF << 8)
+#define AT91C_SDRAMC_TWR_0 (0x0 << 8)
+#define AT91C_SDRAMC_TWR_1 (0x1 << 8)
+#define AT91C_SDRAMC_TWR_2 (0x2 << 8)
+#define AT91C_SDRAMC_TWR_3 (0x3 << 8)
+#define AT91C_SDRAMC_TWR_4 (0x4 << 8)
+#define AT91C_SDRAMC_TWR_5 (0x5 << 8)
+#define AT91C_SDRAMC_TWR_6 (0x6 << 8)
+#define AT91C_SDRAMC_TWR_7 (0x7 << 8)
+#define AT91C_SDRAMC_TWR_8 (0x8 << 8)
+#define AT91C_SDRAMC_TWR_9 (0x9 << 8)
+#define AT91C_SDRAMC_TWR_10 (0xA << 8)
+#define AT91C_SDRAMC_TWR_11 (0xB << 8)
+#define AT91C_SDRAMC_TWR_12 (0xC << 8)
+#define AT91C_SDRAMC_TWR_13 (0xD << 8)
+#define AT91C_SDRAMC_TWR_14 (0xE << 8)
+#define AT91C_SDRAMC_TWR_15 (0xF << 8)
+#define AT91C_SDRAMC_TRC (0xF << 12)
+#define AT91C_SDRAMC_TRC_0 (0x0 << 12)
+#define AT91C_SDRAMC_TRC_1 (0x1 << 12)
+#define AT91C_SDRAMC_TRC_2 (0x2 << 12)
+#define AT91C_SDRAMC_TRC_3 (0x3 << 12)
+#define AT91C_SDRAMC_TRC_4 (0x4 << 12)
+#define AT91C_SDRAMC_TRC_5 (0x5 << 12)
+#define AT91C_SDRAMC_TRC_6 (0x6 << 12)
+#define AT91C_SDRAMC_TRC_7 (0x7 << 12)
+#define AT91C_SDRAMC_TRC_8 (0x8 << 12)
+#define AT91C_SDRAMC_TRC_9 (0x9 << 12)
+#define AT91C_SDRAMC_TRC_10 (0xA << 12)
+#define AT91C_SDRAMC_TRC_11 (0xB << 12)
+#define AT91C_SDRAMC_TRC_12 (0xC << 12)
+#define AT91C_SDRAMC_TRC_13 (0xD << 12)
+#define AT91C_SDRAMC_TRC_14 (0xE << 12)
+#define AT91C_SDRAMC_TRC_15 (0xF << 12)
+#define AT91C_SDRAMC_TRP (0xF << 16)
+#define AT91C_SDRAMC_TRP_0 (0x0 << 16)
+#define AT91C_SDRAMC_TRP_1 (0x1 << 16)
+#define AT91C_SDRAMC_TRP_2 (0x2 << 16)
+#define AT91C_SDRAMC_TRP_3 (0x3 << 16)
+#define AT91C_SDRAMC_TRP_4 (0x4 << 16)
+#define AT91C_SDRAMC_TRP_5 (0x5 << 16)
+#define AT91C_SDRAMC_TRP_6 (0x6 << 16)
+#define AT91C_SDRAMC_TRP_7 (0x7 << 16)
+#define AT91C_SDRAMC_TRP_8 (0x8 << 16)
+#define AT91C_SDRAMC_TRP_9 (0x9 << 16)
+#define AT91C_SDRAMC_TRP_10 (0xA << 16)
+#define AT91C_SDRAMC_TRP_11 (0xB << 16)
+#define AT91C_SDRAMC_TRP_12 (0xC << 16)
+#define AT91C_SDRAMC_TRP_13 (0xD << 16)
+#define AT91C_SDRAMC_TRP_14 (0xE << 16)
+#define AT91C_SDRAMC_TRP_15 (0xF << 16)
+#define AT91C_SDRAMC_TRCD (0xF << 20)
+#define AT91C_SDRAMC_TRCD_0 (0x0 << 20)
+#define AT91C_SDRAMC_TRCD_1 (0x1 << 20)
+#define AT91C_SDRAMC_TRCD_2 (0x2 << 20)
+#define AT91C_SDRAMC_TRCD_3 (0x3 << 20)
+#define AT91C_SDRAMC_TRCD_4 (0x4 << 20)
+#define AT91C_SDRAMC_TRCD_5 (0x5 << 20)
+#define AT91C_SDRAMC_TRCD_6 (0x6 << 20)
+#define AT91C_SDRAMC_TRCD_7 (0x7 << 20)
+#define AT91C_SDRAMC_TRCD_8 (0x8 << 20)
+#define AT91C_SDRAMC_TRCD_9 (0x9 << 20)
+#define AT91C_SDRAMC_TRCD_10 (0xA << 20)
+#define AT91C_SDRAMC_TRCD_11 (0xB << 20)
+#define AT91C_SDRAMC_TRCD_12 (0xC << 20)
+#define AT91C_SDRAMC_TRCD_13 (0xD << 20)
+#define AT91C_SDRAMC_TRCD_14 (0xE << 20)
+#define AT91C_SDRAMC_TRCD_15 (0xF << 20)
+#define AT91C_SDRAMC_TRAS (0xF << 24)
+#define AT91C_SDRAMC_TRAS_0 (0x0 << 24)
+#define AT91C_SDRAMC_TRAS_1 (0x1 << 24)
+#define AT91C_SDRAMC_TRAS_2 (0x2 << 24)
+#define AT91C_SDRAMC_TRAS_3 (0x3 << 24)
+#define AT91C_SDRAMC_TRAS_4 (0x4 << 24)
+#define AT91C_SDRAMC_TRAS_5 (0x5 << 24)
+#define AT91C_SDRAMC_TRAS_6 (0x6 << 24)
+#define AT91C_SDRAMC_TRAS_7 (0x7 << 24)
+#define AT91C_SDRAMC_TRAS_8 (0x8 << 24)
+#define AT91C_SDRAMC_TRAS_9 (0x9 << 24)
+#define AT91C_SDRAMC_TRAS_10 (0xA << 24)
+#define AT91C_SDRAMC_TRAS_11 (0xB << 24)
+#define AT91C_SDRAMC_TRAS_12 (0xC << 24)
+#define AT91C_SDRAMC_TRAS_13 (0xD << 24)
+#define AT91C_SDRAMC_TRAS_14 (0xE << 24)
+#define AT91C_SDRAMC_TRAS_15 (0xF << 24)
+#define AT91C_SDRAMC_TXSR (0xF << 28)
+#define AT91C_SDRAMC_TXSR_0 (0x0 << 28)
+#define AT91C_SDRAMC_TXSR_1 (0x1 << 28)
+#define AT91C_SDRAMC_TXSR_2 (0x2 << 28)
+#define AT91C_SDRAMC_TXSR_3 (0x3 << 28)
+#define AT91C_SDRAMC_TXSR_4 (0x4 << 28)
+#define AT91C_SDRAMC_TXSR_5 (0x5 << 28)
+#define AT91C_SDRAMC_TXSR_6 (0x6 << 28)
+#define AT91C_SDRAMC_TXSR_7 (0x7 << 28)
+#define AT91C_SDRAMC_TXSR_8 (0x8 << 28)
+#define AT91C_SDRAMC_TXSR_9 (0x9 << 28)
+#define AT91C_SDRAMC_TXSR_10 (0xA << 28)
+#define AT91C_SDRAMC_TXSR_11 (0xB << 28)
+#define AT91C_SDRAMC_TXSR_12 (0xC << 28)
+#define AT91C_SDRAMC_TXSR_13 (0xD << 28)
+#define AT91C_SDRAMC_TXSR_14 (0xE << 28)
+#define AT91C_SDRAMC_TXSR_15 (0xF << 28)
+
+#define AT91C_SDRAMC_DA (0x1 << 0)
+#define AT91C_SDRAMC_DA_DISABLE (0x0)
+#define AT91C_SDRAMC_DA_ENABLE (0x1)
+
+#define AT91C_SDRAMC_LPCB (0x3 << 0)
+#define AT91C_SDRAMC_LPCB_DISABLE (0x0)
+#define AT91C_SDRAMC_LPCB_SELF_REFRESH (0x1)
+#define AT91C_SDRAMC_LPCB_POWER_DOWN (0x2)
+#define AT91C_SDRAMC_LPCB_DEEP_POWER_DOWN (0x3)
+#define AT91C_SDRAMC_PASR (0x7 << 4)
+#define AT91C_SDRAMC_TCSR (0x3 << 8)
+#define AT91C_SDRAMC_DS (0x3 << 10)
+#define AT91C_SDRAMC_TIMEOUT (0x3 << 12)
+#define AT91C_SDRAMC_TIMEOUT_0_CLK_CYCLES (0x0 << 12)
+#define AT91C_SDRAMC_TIMEOUT_64_CLK_CYCLES (0x1 << 12)
+#define AT91C_SDRAMC_TIMEOUT_128_CLK_CYCLES (0x2 << 12)
+
+#define AT91C_SDRAMC_RES (0x1 << 0)
+
+
+
+
+#define AT91C_SDRAMC_MD (0x3 << 0)
+#define AT91C_SDRAMC_MD_SDRAM (0x0)
+#define AT91C_SDRAMC_MD_LOW_POWER_SDRAM (0x1)
+# 650 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define SETUP0 (AT91_CAST(AT91_REG *) 0x00000000)
+#define PULSE0 (AT91_CAST(AT91_REG *) 0x00000004)
+#define CYCLE0 (AT91_CAST(AT91_REG *) 0x00000008)
+#define CTRL0 (AT91_CAST(AT91_REG *) 0x0000000C)
+#define SETUP1 (AT91_CAST(AT91_REG *) 0x00000010)
+#define PULSE1 (AT91_CAST(AT91_REG *) 0x00000014)
+#define CYCLE1 (AT91_CAST(AT91_REG *) 0x00000018)
+#define CTRL1 (AT91_CAST(AT91_REG *) 0x0000001C)
+#define SETUP2 (AT91_CAST(AT91_REG *) 0x00000020)
+#define PULSE2 (AT91_CAST(AT91_REG *) 0x00000024)
+#define CYCLE2 (AT91_CAST(AT91_REG *) 0x00000028)
+#define CTRL2 (AT91_CAST(AT91_REG *) 0x0000002C)
+#define SETUP3 (AT91_CAST(AT91_REG *) 0x00000030)
+#define PULSE3 (AT91_CAST(AT91_REG *) 0x00000034)
+#define CYCLE3 (AT91_CAST(AT91_REG *) 0x00000038)
+#define CTRL3 (AT91_CAST(AT91_REG *) 0x0000003C)
+#define SETUP4 (AT91_CAST(AT91_REG *) 0x00000040)
+#define PULSE4 (AT91_CAST(AT91_REG *) 0x00000044)
+#define CYCLE4 (AT91_CAST(AT91_REG *) 0x00000048)
+#define CTRL4 (AT91_CAST(AT91_REG *) 0x0000004C)
+#define SETUP5 (AT91_CAST(AT91_REG *) 0x00000050)
+#define PULSE5 (AT91_CAST(AT91_REG *) 0x00000054)
+#define CYCLE5 (AT91_CAST(AT91_REG *) 0x00000058)
+#define CTRL5 (AT91_CAST(AT91_REG *) 0x0000005C)
+#define SETUP6 (AT91_CAST(AT91_REG *) 0x00000060)
+#define PULSE6 (AT91_CAST(AT91_REG *) 0x00000064)
+#define CYCLE6 (AT91_CAST(AT91_REG *) 0x00000068)
+#define CTRL6 (AT91_CAST(AT91_REG *) 0x0000006C)
+#define SETUP7 (AT91_CAST(AT91_REG *) 0x00000070)
+#define PULSE7 (AT91_CAST(AT91_REG *) 0x00000074)
+#define CYCLE7 (AT91_CAST(AT91_REG *) 0x00000078)
+#define CTRL7 (AT91_CAST(AT91_REG *) 0x0000007C)
+
+
+
+#define AT91C_SMC_NWESETUP (0x3F << 0)
+#define AT91C_SMC_NCSSETUPWR (0x3F << 8)
+#define AT91C_SMC_NRDSETUP (0x3F << 16)
+#define AT91C_SMC_NCSSETUPRD (0x3F << 24)
+
+#define AT91C_SMC_NWEPULSE (0x7F << 0)
+#define AT91C_SMC_NCSPULSEWR (0x7F << 8)
+#define AT91C_SMC_NRDPULSE (0x7F << 16)
+#define AT91C_SMC_NCSPULSERD (0x7F << 24)
+
+#define AT91C_SMC_NWECYCLE (0x1FF << 0)
+#define AT91C_SMC_NRDCYCLE (0x1FF << 16)
+
+#define AT91C_SMC_READMODE (0x1 << 0)
+#define AT91C_SMC_WRITEMODE (0x1 << 1)
+#define AT91C_SMC_NWAITM (0x3 << 4)
+#define AT91C_SMC_NWAITM_NWAIT_DISABLE (0x0 << 4)
+#define AT91C_SMC_NWAITM_NWAIT_ENABLE_FROZEN (0x2 << 4)
+#define AT91C_SMC_NWAITM_NWAIT_ENABLE_READY (0x3 << 4)
+#define AT91C_SMC_BAT (0x1 << 8)
+#define AT91C_SMC_BAT_BYTE_SELECT (0x0 << 8)
+#define AT91C_SMC_BAT_BYTE_WRITE (0x1 << 8)
+#define AT91C_SMC_DBW (0x3 << 12)
+#define AT91C_SMC_DBW_WIDTH_EIGTH_BITS (0x0 << 12)
+#define AT91C_SMC_DBW_WIDTH_SIXTEEN_BITS (0x1 << 12)
+#define AT91C_SMC_DBW_WIDTH_THIRTY_TWO_BITS (0x2 << 12)
+#define AT91C_SMC_TDF (0xF << 16)
+#define AT91C_SMC_TDFEN (0x1 << 20)
+#define AT91C_SMC_PMEN (0x1 << 24)
+#define AT91C_SMC_PS (0x3 << 28)
+#define AT91C_SMC_PS_SIZE_FOUR_BYTES (0x0 << 28)
+#define AT91C_SMC_PS_SIZE_EIGHT_BYTES (0x1 << 28)
+#define AT91C_SMC_PS_SIZE_SIXTEEN_BYTES (0x2 << 28)
+#define AT91C_SMC_PS_SIZE_THIRTY_TWO_BYTES (0x3 << 28)
+# 788 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define MATRIX_MCFG0 (AT91_CAST(AT91_REG *) 0x00000000)
+#define MATRIX_MCFG1 (AT91_CAST(AT91_REG *) 0x00000004)
+#define MATRIX_MCFG2 (AT91_CAST(AT91_REG *) 0x00000008)
+#define MATRIX_MCFG3 (AT91_CAST(AT91_REG *) 0x0000000C)
+#define MATRIX_MCFG4 (AT91_CAST(AT91_REG *) 0x00000010)
+#define MATRIX_MCFG5 (AT91_CAST(AT91_REG *) 0x00000014)
+#define MATRIX_MCFG6 (AT91_CAST(AT91_REG *) 0x00000018)
+#define MATRIX_MCFG7 (AT91_CAST(AT91_REG *) 0x0000001C)
+#define MATRIX_SCFG0 (AT91_CAST(AT91_REG *) 0x00000040)
+#define MATRIX_SCFG1 (AT91_CAST(AT91_REG *) 0x00000044)
+#define MATRIX_SCFG2 (AT91_CAST(AT91_REG *) 0x00000048)
+#define MATRIX_SCFG3 (AT91_CAST(AT91_REG *) 0x0000004C)
+#define MATRIX_SCFG4 (AT91_CAST(AT91_REG *) 0x00000050)
+#define MATRIX_PRAS0 (AT91_CAST(AT91_REG *) 0x00000080)
+#define MATRIX_PRBS0 (AT91_CAST(AT91_REG *) 0x00000084)
+#define MATRIX_PRAS1 (AT91_CAST(AT91_REG *) 0x00000088)
+#define MATRIX_PRBS1 (AT91_CAST(AT91_REG *) 0x0000008C)
+#define MATRIX_PRAS2 (AT91_CAST(AT91_REG *) 0x00000090)
+#define MATRIX_PRBS2 (AT91_CAST(AT91_REG *) 0x00000094)
+#define MATRIX_PRAS3 (AT91_CAST(AT91_REG *) 0x00000098)
+#define MATRIX_PRBS3 (AT91_CAST(AT91_REG *) 0x0000009C)
+#define MATRIX_PRAS4 (AT91_CAST(AT91_REG *) 0x000000A0)
+#define MATRIX_PRBS4 (AT91_CAST(AT91_REG *) 0x000000A4)
+#define MATRIX_MRCR (AT91_CAST(AT91_REG *) 0x00000100)
+#define MATRIX_EBI (AT91_CAST(AT91_REG *) 0x0000011C)
+#define MATRIX_TEAKCFG (AT91_CAST(AT91_REG *) 0x0000012C)
+#define MATRIX_VERSION (AT91_CAST(AT91_REG *) 0x000001FC)
+
+
+
+#define AT91C_MATRIX_SLOT_CYCLE (0xFF << 0)
+#define AT91C_MATRIX_DEFMSTR_TYPE (0x3 << 16)
+#define AT91C_MATRIX_DEFMSTR_TYPE_NO_DEFMSTR (0x0 << 16)
+#define AT91C_MATRIX_DEFMSTR_TYPE_LAST_DEFMSTR (0x1 << 16)
+#define AT91C_MATRIX_DEFMSTR_TYPE_FIXED_DEFMSTR (0x2 << 16)
+#define AT91C_MATRIX_FIXED_DEFMSTR0 (0x7 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR0_ARM926I (0x0 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR0_ARM926D (0x1 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR0_HPDC3 (0x2 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR0_LCDC (0x3 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR0_DMA (0x4 << 18)
+
+#define AT91C_MATRIX_FIXED_DEFMSTR1 (0x7 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR1_ARM926I (0x0 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR1_ARM926D (0x1 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR1_HPDC3 (0x2 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR1_LCDC (0x3 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR1_DMA (0x4 << 18)
+
+#define AT91C_MATRIX_FIXED_DEFMSTR2 (0x1 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR2_ARM926I (0x0 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR2_ARM926D (0x1 << 18)
+
+#define AT91C_MATRIX_FIXED_DEFMSTR3 (0x7 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR3_ARM926I (0x0 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR3_ARM926D (0x1 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR3_HPDC3 (0x2 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR3_LCDC (0x3 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR3_DMA (0x4 << 18)
+
+#define AT91C_MATRIX_FIXED_DEFMSTR4 (0x3 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR4_ARM926I (0x0 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR4_ARM926D (0x1 << 18)
+#define AT91C_MATRIX_FIXED_DEFMSTR4_HPDC3 (0x2 << 18)
+
+#define AT91C_MATRIX_M0PR (0x3 << 0)
+#define AT91C_MATRIX_M1PR (0x3 << 4)
+#define AT91C_MATRIX_M2PR (0x3 << 8)
+#define AT91C_MATRIX_M3PR (0x3 << 12)
+#define AT91C_MATRIX_M4PR (0x3 << 16)
+#define AT91C_MATRIX_M5PR (0x3 << 20)
+#define AT91C_MATRIX_M6PR (0x3 << 24)
+#define AT91C_MATRIX_M7PR (0x3 << 28)
+
+#define AT91C_MATRIX_M8PR (0x3 << 0)
+# 872 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define AT91C_MATRIX_RCA926I (0x1 << 0)
+#define AT91C_MATRIX_RCA926D (0x1 << 1)
+
+#define AT91C_MATRIX_CS1A (0x1 << 1)
+#define AT91C_MATRIX_CS1A_SMC (0x0 << 1)
+#define AT91C_MATRIX_CS1A_SDRAMC (0x1 << 1)
+#define AT91C_MATRIX_CS3A (0x1 << 3)
+#define AT91C_MATRIX_CS3A_SMC (0x0 << 3)
+#define AT91C_MATRIX_CS3A_SM (0x1 << 3)
+#define AT91C_MATRIX_CS4A (0x1 << 4)
+#define AT91C_MATRIX_CS4A_SMC (0x0 << 4)
+#define AT91C_MATRIX_CS4A_CF (0x1 << 4)
+#define AT91C_MATRIX_CS5A (0x1 << 5)
+#define AT91C_MATRIX_CS5A_SMC (0x0 << 5)
+#define AT91C_MATRIX_CS5A_CF (0x1 << 5)
+#define AT91C_MATRIX_DBPUC (0x1 << 8)
+
+#define AT91C_TEAK_PROGRAM_ACCESS (0x1 << 0)
+#define AT91C_TEAK_PROGRAM_ACCESS_DISABLED (0x0)
+#define AT91C_TEAK_PROGRAM_ACCESS_ENABLED (0x1)
+#define AT91C_TEAK_BOOT (0x1 << 1)
+#define AT91C_TEAK_BOOT_DISABLED (0x0 << 1)
+#define AT91C_TEAK_BOOT_ENABLED (0x1 << 1)
+#define AT91C_TEAK_NRESET (0x1 << 2)
+#define AT91C_TEAK_NRESET_ENABLED (0x0 << 2)
+#define AT91C_TEAK_NRESET_DISABLED (0x1 << 2)
+#define AT91C_TEAK_LVECTORP (0x3FFFF << 14)
+# 911 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define CCFG_EBICSA (AT91_CAST(AT91_REG *) 0x0000000C)
+#define CCFG_MATRIXVERSION (AT91_CAST(AT91_REG *) 0x000000EC)
+
+
+
+#define AT91C_EBI_CS1A (0x1 << 1)
+#define AT91C_EBI_CS1A_SMC (0x0 << 1)
+#define AT91C_EBI_CS1A_SDRAMC (0x1 << 1)
+#define AT91C_EBI_CS3A (0x1 << 3)
+#define AT91C_EBI_CS3A_SMC (0x0 << 3)
+#define AT91C_EBI_CS3A_SM (0x1 << 3)
+#define AT91C_EBI_CS4A (0x1 << 4)
+#define AT91C_EBI_CS4A_SMC (0x0 << 4)
+#define AT91C_EBI_CS4A_CF (0x1 << 4)
+#define AT91C_EBI_CS5A (0x1 << 5)
+#define AT91C_EBI_CS5A_SMC (0x0 << 5)
+#define AT91C_EBI_CS5A_CF (0x1 << 5)
+#define AT91C_EBI_DBPUC (0x1 << 8)
+#define AT91C_EBI_SUPPLY (0x1 << 16)
+# 948 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define PDC_RPR (AT91_CAST(AT91_REG *) 0x00000000)
+#define PDC_RCR (AT91_CAST(AT91_REG *) 0x00000004)
+#define PDC_TPR (AT91_CAST(AT91_REG *) 0x00000008)
+#define PDC_TCR (AT91_CAST(AT91_REG *) 0x0000000C)
+#define PDC_RNPR (AT91_CAST(AT91_REG *) 0x00000010)
+#define PDC_RNCR (AT91_CAST(AT91_REG *) 0x00000014)
+#define PDC_TNPR (AT91_CAST(AT91_REG *) 0x00000018)
+#define PDC_TNCR (AT91_CAST(AT91_REG *) 0x0000001C)
+#define PDC_PTCR (AT91_CAST(AT91_REG *) 0x00000020)
+#define PDC_PTSR (AT91_CAST(AT91_REG *) 0x00000024)
+
+
+
+#define AT91C_PDC_RXTEN (0x1 << 0)
+#define AT91C_PDC_RXTDIS (0x1 << 1)
+#define AT91C_PDC_TXTEN (0x1 << 8)
+#define AT91C_PDC_TXTDIS (0x1 << 9)
+# 998 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define DBGU_CR (AT91_CAST(AT91_REG *) 0x00000000)
+#define DBGU_MR (AT91_CAST(AT91_REG *) 0x00000004)
+#define DBGU_IER (AT91_CAST(AT91_REG *) 0x00000008)
+#define DBGU_IDR (AT91_CAST(AT91_REG *) 0x0000000C)
+#define DBGU_IMR (AT91_CAST(AT91_REG *) 0x00000010)
+#define DBGU_CSR (AT91_CAST(AT91_REG *) 0x00000014)
+#define DBGU_RHR (AT91_CAST(AT91_REG *) 0x00000018)
+#define DBGU_THR (AT91_CAST(AT91_REG *) 0x0000001C)
+#define DBGU_BRGR (AT91_CAST(AT91_REG *) 0x00000020)
+#define DBGU_CIDR (AT91_CAST(AT91_REG *) 0x00000040)
+#define DBGU_EXID (AT91_CAST(AT91_REG *) 0x00000044)
+#define DBGU_FNTR (AT91_CAST(AT91_REG *) 0x00000048)
+
+
+
+#define AT91C_US_RSTRX (0x1 << 2)
+#define AT91C_US_RSTTX (0x1 << 3)
+#define AT91C_US_RXEN (0x1 << 4)
+#define AT91C_US_RXDIS (0x1 << 5)
+#define AT91C_US_TXEN (0x1 << 6)
+#define AT91C_US_TXDIS (0x1 << 7)
+#define AT91C_US_RSTSTA (0x1 << 8)
+
+#define AT91C_US_PAR (0x7 << 9)
+#define AT91C_US_PAR_EVEN (0x0 << 9)
+#define AT91C_US_PAR_ODD (0x1 << 9)
+#define AT91C_US_PAR_SPACE (0x2 << 9)
+#define AT91C_US_PAR_MARK (0x3 << 9)
+#define AT91C_US_PAR_NONE (0x4 << 9)
+#define AT91C_US_PAR_MULTI_DROP (0x6 << 9)
+#define AT91C_US_CHMODE (0x3 << 14)
+#define AT91C_US_CHMODE_NORMAL (0x0 << 14)
+#define AT91C_US_CHMODE_AUTO (0x1 << 14)
+#define AT91C_US_CHMODE_LOCAL (0x2 << 14)
+#define AT91C_US_CHMODE_REMOTE (0x3 << 14)
+
+#define AT91C_US_RXRDY (0x1 << 0)
+#define AT91C_US_TXRDY (0x1 << 1)
+#define AT91C_US_ENDRX (0x1 << 3)
+#define AT91C_US_ENDTX (0x1 << 4)
+#define AT91C_US_OVRE (0x1 << 5)
+#define AT91C_US_FRAME (0x1 << 6)
+#define AT91C_US_PARE (0x1 << 7)
+#define AT91C_US_TXEMPTY (0x1 << 9)
+#define AT91C_US_TXBUFE (0x1 << 11)
+#define AT91C_US_RXBUFF (0x1 << 12)
+#define AT91C_US_COMM_TX (0x1 << 30)
+#define AT91C_US_COMM_RX (0x1 << 31)
+
+
+
+
+#define AT91C_US_FORCE_NTRST (0x1 << 0)
+# 1079 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define AIC_SMR (AT91_CAST(AT91_REG *) 0x00000000)
+#define AIC_SVR (AT91_CAST(AT91_REG *) 0x00000080)
+#define AIC_IVR (AT91_CAST(AT91_REG *) 0x00000100)
+#define AIC_FVR (AT91_CAST(AT91_REG *) 0x00000104)
+#define AIC_ISR (AT91_CAST(AT91_REG *) 0x00000108)
+#define AIC_IPR (AT91_CAST(AT91_REG *) 0x0000010C)
+#define AIC_IMR (AT91_CAST(AT91_REG *) 0x00000110)
+#define AIC_CISR (AT91_CAST(AT91_REG *) 0x00000114)
+#define AIC_IECR (AT91_CAST(AT91_REG *) 0x00000120)
+#define AIC_IDCR (AT91_CAST(AT91_REG *) 0x00000124)
+#define AIC_ICCR (AT91_CAST(AT91_REG *) 0x00000128)
+#define AIC_ISCR (AT91_CAST(AT91_REG *) 0x0000012C)
+#define AIC_EOICR (AT91_CAST(AT91_REG *) 0x00000130)
+#define AIC_SPU (AT91_CAST(AT91_REG *) 0x00000134)
+#define AIC_DCR (AT91_CAST(AT91_REG *) 0x00000138)
+#define AIC_FFER (AT91_CAST(AT91_REG *) 0x00000140)
+#define AIC_FFDR (AT91_CAST(AT91_REG *) 0x00000144)
+#define AIC_FFSR (AT91_CAST(AT91_REG *) 0x00000148)
+
+
+
+#define AT91C_AIC_PRIOR (0x7 << 0)
+#define AT91C_AIC_PRIOR_LOWEST (0x0)
+#define AT91C_AIC_PRIOR_HIGHEST (0x7)
+#define AT91C_AIC_SRCTYPE (0x3 << 5)
+#define AT91C_AIC_SRCTYPE_INT_LEVEL_SENSITIVE (0x0 << 5)
+#define AT91C_AIC_SRCTYPE_INT_EDGE_TRIGGERED (0x1 << 5)
+#define AT91C_AIC_SRCTYPE_EXT_HIGH_LEVEL (0x2 << 5)
+#define AT91C_AIC_SRCTYPE_EXT_POSITIVE_EDGE (0x3 << 5)
+
+#define AT91C_AIC_NFIQ (0x1 << 0)
+#define AT91C_AIC_NIRQ (0x1 << 1)
+
+#define AT91C_AIC_DCR_PROT (0x1 << 0)
+#define AT91C_AIC_DCR_GMSK (0x1 << 1)
+# 1157 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define PIO_PER (AT91_CAST(AT91_REG *) 0x00000000)
+#define PIO_PDR (AT91_CAST(AT91_REG *) 0x00000004)
+#define PIO_PSR (AT91_CAST(AT91_REG *) 0x00000008)
+#define PIO_OER (AT91_CAST(AT91_REG *) 0x00000010)
+#define PIO_ODR (AT91_CAST(AT91_REG *) 0x00000014)
+#define PIO_OSR (AT91_CAST(AT91_REG *) 0x00000018)
+#define PIO_IFER (AT91_CAST(AT91_REG *) 0x00000020)
+#define PIO_IFDR (AT91_CAST(AT91_REG *) 0x00000024)
+#define PIO_IFSR (AT91_CAST(AT91_REG *) 0x00000028)
+#define PIO_SODR (AT91_CAST(AT91_REG *) 0x00000030)
+#define PIO_CODR (AT91_CAST(AT91_REG *) 0x00000034)
+#define PIO_ODSR (AT91_CAST(AT91_REG *) 0x00000038)
+#define PIO_PDSR (AT91_CAST(AT91_REG *) 0x0000003C)
+#define PIO_IER (AT91_CAST(AT91_REG *) 0x00000040)
+#define PIO_IDR (AT91_CAST(AT91_REG *) 0x00000044)
+#define PIO_IMR (AT91_CAST(AT91_REG *) 0x00000048)
+#define PIO_ISR (AT91_CAST(AT91_REG *) 0x0000004C)
+#define PIO_MDER (AT91_CAST(AT91_REG *) 0x00000050)
+#define PIO_MDDR (AT91_CAST(AT91_REG *) 0x00000054)
+#define PIO_MDSR (AT91_CAST(AT91_REG *) 0x00000058)
+#define PIO_PPUDR (AT91_CAST(AT91_REG *) 0x00000060)
+#define PIO_PPUER (AT91_CAST(AT91_REG *) 0x00000064)
+#define PIO_PPUSR (AT91_CAST(AT91_REG *) 0x00000068)
+#define PIO_ASR (AT91_CAST(AT91_REG *) 0x00000070)
+#define PIO_BSR (AT91_CAST(AT91_REG *) 0x00000074)
+#define PIO_ABSR (AT91_CAST(AT91_REG *) 0x00000078)
+#define PIO_OWER (AT91_CAST(AT91_REG *) 0x000000A0)
+#define PIO_OWDR (AT91_CAST(AT91_REG *) 0x000000A4)
+#define PIO_OWSR (AT91_CAST(AT91_REG *) 0x000000A8)
+# 1200 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define CKGR_MOR (AT91_CAST(AT91_REG *) 0x00000000)
+#define CKGR_MCFR (AT91_CAST(AT91_REG *) 0x00000004)
+#define CKGR_PLLAR (AT91_CAST(AT91_REG *) 0x00000008)
+#define CKGR_PLLBR (AT91_CAST(AT91_REG *) 0x0000000C)
+
+
+
+#define AT91C_CKGR_MOSCEN (0x1 << 0)
+#define AT91C_CKGR_OSCBYPASS (0x1 << 1)
+#define AT91C_CKGR_OSCOUNT (0xFF << 8)
+
+#define AT91C_CKGR_MAINF (0xFFFF << 0)
+#define AT91C_CKGR_MAINRDY (0x1 << 16)
+
+#define AT91C_CKGR_DIVA (0xFF << 0)
+#define AT91C_CKGR_DIVA_0 (0x0)
+#define AT91C_CKGR_DIVA_BYPASS (0x1)
+#define AT91C_CKGR_PLLACOUNT (0x3F << 8)
+#define AT91C_CKGR_OUTA (0x3 << 14)
+#define AT91C_CKGR_OUTA_0 (0x0 << 14)
+#define AT91C_CKGR_OUTA_1 (0x1 << 14)
+#define AT91C_CKGR_OUTA_2 (0x2 << 14)
+#define AT91C_CKGR_OUTA_3 (0x3 << 14)
+#define AT91C_CKGR_MULA (0x7FF << 16)
+#define AT91C_CKGR_SRCA (0x1 << 29)
+
+#define AT91C_CKGR_DIVB (0xFF << 0)
+#define AT91C_CKGR_DIVB_0 (0x0)
+#define AT91C_CKGR_DIVB_BYPASS (0x1)
+#define AT91C_CKGR_PLLBCOUNT (0x3F << 8)
+#define AT91C_CKGR_OUTB (0x3 << 14)
+#define AT91C_CKGR_OUTB_0 (0x0 << 14)
+#define AT91C_CKGR_OUTB_1 (0x1 << 14)
+#define AT91C_CKGR_OUTB_2 (0x2 << 14)
+#define AT91C_CKGR_OUTB_3 (0x3 << 14)
+#define AT91C_CKGR_MULB (0x7FF << 16)
+#define AT91C_CKGR_USBDIV (0x3 << 28)
+#define AT91C_CKGR_USBDIV_0 (0x0 << 28)
+#define AT91C_CKGR_USBDIV_1 (0x1 << 28)
+#define AT91C_CKGR_USBDIV_2 (0x2 << 28)
+# 1270 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define PMC_SCER (AT91_CAST(AT91_REG *) 0x00000000)
+#define PMC_SCDR (AT91_CAST(AT91_REG *) 0x00000004)
+#define PMC_SCSR (AT91_CAST(AT91_REG *) 0x00000008)
+#define PMC_PCER (AT91_CAST(AT91_REG *) 0x00000010)
+#define PMC_PCDR (AT91_CAST(AT91_REG *) 0x00000014)
+#define PMC_PCSR (AT91_CAST(AT91_REG *) 0x00000018)
+#define PMC_MCKR (AT91_CAST(AT91_REG *) 0x00000030)
+#define PMC_PCKR (AT91_CAST(AT91_REG *) 0x00000040)
+#define PMC_IER (AT91_CAST(AT91_REG *) 0x00000060)
+#define PMC_IDR (AT91_CAST(AT91_REG *) 0x00000064)
+#define PMC_SR (AT91_CAST(AT91_REG *) 0x00000068)
+#define PMC_IMR (AT91_CAST(AT91_REG *) 0x0000006C)
+#define PMC_PLLICPR (AT91_CAST(AT91_REG *) 0x00000080)
+
+
+
+#define AT91C_PMC_UHP (0x1 << 6)
+#define AT91C_PMC_UDP (0x1 << 7)
+#define AT91C_PMC_PCK0 (0x1 << 8)
+#define AT91C_PMC_PCK1 (0x1 << 9)
+
+#define AT91C_PMC_PCK (0x1 << 0)
+
+
+
+
+
+
+#define AT91C_PMC_CSS (0x3 << 0)
+#define AT91C_PMC_CSS_SLOW_CLK (0x0)
+#define AT91C_PMC_CSS_MAIN_CLK (0x1)
+#define AT91C_PMC_CSS_PLLA_CLK (0x2)
+#define AT91C_PMC_CSS_PLLB_CLK (0x3)
+#define AT91C_PMC_PRES (0x7 << 2)
+#define AT91C_PMC_PRES_CLK (0x0 << 2)
+#define AT91C_PMC_PRES_CLK_2 (0x1 << 2)
+#define AT91C_PMC_PRES_CLK_4 (0x2 << 2)
+#define AT91C_PMC_PRES_CLK_8 (0x3 << 2)
+#define AT91C_PMC_PRES_CLK_16 (0x4 << 2)
+#define AT91C_PMC_PRES_CLK_32 (0x5 << 2)
+#define AT91C_PMC_PRES_CLK_64 (0x6 << 2)
+#define AT91C_PMC_MDIV (0x3 << 8)
+#define AT91C_PMC_MDIV_1 (0x0 << 8)
+#define AT91C_PMC_MDIV_2 (0x1 << 8)
+#define AT91C_PMC_MDIV_4 (0x2 << 8)
+
+
+#define AT91C_PMC_MOSCS (0x1 << 0)
+#define AT91C_PMC_LOCKA (0x1 << 1)
+#define AT91C_PMC_LOCKB (0x1 << 2)
+#define AT91C_PMC_MCKRDY (0x1 << 3)
+#define AT91C_PMC_PCK0RDY (0x1 << 8)
+#define AT91C_PMC_PCK1RDY (0x1 << 9)
+
+
+#define AT91C_PMC_OSCSEL (0x1 << 7)
+
+
+#define AT91C_PMC_ICPLLA (0x1 << 0)
+#define AT91C_PMC_ICPLLB (0x1 << 16)
+# 1343 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define RSTC_RCR (AT91_CAST(AT91_REG *) 0x00000000)
+#define RSTC_RSR (AT91_CAST(AT91_REG *) 0x00000004)
+#define RSTC_RMR (AT91_CAST(AT91_REG *) 0x00000008)
+#define RSTC_VER (AT91_CAST(AT91_REG *) 0x000000FC)
+
+
+
+#define AT91C_RSTC_PROCRST (0x1 << 0)
+#define AT91C_RSTC_ICERST (0x1 << 1)
+#define AT91C_RSTC_PERRST (0x1 << 2)
+#define AT91C_RSTC_EXTRST (0x1 << 3)
+#define AT91C_RSTC_KEY (0xFF << 24)
+
+#define AT91C_RSTC_URSTS (0x1 << 0)
+#define AT91C_RSTC_RSTTYP (0x7 << 8)
+#define AT91C_RSTC_RSTTYP_GENERAL (0x0 << 8)
+#define AT91C_RSTC_RSTTYP_WAKEUP (0x1 << 8)
+#define AT91C_RSTC_RSTTYP_WATCHDOG (0x2 << 8)
+#define AT91C_RSTC_RSTTYP_SOFTWARE (0x3 << 8)
+#define AT91C_RSTC_RSTTYP_USER (0x4 << 8)
+#define AT91C_RSTC_NRSTL (0x1 << 16)
+#define AT91C_RSTC_SRCMP (0x1 << 17)
+
+#define AT91C_RSTC_URSTEN (0x1 << 0)
+#define AT91C_RSTC_URSTIEN (0x1 << 4)
+#define AT91C_RSTC_ERSTL (0xF << 8)
+# 1380 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define SHDWC_SHCR (AT91_CAST(AT91_REG *) 0x00000000)
+#define SHDWC_SHMR (AT91_CAST(AT91_REG *) 0x00000004)
+#define SHDWC_SHSR (AT91_CAST(AT91_REG *) 0x00000008)
+
+
+
+#define AT91C_SHDWC_SHDW (0x1 << 0)
+#define AT91C_SHDWC_KEY (0xFF << 24)
+
+#define AT91C_SHDWC_WKMODE0 (0x3 << 0)
+#define AT91C_SHDWC_WKMODE0_NONE (0x0)
+#define AT91C_SHDWC_WKMODE0_HIGH (0x1)
+#define AT91C_SHDWC_WKMODE0_LOW (0x2)
+#define AT91C_SHDWC_WKMODE0_ANYLEVEL (0x3)
+#define AT91C_SHDWC_CPTWK0 (0xF << 4)
+#define AT91C_SHDWC_WKMODE1 (0x3 << 8)
+#define AT91C_SHDWC_WKMODE1_NONE (0x0 << 8)
+#define AT91C_SHDWC_WKMODE1_HIGH (0x1 << 8)
+#define AT91C_SHDWC_WKMODE1_LOW (0x2 << 8)
+#define AT91C_SHDWC_WKMODE1_ANYLEVEL (0x3 << 8)
+#define AT91C_SHDWC_CPTWK1 (0xF << 12)
+#define AT91C_SHDWC_RTTWKEN (0x1 << 16)
+#define AT91C_SHDWC_RTCWKEN (0x1 << 17)
+
+#define AT91C_SHDWC_WAKEUP0 (0x1 << 0)
+#define AT91C_SHDWC_WAKEUP1 (0x1 << 1)
+#define AT91C_SHDWC_FWKUP (0x1 << 2)
+#define AT91C_SHDWC_RTTWK (0x1 << 16)
+#define AT91C_SHDWC_RTCWK (0x1 << 17)
+# 1421 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define RTTC_RTMR (AT91_CAST(AT91_REG *) 0x00000000)
+#define RTTC_RTAR (AT91_CAST(AT91_REG *) 0x00000004)
+#define RTTC_RTVR (AT91_CAST(AT91_REG *) 0x00000008)
+#define RTTC_RTSR (AT91_CAST(AT91_REG *) 0x0000000C)
+
+
+
+#define AT91C_RTTC_RTPRES (0xFFFF << 0)
+#define AT91C_RTTC_ALMIEN (0x1 << 16)
+#define AT91C_RTTC_RTTINCIEN (0x1 << 17)
+#define AT91C_RTTC_RTTRST (0x1 << 18)
+
+#define AT91C_RTTC_ALMV (0x0 << 0)
+
+#define AT91C_RTTC_CRTV (0x0 << 0)
+
+#define AT91C_RTTC_ALMS (0x1 << 0)
+#define AT91C_RTTC_RTTINC (0x1 << 1)
+# 1451 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define PITC_PIMR (AT91_CAST(AT91_REG *) 0x00000000)
+#define PITC_PISR (AT91_CAST(AT91_REG *) 0x00000004)
+#define PITC_PIVR (AT91_CAST(AT91_REG *) 0x00000008)
+#define PITC_PIIR (AT91_CAST(AT91_REG *) 0x0000000C)
+
+
+
+#define AT91C_PITC_PIV (0xFFFFF << 0)
+#define AT91C_PITC_PITEN (0x1 << 24)
+#define AT91C_PITC_PITIEN (0x1 << 25)
+
+#define AT91C_PITC_PITS (0x1 << 0)
+
+#define AT91C_PITC_CPIV (0xFFFFF << 0)
+#define AT91C_PITC_PICNT (0xFFF << 20)
+# 1478 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define WDTC_WDCR (AT91_CAST(AT91_REG *) 0x00000000)
+#define WDTC_WDMR (AT91_CAST(AT91_REG *) 0x00000004)
+#define WDTC_WDSR (AT91_CAST(AT91_REG *) 0x00000008)
+
+
+
+#define AT91C_WDTC_WDRSTT (0x1 << 0)
+#define AT91C_WDTC_KEY (0xFF << 24)
+
+#define AT91C_WDTC_WDV (0xFFF << 0)
+#define AT91C_WDTC_WDFIEN (0x1 << 12)
+#define AT91C_WDTC_WDRSTEN (0x1 << 13)
+#define AT91C_WDTC_WDRPROC (0x1 << 14)
+#define AT91C_WDTC_WDDIS (0x1 << 15)
+#define AT91C_WDTC_WDD (0xFFF << 16)
+#define AT91C_WDTC_WDDBGHLT (0x1 << 28)
+#define AT91C_WDTC_WDIDLEHLT (0x1 << 29)
+
+#define AT91C_WDTC_WDUNF (0x1 << 0)
+#define AT91C_WDTC_WDERR (0x1 << 1)
+# 1517 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define TC_CCR (AT91_CAST(AT91_REG *) 0x00000000)
+#define TC_CMR (AT91_CAST(AT91_REG *) 0x00000004)
+#define TC_CV (AT91_CAST(AT91_REG *) 0x00000010)
+#define TC_RA (AT91_CAST(AT91_REG *) 0x00000014)
+#define TC_RB (AT91_CAST(AT91_REG *) 0x00000018)
+#define TC_RC (AT91_CAST(AT91_REG *) 0x0000001C)
+#define TC_SR (AT91_CAST(AT91_REG *) 0x00000020)
+#define TC_IER (AT91_CAST(AT91_REG *) 0x00000024)
+#define TC_IDR (AT91_CAST(AT91_REG *) 0x00000028)
+#define TC_IMR (AT91_CAST(AT91_REG *) 0x0000002C)
+
+
+
+#define AT91C_TC_CLKEN (0x1 << 0)
+#define AT91C_TC_CLKDIS (0x1 << 1)
+#define AT91C_TC_SWTRG (0x1 << 2)
+
+#define AT91C_TC_CLKS (0x7 << 0)
+#define AT91C_TC_CLKS_TIMER_DIV1_CLOCK (0x0)
+#define AT91C_TC_CLKS_TIMER_DIV2_CLOCK (0x1)
+#define AT91C_TC_CLKS_TIMER_DIV3_CLOCK (0x2)
+#define AT91C_TC_CLKS_TIMER_DIV4_CLOCK (0x3)
+#define AT91C_TC_CLKS_TIMER_DIV5_CLOCK (0x4)
+#define AT91C_TC_CLKS_XC0 (0x5)
+#define AT91C_TC_CLKS_XC1 (0x6)
+#define AT91C_TC_CLKS_XC2 (0x7)
+#define AT91C_TC_CLKI (0x1 << 3)
+#define AT91C_TC_BURST (0x3 << 4)
+#define AT91C_TC_BURST_NONE (0x0 << 4)
+#define AT91C_TC_BURST_XC0 (0x1 << 4)
+#define AT91C_TC_BURST_XC1 (0x2 << 4)
+#define AT91C_TC_BURST_XC2 (0x3 << 4)
+#define AT91C_TC_CPCSTOP (0x1 << 6)
+#define AT91C_TC_LDBSTOP (0x1 << 6)
+#define AT91C_TC_CPCDIS (0x1 << 7)
+#define AT91C_TC_LDBDIS (0x1 << 7)
+#define AT91C_TC_ETRGEDG (0x3 << 8)
+#define AT91C_TC_ETRGEDG_NONE (0x0 << 8)
+#define AT91C_TC_ETRGEDG_RISING (0x1 << 8)
+#define AT91C_TC_ETRGEDG_FALLING (0x2 << 8)
+#define AT91C_TC_ETRGEDG_BOTH (0x3 << 8)
+#define AT91C_TC_EEVTEDG (0x3 << 8)
+#define AT91C_TC_EEVTEDG_NONE (0x0 << 8)
+#define AT91C_TC_EEVTEDG_RISING (0x1 << 8)
+#define AT91C_TC_EEVTEDG_FALLING (0x2 << 8)
+#define AT91C_TC_EEVTEDG_BOTH (0x3 << 8)
+#define AT91C_TC_EEVT (0x3 << 10)
+#define AT91C_TC_EEVT_TIOB (0x0 << 10)
+#define AT91C_TC_EEVT_XC0 (0x1 << 10)
+#define AT91C_TC_EEVT_XC1 (0x2 << 10)
+#define AT91C_TC_EEVT_XC2 (0x3 << 10)
+#define AT91C_TC_ABETRG (0x1 << 10)
+#define AT91C_TC_ENETRG (0x1 << 12)
+#define AT91C_TC_WAVESEL (0x3 << 13)
+#define AT91C_TC_WAVESEL_UP (0x0 << 13)
+#define AT91C_TC_WAVESEL_UPDOWN (0x1 << 13)
+#define AT91C_TC_WAVESEL_UP_AUTO (0x2 << 13)
+#define AT91C_TC_WAVESEL_UPDOWN_AUTO (0x3 << 13)
+#define AT91C_TC_CPCTRG (0x1 << 14)
+#define AT91C_TC_WAVE (0x1 << 15)
+#define AT91C_TC_ACPA (0x3 << 16)
+#define AT91C_TC_ACPA_NONE (0x0 << 16)
+#define AT91C_TC_ACPA_SET (0x1 << 16)
+#define AT91C_TC_ACPA_CLEAR (0x2 << 16)
+#define AT91C_TC_ACPA_TOGGLE (0x3 << 16)
+#define AT91C_TC_LDRA (0x3 << 16)
+#define AT91C_TC_LDRA_NONE (0x0 << 16)
+#define AT91C_TC_LDRA_RISING (0x1 << 16)
+#define AT91C_TC_LDRA_FALLING (0x2 << 16)
+#define AT91C_TC_LDRA_BOTH (0x3 << 16)
+#define AT91C_TC_ACPC (0x3 << 18)
+#define AT91C_TC_ACPC_NONE (0x0 << 18)
+#define AT91C_TC_ACPC_SET (0x1 << 18)
+#define AT91C_TC_ACPC_CLEAR (0x2 << 18)
+#define AT91C_TC_ACPC_TOGGLE (0x3 << 18)
+#define AT91C_TC_LDRB (0x3 << 18)
+#define AT91C_TC_LDRB_NONE (0x0 << 18)
+#define AT91C_TC_LDRB_RISING (0x1 << 18)
+#define AT91C_TC_LDRB_FALLING (0x2 << 18)
+#define AT91C_TC_LDRB_BOTH (0x3 << 18)
+#define AT91C_TC_AEEVT (0x3 << 20)
+#define AT91C_TC_AEEVT_NONE (0x0 << 20)
+#define AT91C_TC_AEEVT_SET (0x1 << 20)
+#define AT91C_TC_AEEVT_CLEAR (0x2 << 20)
+#define AT91C_TC_AEEVT_TOGGLE (0x3 << 20)
+#define AT91C_TC_ASWTRG (0x3 << 22)
+#define AT91C_TC_ASWTRG_NONE (0x0 << 22)
+#define AT91C_TC_ASWTRG_SET (0x1 << 22)
+#define AT91C_TC_ASWTRG_CLEAR (0x2 << 22)
+#define AT91C_TC_ASWTRG_TOGGLE (0x3 << 22)
+#define AT91C_TC_BCPB (0x3 << 24)
+#define AT91C_TC_BCPB_NONE (0x0 << 24)
+#define AT91C_TC_BCPB_SET (0x1 << 24)
+#define AT91C_TC_BCPB_CLEAR (0x2 << 24)
+#define AT91C_TC_BCPB_TOGGLE (0x3 << 24)
+#define AT91C_TC_BCPC (0x3 << 26)
+#define AT91C_TC_BCPC_NONE (0x0 << 26)
+#define AT91C_TC_BCPC_SET (0x1 << 26)
+#define AT91C_TC_BCPC_CLEAR (0x2 << 26)
+#define AT91C_TC_BCPC_TOGGLE (0x3 << 26)
+#define AT91C_TC_BEEVT (0x3 << 28)
+#define AT91C_TC_BEEVT_NONE (0x0 << 28)
+#define AT91C_TC_BEEVT_SET (0x1 << 28)
+#define AT91C_TC_BEEVT_CLEAR (0x2 << 28)
+#define AT91C_TC_BEEVT_TOGGLE (0x3 << 28)
+#define AT91C_TC_BSWTRG (0x3 << 30)
+#define AT91C_TC_BSWTRG_NONE (0x0 << 30)
+#define AT91C_TC_BSWTRG_SET (0x1 << 30)
+#define AT91C_TC_BSWTRG_CLEAR (0x2 << 30)
+#define AT91C_TC_BSWTRG_TOGGLE (0x3 << 30)
+
+#define AT91C_TC_COVFS (0x1 << 0)
+#define AT91C_TC_LOVRS (0x1 << 1)
+#define AT91C_TC_CPAS (0x1 << 2)
+#define AT91C_TC_CPBS (0x1 << 3)
+#define AT91C_TC_CPCS (0x1 << 4)
+#define AT91C_TC_LDRAS (0x1 << 5)
+#define AT91C_TC_LDRBS (0x1 << 6)
+#define AT91C_TC_ETRGS (0x1 << 7)
+#define AT91C_TC_CLKSTA (0x1 << 16)
+#define AT91C_TC_MTIOA (0x1 << 17)
+#define AT91C_TC_MTIOB (0x1 << 18)
+# 1664 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define TCB_BCR (AT91_CAST(AT91_REG *) 0x000000C0)
+#define TCB_BMR (AT91_CAST(AT91_REG *) 0x000000C4)
+#define TC_ADDRSIZE (AT91_CAST(AT91_REG *) 0x000000EC)
+#define TC_IPNAME1 (AT91_CAST(AT91_REG *) 0x000000F0)
+#define TC_IPNAME2 (AT91_CAST(AT91_REG *) 0x000000F4)
+#define TC_FEATURES (AT91_CAST(AT91_REG *) 0x000000F8)
+#define TC_VER (AT91_CAST(AT91_REG *) 0x000000FC)
+
+
+
+#define AT91C_TCB_SYNC (0x1 << 0)
+
+#define AT91C_TCB_TC0XC0S (0x3 << 0)
+#define AT91C_TCB_TC0XC0S_TCLK0 (0x0)
+#define AT91C_TCB_TC0XC0S_NONE (0x1)
+#define AT91C_TCB_TC0XC0S_TIOA1 (0x2)
+#define AT91C_TCB_TC0XC0S_TIOA2 (0x3)
+#define AT91C_TCB_TC1XC1S (0x3 << 2)
+#define AT91C_TCB_TC1XC1S_TCLK1 (0x0 << 2)
+#define AT91C_TCB_TC1XC1S_NONE (0x1 << 2)
+#define AT91C_TCB_TC1XC1S_TIOA0 (0x2 << 2)
+#define AT91C_TCB_TC1XC1S_TIOA2 (0x3 << 2)
+#define AT91C_TCB_TC2XC2S (0x3 << 4)
+#define AT91C_TCB_TC2XC2S_TCLK2 (0x0 << 4)
+#define AT91C_TCB_TC2XC2S_NONE (0x1 << 4)
+#define AT91C_TCB_TC2XC2S_TIOA0 (0x2 << 4)
+#define AT91C_TCB_TC2XC2S_TIOA1 (0x3 << 4)
+# 1727 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define MCI_CR (AT91_CAST(AT91_REG *) 0x00000000)
+#define MCI_MR (AT91_CAST(AT91_REG *) 0x00000004)
+#define MCI_DTOR (AT91_CAST(AT91_REG *) 0x00000008)
+#define MCI_SDCR (AT91_CAST(AT91_REG *) 0x0000000C)
+#define MCI_ARGR (AT91_CAST(AT91_REG *) 0x00000010)
+#define MCI_CMDR (AT91_CAST(AT91_REG *) 0x00000014)
+#define MCI_BLKR (AT91_CAST(AT91_REG *) 0x00000018)
+#define MCI_RSPR (AT91_CAST(AT91_REG *) 0x00000020)
+#define MCI_RDR (AT91_CAST(AT91_REG *) 0x00000030)
+#define MCI_TDR (AT91_CAST(AT91_REG *) 0x00000034)
+#define MCI_SR (AT91_CAST(AT91_REG *) 0x00000040)
+#define MCI_IER (AT91_CAST(AT91_REG *) 0x00000044)
+#define MCI_IDR (AT91_CAST(AT91_REG *) 0x00000048)
+#define MCI_IMR (AT91_CAST(AT91_REG *) 0x0000004C)
+#define MCI_VR (AT91_CAST(AT91_REG *) 0x000000FC)
+
+
+
+#define AT91C_MCI_MCIEN (0x1 << 0)
+#define AT91C_MCI_MCIEN_0 (0x0)
+#define AT91C_MCI_MCIEN_1 (0x1)
+#define AT91C_MCI_MCIDIS (0x1 << 1)
+#define AT91C_MCI_MCIDIS_0 (0x0 << 1)
+#define AT91C_MCI_MCIDIS_1 (0x1 << 1)
+#define AT91C_MCI_PWSEN (0x1 << 2)
+#define AT91C_MCI_PWSEN_0 (0x0 << 2)
+#define AT91C_MCI_PWSEN_1 (0x1 << 2)
+#define AT91C_MCI_PWSDIS (0x1 << 3)
+#define AT91C_MCI_PWSDIS_0 (0x0 << 3)
+#define AT91C_MCI_PWSDIS_1 (0x1 << 3)
+#define AT91C_MCI_SWRST (0x1 << 7)
+#define AT91C_MCI_SWRST_0 (0x0 << 7)
+#define AT91C_MCI_SWRST_1 (0x1 << 7)
+
+#define AT91C_MCI_CLKDIV (0xFF << 0)
+#define AT91C_MCI_PWSDIV (0x7 << 8)
+#define AT91C_MCI_RDPROOF (0x1 << 11)
+#define AT91C_MCI_RDPROOF_DISABLE (0x0 << 11)
+#define AT91C_MCI_RDPROOF_ENABLE (0x1 << 11)
+#define AT91C_MCI_WRPROOF (0x1 << 12)
+#define AT91C_MCI_WRPROOF_DISABLE (0x0 << 12)
+#define AT91C_MCI_WRPROOF_ENABLE (0x1 << 12)
+#define AT91C_MCI_PDCFBYTE (0x1 << 13)
+#define AT91C_MCI_PDCFBYTE_DISABLE (0x0 << 13)
+#define AT91C_MCI_PDCFBYTE_ENABLE (0x1 << 13)
+#define AT91C_MCI_PDCPADV (0x1 << 14)
+#define AT91C_MCI_PDCMODE (0x1 << 15)
+#define AT91C_MCI_PDCMODE_DISABLE (0x0 << 15)
+#define AT91C_MCI_PDCMODE_ENABLE (0x1 << 15)
+#define AT91C_MCI_BLKLEN (0xFFFF << 16)
+
+#define AT91C_MCI_DTOCYC (0xF << 0)
+#define AT91C_MCI_DTOMUL (0x7 << 4)
+#define AT91C_MCI_DTOMUL_1 (0x0 << 4)
+#define AT91C_MCI_DTOMUL_16 (0x1 << 4)
+#define AT91C_MCI_DTOMUL_128 (0x2 << 4)
+#define AT91C_MCI_DTOMUL_256 (0x3 << 4)
+#define AT91C_MCI_DTOMUL_1024 (0x4 << 4)
+#define AT91C_MCI_DTOMUL_4096 (0x5 << 4)
+#define AT91C_MCI_DTOMUL_65536 (0x6 << 4)
+#define AT91C_MCI_DTOMUL_1048576 (0x7 << 4)
+
+#define AT91C_MCI_SCDSEL (0x3 << 0)
+#define AT91C_MCI_SCDSEL_SLOTA (0x0)
+#define AT91C_MCI_SCDSEL_SLOTB (0x1)
+#define AT91C_MCI_SCDSEL_RESERVED1 (0x2)
+#define AT91C_MCI_SCDSEL_RESERVED2 (0x3)
+#define AT91C_MCI_SCDBUS (0x1 << 7)
+#define AT91C_MCI_SCDBUS_1BIT (0x0 << 7)
+#define AT91C_MCI_SCDBUS_4BITS (0x1 << 7)
+
+#define AT91C_MCI_CMDNB (0x3F << 0)
+#define AT91C_MCI_RSPTYP (0x3 << 6)
+#define AT91C_MCI_RSPTYP_NO (0x0 << 6)
+#define AT91C_MCI_RSPTYP_48 (0x1 << 6)
+#define AT91C_MCI_RSPTYP_136 (0x2 << 6)
+#define AT91C_MCI_SPCMD (0x7 << 8)
+#define AT91C_MCI_SPCMD_NONE (0x0 << 8)
+#define AT91C_MCI_SPCMD_INIT (0x1 << 8)
+#define AT91C_MCI_SPCMD_SYNC (0x2 << 8)
+#define AT91C_MCI_SPCMD_IT_CMD (0x4 << 8)
+#define AT91C_MCI_SPCMD_IT_REP (0x5 << 8)
+#define AT91C_MCI_OPDCMD (0x1 << 11)
+#define AT91C_MCI_OPDCMD_PUSHPULL (0x0 << 11)
+#define AT91C_MCI_OPDCMD_OPENDRAIN (0x1 << 11)
+#define AT91C_MCI_MAXLAT (0x1 << 12)
+#define AT91C_MCI_MAXLAT_5 (0x0 << 12)
+#define AT91C_MCI_MAXLAT_64 (0x1 << 12)
+#define AT91C_MCI_TRCMD (0x3 << 16)
+#define AT91C_MCI_TRCMD_NO (0x0 << 16)
+#define AT91C_MCI_TRCMD_START (0x1 << 16)
+#define AT91C_MCI_TRCMD_STOP (0x2 << 16)
+#define AT91C_MCI_TRDIR (0x1 << 18)
+#define AT91C_MCI_TRDIR_WRITE (0x0 << 18)
+#define AT91C_MCI_TRDIR_READ (0x1 << 18)
+#define AT91C_MCI_TRTYP (0x7 << 19)
+#define AT91C_MCI_TRTYP_BLOCK (0x0 << 19)
+#define AT91C_MCI_TRTYP_MULTIPLE (0x1 << 19)
+#define AT91C_MCI_TRTYP_STREAM (0x2 << 19)
+#define AT91C_MCI_TRTYP_SDIO_BYTE (0x4 << 19)
+#define AT91C_MCI_TRTYP_SDIO_BLOCK (0x5 << 19)
+#define AT91C_MCI_IOSPCMD (0x3 << 24)
+#define AT91C_MCI_IOSPCMD_NONE (0x0 << 24)
+#define AT91C_MCI_IOSPCMD_SUSPEND (0x1 << 24)
+#define AT91C_MCI_IOSPCMD_RESUME (0x2 << 24)
+
+#define AT91C_MCI_BCNT (0xFFFF << 0)
+
+#define AT91C_MCI_CMDRDY (0x1 << 0)
+#define AT91C_MCI_RXRDY (0x1 << 1)
+#define AT91C_MCI_TXRDY (0x1 << 2)
+#define AT91C_MCI_BLKE (0x1 << 3)
+#define AT91C_MCI_DTIP (0x1 << 4)
+#define AT91C_MCI_NOTBUSY (0x1 << 5)
+#define AT91C_MCI_ENDRX (0x1 << 6)
+#define AT91C_MCI_ENDTX (0x1 << 7)
+#define AT91C_MCI_SDIOIRQA (0x1 << 8)
+#define AT91C_MCI_SDIOIRQB (0x1 << 9)
+#define AT91C_MCI_SDIOIRQC (0x1 << 10)
+#define AT91C_MCI_SDIOIRQD (0x1 << 11)
+#define AT91C_MCI_RXBUFF (0x1 << 14)
+#define AT91C_MCI_TXBUFE (0x1 << 15)
+#define AT91C_MCI_RINDE (0x1 << 16)
+#define AT91C_MCI_RDIRE (0x1 << 17)
+#define AT91C_MCI_RCRCE (0x1 << 18)
+#define AT91C_MCI_RENDE (0x1 << 19)
+#define AT91C_MCI_RTOE (0x1 << 20)
+#define AT91C_MCI_DCRCE (0x1 << 21)
+#define AT91C_MCI_DTOE (0x1 << 22)
+#define AT91C_MCI_OVRE (0x1 << 30)
+#define AT91C_MCI_UNRE (0x1 << 31)
+# 1897 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define TWI_CR (AT91_CAST(AT91_REG *) 0x00000000)
+#define TWI_MMR (AT91_CAST(AT91_REG *) 0x00000004)
+#define TWI_SMR (AT91_CAST(AT91_REG *) 0x00000008)
+#define TWI_IADR (AT91_CAST(AT91_REG *) 0x0000000C)
+#define TWI_CWGR (AT91_CAST(AT91_REG *) 0x00000010)
+#define TWI_SR (AT91_CAST(AT91_REG *) 0x00000020)
+#define TWI_IER (AT91_CAST(AT91_REG *) 0x00000024)
+#define TWI_IDR (AT91_CAST(AT91_REG *) 0x00000028)
+#define TWI_IMR (AT91_CAST(AT91_REG *) 0x0000002C)
+#define TWI_RHR (AT91_CAST(AT91_REG *) 0x00000030)
+#define TWI_THR (AT91_CAST(AT91_REG *) 0x00000034)
+#define TWI_ADDRSIZE (AT91_CAST(AT91_REG *) 0x000000EC)
+#define TWI_IPNAME1 (AT91_CAST(AT91_REG *) 0x000000F0)
+#define TWI_IPNAME2 (AT91_CAST(AT91_REG *) 0x000000F4)
+#define TWI_FEATURES (AT91_CAST(AT91_REG *) 0x000000F8)
+#define TWI_VER (AT91_CAST(AT91_REG *) 0x000000FC)
+
+
+
+#define AT91C_TWI_START (0x1 << 0)
+#define AT91C_TWI_STOP (0x1 << 1)
+#define AT91C_TWI_MSEN (0x1 << 2)
+#define AT91C_TWI_MSDIS (0x1 << 3)
+#define AT91C_TWI_SVEN (0x1 << 4)
+#define AT91C_TWI_SVDIS (0x1 << 5)
+#define AT91C_TWI_SWRST (0x1 << 7)
+
+#define AT91C_TWI_IADRSZ (0x3 << 8)
+#define AT91C_TWI_IADRSZ_NO (0x0 << 8)
+#define AT91C_TWI_IADRSZ_1_BYTE (0x1 << 8)
+#define AT91C_TWI_IADRSZ_2_BYTE (0x2 << 8)
+#define AT91C_TWI_IADRSZ_3_BYTE (0x3 << 8)
+#define AT91C_TWI_MREAD (0x1 << 12)
+#define AT91C_TWI_DADR (0x7F << 16)
+
+#define AT91C_TWI_SADR (0x7F << 16)
+
+#define AT91C_TWI_CLDIV (0xFF << 0)
+#define AT91C_TWI_CHDIV (0xFF << 8)
+#define AT91C_TWI_CKDIV (0x7 << 16)
+
+#define AT91C_TWI_TXCOMP_SLAVE (0x1 << 0)
+#define AT91C_TWI_TXCOMP_MASTER (0x1 << 0)
+#define AT91C_TWI_RXRDY (0x1 << 1)
+#define AT91C_TWI_TXRDY_MASTER (0x1 << 2)
+#define AT91C_TWI_TXRDY_SLAVE (0x1 << 2)
+#define AT91C_TWI_SVREAD (0x1 << 3)
+#define AT91C_TWI_SVACC (0x1 << 4)
+#define AT91C_TWI_GACC (0x1 << 5)
+#define AT91C_TWI_OVRE (0x1 << 6)
+#define AT91C_TWI_NACK_SLAVE (0x1 << 8)
+#define AT91C_TWI_NACK_MASTER (0x1 << 8)
+#define AT91C_TWI_ARBLST_MULTI_MASTER (0x1 << 9)
+#define AT91C_TWI_SCLWS (0x1 << 10)
+#define AT91C_TWI_EOSACC (0x1 << 11)
+#define AT91C_TWI_ENDRX (0x1 << 12)
+#define AT91C_TWI_ENDTX (0x1 << 13)
+#define AT91C_TWI_RXBUFF (0x1 << 14)
+#define AT91C_TWI_TXBUFE (0x1 << 15)
+# 1994 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define US_CR (AT91_CAST(AT91_REG *) 0x00000000)
+#define US_MR (AT91_CAST(AT91_REG *) 0x00000004)
+#define US_IER (AT91_CAST(AT91_REG *) 0x00000008)
+#define US_IDR (AT91_CAST(AT91_REG *) 0x0000000C)
+#define US_IMR (AT91_CAST(AT91_REG *) 0x00000010)
+#define US_CSR (AT91_CAST(AT91_REG *) 0x00000014)
+#define US_RHR (AT91_CAST(AT91_REG *) 0x00000018)
+#define US_THR (AT91_CAST(AT91_REG *) 0x0000001C)
+#define US_BRGR (AT91_CAST(AT91_REG *) 0x00000020)
+#define US_RTOR (AT91_CAST(AT91_REG *) 0x00000024)
+#define US_TTGR (AT91_CAST(AT91_REG *) 0x00000028)
+#define US_FIDI (AT91_CAST(AT91_REG *) 0x00000040)
+#define US_NER (AT91_CAST(AT91_REG *) 0x00000044)
+#define US_IF (AT91_CAST(AT91_REG *) 0x0000004C)
+
+
+
+#define AT91C_US_STTBRK (0x1 << 9)
+#define AT91C_US_STPBRK (0x1 << 10)
+#define AT91C_US_STTTO (0x1 << 11)
+#define AT91C_US_SENDA (0x1 << 12)
+#define AT91C_US_RSTIT (0x1 << 13)
+#define AT91C_US_RSTNACK (0x1 << 14)
+#define AT91C_US_RETTO (0x1 << 15)
+#define AT91C_US_DTREN (0x1 << 16)
+#define AT91C_US_DTRDIS (0x1 << 17)
+#define AT91C_US_RTSEN (0x1 << 18)
+#define AT91C_US_RTSDIS (0x1 << 19)
+
+#define AT91C_US_USMODE (0xF << 0)
+#define AT91C_US_USMODE_NORMAL (0x0)
+#define AT91C_US_USMODE_RS485 (0x1)
+#define AT91C_US_USMODE_HWHSH (0x2)
+#define AT91C_US_USMODE_MODEM (0x3)
+#define AT91C_US_USMODE_ISO7816_0 (0x4)
+#define AT91C_US_USMODE_ISO7816_1 (0x6)
+#define AT91C_US_USMODE_IRDA (0x8)
+#define AT91C_US_USMODE_SWHSH (0xC)
+#define AT91C_US_CLKS (0x3 << 4)
+#define AT91C_US_CLKS_CLOCK (0x0 << 4)
+#define AT91C_US_CLKS_FDIV1 (0x1 << 4)
+#define AT91C_US_CLKS_SLOW (0x2 << 4)
+#define AT91C_US_CLKS_EXT (0x3 << 4)
+#define AT91C_US_CHRL (0x3 << 6)
+#define AT91C_US_CHRL_5_BITS (0x0 << 6)
+#define AT91C_US_CHRL_6_BITS (0x1 << 6)
+#define AT91C_US_CHRL_7_BITS (0x2 << 6)
+#define AT91C_US_CHRL_8_BITS (0x3 << 6)
+#define AT91C_US_SYNC (0x1 << 8)
+#define AT91C_US_NBSTOP (0x3 << 12)
+#define AT91C_US_NBSTOP_1_BIT (0x0 << 12)
+#define AT91C_US_NBSTOP_15_BIT (0x1 << 12)
+#define AT91C_US_NBSTOP_2_BIT (0x2 << 12)
+#define AT91C_US_MSBF (0x1 << 16)
+#define AT91C_US_MODE9 (0x1 << 17)
+#define AT91C_US_CKLO (0x1 << 18)
+#define AT91C_US_OVER (0x1 << 19)
+#define AT91C_US_INACK (0x1 << 20)
+#define AT91C_US_DSNACK (0x1 << 21)
+#define AT91C_US_MAX_ITER (0x1 << 24)
+#define AT91C_US_FILTER (0x1 << 28)
+
+#define AT91C_US_RXBRK (0x1 << 2)
+#define AT91C_US_TIMEOUT (0x1 << 8)
+#define AT91C_US_ITERATION (0x1 << 10)
+#define AT91C_US_NACK (0x1 << 13)
+#define AT91C_US_RIIC (0x1 << 16)
+#define AT91C_US_DSRIC (0x1 << 17)
+#define AT91C_US_DCDIC (0x1 << 18)
+#define AT91C_US_CTSIC (0x1 << 19)
+
+
+
+#define AT91C_US_RI (0x1 << 20)
+#define AT91C_US_DSR (0x1 << 21)
+#define AT91C_US_DCD (0x1 << 22)
+#define AT91C_US_CTS (0x1 << 23)
+# 2107 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define SSC_CR (AT91_CAST(AT91_REG *) 0x00000000)
+#define SSC_CMR (AT91_CAST(AT91_REG *) 0x00000004)
+#define SSC_RCMR (AT91_CAST(AT91_REG *) 0x00000010)
+#define SSC_RFMR (AT91_CAST(AT91_REG *) 0x00000014)
+#define SSC_TCMR (AT91_CAST(AT91_REG *) 0x00000018)
+#define SSC_TFMR (AT91_CAST(AT91_REG *) 0x0000001C)
+#define SSC_RHR (AT91_CAST(AT91_REG *) 0x00000020)
+#define SSC_THR (AT91_CAST(AT91_REG *) 0x00000024)
+#define SSC_RSHR (AT91_CAST(AT91_REG *) 0x00000030)
+#define SSC_TSHR (AT91_CAST(AT91_REG *) 0x00000034)
+#define SSC_SR (AT91_CAST(AT91_REG *) 0x00000040)
+#define SSC_IER (AT91_CAST(AT91_REG *) 0x00000044)
+#define SSC_IDR (AT91_CAST(AT91_REG *) 0x00000048)
+#define SSC_IMR (AT91_CAST(AT91_REG *) 0x0000004C)
+
+
+
+#define AT91C_SSC_RXEN (0x1 << 0)
+#define AT91C_SSC_RXDIS (0x1 << 1)
+#define AT91C_SSC_TXEN (0x1 << 8)
+#define AT91C_SSC_TXDIS (0x1 << 9)
+#define AT91C_SSC_SWRST (0x1 << 15)
+
+#define AT91C_SSC_CKS (0x3 << 0)
+#define AT91C_SSC_CKS_DIV (0x0)
+#define AT91C_SSC_CKS_TK (0x1)
+#define AT91C_SSC_CKS_RK (0x2)
+#define AT91C_SSC_CKO (0x7 << 2)
+#define AT91C_SSC_CKO_NONE (0x0 << 2)
+#define AT91C_SSC_CKO_CONTINOUS (0x1 << 2)
+#define AT91C_SSC_CKO_DATA_TX (0x2 << 2)
+#define AT91C_SSC_CKI (0x1 << 5)
+#define AT91C_SSC_START (0xF << 8)
+#define AT91C_SSC_START_CONTINOUS (0x0 << 8)
+#define AT91C_SSC_START_TX (0x1 << 8)
+#define AT91C_SSC_START_LOW_RF (0x2 << 8)
+#define AT91C_SSC_START_HIGH_RF (0x3 << 8)
+#define AT91C_SSC_START_FALL_RF (0x4 << 8)
+#define AT91C_SSC_START_RISE_RF (0x5 << 8)
+#define AT91C_SSC_START_LEVEL_RF (0x6 << 8)
+#define AT91C_SSC_START_EDGE_RF (0x7 << 8)
+#define AT91C_SSC_START_0 (0x8 << 8)
+#define AT91C_SSC_STTDLY (0xFF << 16)
+#define AT91C_SSC_PERIOD (0xFF << 24)
+
+#define AT91C_SSC_DATLEN (0x1F << 0)
+#define AT91C_SSC_LOOP (0x1 << 5)
+#define AT91C_SSC_MSBF (0x1 << 7)
+#define AT91C_SSC_DATNB (0xF << 8)
+#define AT91C_SSC_FSLEN (0xF << 16)
+#define AT91C_SSC_FSOS (0x7 << 20)
+#define AT91C_SSC_FSOS_NONE (0x0 << 20)
+#define AT91C_SSC_FSOS_NEGATIVE (0x1 << 20)
+#define AT91C_SSC_FSOS_POSITIVE (0x2 << 20)
+#define AT91C_SSC_FSOS_LOW (0x3 << 20)
+#define AT91C_SSC_FSOS_HIGH (0x4 << 20)
+#define AT91C_SSC_FSOS_TOGGLE (0x5 << 20)
+#define AT91C_SSC_FSEDGE (0x1 << 24)
+
+
+#define AT91C_SSC_DATDEF (0x1 << 5)
+#define AT91C_SSC_FSDEN (0x1 << 23)
+
+#define AT91C_SSC_TXRDY (0x1 << 0)
+#define AT91C_SSC_TXEMPTY (0x1 << 1)
+#define AT91C_SSC_ENDTX (0x1 << 2)
+#define AT91C_SSC_TXBUFE (0x1 << 3)
+#define AT91C_SSC_RXRDY (0x1 << 4)
+#define AT91C_SSC_OVRUN (0x1 << 5)
+#define AT91C_SSC_ENDRX (0x1 << 6)
+#define AT91C_SSC_RXBUFF (0x1 << 7)
+#define AT91C_SSC_TXSYN (0x1 << 10)
+#define AT91C_SSC_RXSYN (0x1 << 11)
+#define AT91C_SSC_TXENA (0x1 << 16)
+#define AT91C_SSC_RXENA (0x1 << 17)
+# 2214 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define SPI_CR (AT91_CAST(AT91_REG *) 0x00000000)
+#define SPI_MR (AT91_CAST(AT91_REG *) 0x00000004)
+#define SPI_RDR (AT91_CAST(AT91_REG *) 0x00000008)
+#define SPI_TDR (AT91_CAST(AT91_REG *) 0x0000000C)
+#define SPI_SR (AT91_CAST(AT91_REG *) 0x00000010)
+#define SPI_IER (AT91_CAST(AT91_REG *) 0x00000014)
+#define SPI_IDR (AT91_CAST(AT91_REG *) 0x00000018)
+#define SPI_IMR (AT91_CAST(AT91_REG *) 0x0000001C)
+#define SPI_CSR (AT91_CAST(AT91_REG *) 0x00000030)
+
+
+
+#define AT91C_SPI_SPIEN (0x1 << 0)
+#define AT91C_SPI_SPIDIS (0x1 << 1)
+#define AT91C_SPI_SWRST (0x1 << 7)
+#define AT91C_SPI_LASTXFER (0x1 << 24)
+
+#define AT91C_SPI_MSTR (0x1 << 0)
+#define AT91C_SPI_PS (0x1 << 1)
+#define AT91C_SPI_PS_FIXED (0x0 << 1)
+#define AT91C_SPI_PS_VARIABLE (0x1 << 1)
+#define AT91C_SPI_PCSDEC (0x1 << 2)
+#define AT91C_SPI_FDIV (0x1 << 3)
+#define AT91C_SPI_MODFDIS (0x1 << 4)
+#define AT91C_SPI_LLB (0x1 << 7)
+#define AT91C_SPI_PCS (0xF << 16)
+#define AT91C_SPI_DLYBCS (0xFF << 24)
+
+#define AT91C_SPI_RD (0xFFFF << 0)
+#define AT91C_SPI_RPCS (0xF << 16)
+
+#define AT91C_SPI_TD (0xFFFF << 0)
+#define AT91C_SPI_TPCS (0xF << 16)
+
+#define AT91C_SPI_RDRF (0x1 << 0)
+#define AT91C_SPI_TDRE (0x1 << 1)
+#define AT91C_SPI_MODF (0x1 << 2)
+#define AT91C_SPI_OVRES (0x1 << 3)
+#define AT91C_SPI_ENDRX (0x1 << 4)
+#define AT91C_SPI_ENDTX (0x1 << 5)
+#define AT91C_SPI_RXBUFF (0x1 << 6)
+#define AT91C_SPI_TXBUFE (0x1 << 7)
+#define AT91C_SPI_NSSR (0x1 << 8)
+#define AT91C_SPI_TXEMPTY (0x1 << 9)
+#define AT91C_SPI_SPIENS (0x1 << 16)
+
+
+
+
+#define AT91C_SPI_CPOL (0x1 << 0)
+#define AT91C_SPI_NCPHA (0x1 << 1)
+#define AT91C_SPI_CSAAT (0x1 << 3)
+#define AT91C_SPI_BITS (0xF << 4)
+#define AT91C_SPI_BITS_8 (0x0 << 4)
+#define AT91C_SPI_BITS_9 (0x1 << 4)
+#define AT91C_SPI_BITS_10 (0x2 << 4)
+#define AT91C_SPI_BITS_11 (0x3 << 4)
+#define AT91C_SPI_BITS_12 (0x4 << 4)
+#define AT91C_SPI_BITS_13 (0x5 << 4)
+#define AT91C_SPI_BITS_14 (0x6 << 4)
+#define AT91C_SPI_BITS_15 (0x7 << 4)
+#define AT91C_SPI_BITS_16 (0x8 << 4)
+#define AT91C_SPI_SCBR (0xFF << 8)
+#define AT91C_SPI_DLYBS (0xFF << 16)
+#define AT91C_SPI_DLYBCT (0xFF << 24)
+# 2313 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define ADC_CR (AT91_CAST(AT91_REG *) 0x00000000)
+#define ADC_MR (AT91_CAST(AT91_REG *) 0x00000004)
+#define ADC_CHER (AT91_CAST(AT91_REG *) 0x00000010)
+#define ADC_CHDR (AT91_CAST(AT91_REG *) 0x00000014)
+#define ADC_CHSR (AT91_CAST(AT91_REG *) 0x00000018)
+#define ADC_SR (AT91_CAST(AT91_REG *) 0x0000001C)
+#define ADC_LCDR (AT91_CAST(AT91_REG *) 0x00000020)
+#define ADC_IER (AT91_CAST(AT91_REG *) 0x00000024)
+#define ADC_IDR (AT91_CAST(AT91_REG *) 0x00000028)
+#define ADC_IMR (AT91_CAST(AT91_REG *) 0x0000002C)
+#define ADC_CDR0 (AT91_CAST(AT91_REG *) 0x00000030)
+#define ADC_CDR1 (AT91_CAST(AT91_REG *) 0x00000034)
+#define ADC_CDR2 (AT91_CAST(AT91_REG *) 0x00000038)
+#define ADC_CDR3 (AT91_CAST(AT91_REG *) 0x0000003C)
+
+
+
+#define AT91C_ADC_SWRST (0x1 << 0)
+#define AT91C_ADC_START (0x1 << 1)
+
+#define AT91C_ADC_TRGEN (0x1 << 0)
+#define AT91C_ADC_TRGEN_DIS (0x0)
+#define AT91C_ADC_TRGEN_EN (0x1)
+#define AT91C_ADC_TRGSEL (0x7 << 1)
+#define AT91C_ADC_TRGSEL_TIOA0 (0x0 << 1)
+#define AT91C_ADC_TRGSEL_TIOA1 (0x1 << 1)
+#define AT91C_ADC_TRGSEL_TIOA2 (0x2 << 1)
+#define AT91C_ADC_TRGSEL_TIOA3 (0x3 << 1)
+#define AT91C_ADC_TRGSEL_TIOA4 (0x4 << 1)
+#define AT91C_ADC_TRGSEL_TIOA5 (0x5 << 1)
+#define AT91C_ADC_TRGSEL_EXT (0x6 << 1)
+#define AT91C_ADC_LOWRES (0x1 << 4)
+#define AT91C_ADC_LOWRES_10_BIT (0x0 << 4)
+#define AT91C_ADC_LOWRES_8_BIT (0x1 << 4)
+#define AT91C_ADC_SLEEP (0x1 << 5)
+#define AT91C_ADC_SLEEP_NORMAL_MODE (0x0 << 5)
+#define AT91C_ADC_SLEEP_MODE (0x1 << 5)
+#define AT91C_ADC_PRESCAL (0x3F << 8)
+#define AT91C_ADC_STARTUP (0x1F << 16)
+#define AT91C_ADC_SHTIM (0xF << 24)
+
+#define AT91C_ADC_CH0 (0x1 << 0)
+#define AT91C_ADC_CH1 (0x1 << 1)
+#define AT91C_ADC_CH2 (0x1 << 2)
+#define AT91C_ADC_CH3 (0x1 << 3)
+
+
+
+#define AT91C_ADC_EOC0 (0x1 << 0)
+#define AT91C_ADC_EOC1 (0x1 << 1)
+#define AT91C_ADC_EOC2 (0x1 << 2)
+#define AT91C_ADC_EOC3 (0x1 << 3)
+#define AT91C_ADC_OVRE0 (0x1 << 8)
+#define AT91C_ADC_OVRE1 (0x1 << 9)
+#define AT91C_ADC_OVRE2 (0x1 << 10)
+#define AT91C_ADC_OVRE3 (0x1 << 11)
+#define AT91C_ADC_DRDY (0x1 << 16)
+#define AT91C_ADC_GOVRE (0x1 << 17)
+#define AT91C_ADC_ENDRX (0x1 << 18)
+#define AT91C_ADC_RXBUFF (0x1 << 19)
+
+#define AT91C_ADC_LDATA (0x3FF << 0)
+
+
+
+
+#define AT91C_ADC_DATA (0x3FF << 0)
+# 2442 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define EMAC_NCR (AT91_CAST(AT91_REG *) 0x00000000)
+#define EMAC_NCFGR (AT91_CAST(AT91_REG *) 0x00000004)
+#define EMAC_NSR (AT91_CAST(AT91_REG *) 0x00000008)
+#define EMAC_TSR (AT91_CAST(AT91_REG *) 0x00000014)
+#define EMAC_RBQP (AT91_CAST(AT91_REG *) 0x00000018)
+#define EMAC_TBQP (AT91_CAST(AT91_REG *) 0x0000001C)
+#define EMAC_RSR (AT91_CAST(AT91_REG *) 0x00000020)
+#define EMAC_ISR (AT91_CAST(AT91_REG *) 0x00000024)
+#define EMAC_IER (AT91_CAST(AT91_REG *) 0x00000028)
+#define EMAC_IDR (AT91_CAST(AT91_REG *) 0x0000002C)
+#define EMAC_IMR (AT91_CAST(AT91_REG *) 0x00000030)
+#define EMAC_MAN (AT91_CAST(AT91_REG *) 0x00000034)
+#define EMAC_PTR (AT91_CAST(AT91_REG *) 0x00000038)
+#define EMAC_PFR (AT91_CAST(AT91_REG *) 0x0000003C)
+#define EMAC_FTO (AT91_CAST(AT91_REG *) 0x00000040)
+#define EMAC_SCF (AT91_CAST(AT91_REG *) 0x00000044)
+#define EMAC_MCF (AT91_CAST(AT91_REG *) 0x00000048)
+#define EMAC_FRO (AT91_CAST(AT91_REG *) 0x0000004C)
+#define EMAC_FCSE (AT91_CAST(AT91_REG *) 0x00000050)
+#define EMAC_ALE (AT91_CAST(AT91_REG *) 0x00000054)
+#define EMAC_DTF (AT91_CAST(AT91_REG *) 0x00000058)
+#define EMAC_LCOL (AT91_CAST(AT91_REG *) 0x0000005C)
+#define EMAC_ECOL (AT91_CAST(AT91_REG *) 0x00000060)
+#define EMAC_TUND (AT91_CAST(AT91_REG *) 0x00000064)
+#define EMAC_CSE (AT91_CAST(AT91_REG *) 0x00000068)
+#define EMAC_RRE (AT91_CAST(AT91_REG *) 0x0000006C)
+#define EMAC_ROV (AT91_CAST(AT91_REG *) 0x00000070)
+#define EMAC_RSE (AT91_CAST(AT91_REG *) 0x00000074)
+#define EMAC_ELE (AT91_CAST(AT91_REG *) 0x00000078)
+#define EMAC_RJA (AT91_CAST(AT91_REG *) 0x0000007C)
+#define EMAC_USF (AT91_CAST(AT91_REG *) 0x00000080)
+#define EMAC_STE (AT91_CAST(AT91_REG *) 0x00000084)
+#define EMAC_RLE (AT91_CAST(AT91_REG *) 0x00000088)
+#define EMAC_TPF (AT91_CAST(AT91_REG *) 0x0000008C)
+#define EMAC_HRB (AT91_CAST(AT91_REG *) 0x00000090)
+#define EMAC_HRT (AT91_CAST(AT91_REG *) 0x00000094)
+#define EMAC_SA1L (AT91_CAST(AT91_REG *) 0x00000098)
+#define EMAC_SA1H (AT91_CAST(AT91_REG *) 0x0000009C)
+#define EMAC_SA2L (AT91_CAST(AT91_REG *) 0x000000A0)
+#define EMAC_SA2H (AT91_CAST(AT91_REG *) 0x000000A4)
+#define EMAC_SA3L (AT91_CAST(AT91_REG *) 0x000000A8)
+#define EMAC_SA3H (AT91_CAST(AT91_REG *) 0x000000AC)
+#define EMAC_SA4L (AT91_CAST(AT91_REG *) 0x000000B0)
+#define EMAC_SA4H (AT91_CAST(AT91_REG *) 0x000000B4)
+#define EMAC_TID (AT91_CAST(AT91_REG *) 0x000000B8)
+#define EMAC_TPQ (AT91_CAST(AT91_REG *) 0x000000BC)
+#define EMAC_USRIO (AT91_CAST(AT91_REG *) 0x000000C0)
+#define EMAC_WOL (AT91_CAST(AT91_REG *) 0x000000C4)
+#define EMAC_REV (AT91_CAST(AT91_REG *) 0x000000FC)
+
+
+
+#define AT91C_EMAC_LB (0x1 << 0)
+#define AT91C_EMAC_LLB (0x1 << 1)
+#define AT91C_EMAC_RE (0x1 << 2)
+#define AT91C_EMAC_TE (0x1 << 3)
+#define AT91C_EMAC_MPE (0x1 << 4)
+#define AT91C_EMAC_CLRSTAT (0x1 << 5)
+#define AT91C_EMAC_INCSTAT (0x1 << 6)
+#define AT91C_EMAC_WESTAT (0x1 << 7)
+#define AT91C_EMAC_BP (0x1 << 8)
+#define AT91C_EMAC_TSTART (0x1 << 9)
+#define AT91C_EMAC_THALT (0x1 << 10)
+#define AT91C_EMAC_TPFR (0x1 << 11)
+#define AT91C_EMAC_TZQ (0x1 << 12)
+
+#define AT91C_EMAC_SPD (0x1 << 0)
+#define AT91C_EMAC_FD (0x1 << 1)
+#define AT91C_EMAC_JFRAME (0x1 << 3)
+#define AT91C_EMAC_CAF (0x1 << 4)
+#define AT91C_EMAC_NBC (0x1 << 5)
+#define AT91C_EMAC_MTI (0x1 << 6)
+#define AT91C_EMAC_UNI (0x1 << 7)
+#define AT91C_EMAC_BIG (0x1 << 8)
+#define AT91C_EMAC_EAE (0x1 << 9)
+#define AT91C_EMAC_CLK (0x3 << 10)
+#define AT91C_EMAC_CLK_HCLK_8 (0x0 << 10)
+#define AT91C_EMAC_CLK_HCLK_16 (0x1 << 10)
+#define AT91C_EMAC_CLK_HCLK_32 (0x2 << 10)
+#define AT91C_EMAC_CLK_HCLK_64 (0x3 << 10)
+#define AT91C_EMAC_RTY (0x1 << 12)
+#define AT91C_EMAC_PAE (0x1 << 13)
+#define AT91C_EMAC_RBOF (0x3 << 14)
+#define AT91C_EMAC_RBOF_OFFSET_0 (0x0 << 14)
+#define AT91C_EMAC_RBOF_OFFSET_1 (0x1 << 14)
+#define AT91C_EMAC_RBOF_OFFSET_2 (0x2 << 14)
+#define AT91C_EMAC_RBOF_OFFSET_3 (0x3 << 14)
+#define AT91C_EMAC_RLCE (0x1 << 16)
+#define AT91C_EMAC_DRFCS (0x1 << 17)
+#define AT91C_EMAC_EFRHD (0x1 << 18)
+#define AT91C_EMAC_IRXFCS (0x1 << 19)
+
+#define AT91C_EMAC_LINKR (0x1 << 0)
+#define AT91C_EMAC_MDIO (0x1 << 1)
+#define AT91C_EMAC_IDLE (0x1 << 2)
+
+#define AT91C_EMAC_UBR (0x1 << 0)
+#define AT91C_EMAC_COL (0x1 << 1)
+#define AT91C_EMAC_RLES (0x1 << 2)
+#define AT91C_EMAC_TGO (0x1 << 3)
+#define AT91C_EMAC_BEX (0x1 << 4)
+#define AT91C_EMAC_COMP (0x1 << 5)
+#define AT91C_EMAC_UND (0x1 << 6)
+
+#define AT91C_EMAC_BNA (0x1 << 0)
+#define AT91C_EMAC_REC (0x1 << 1)
+#define AT91C_EMAC_OVR (0x1 << 2)
+
+#define AT91C_EMAC_MFD (0x1 << 0)
+#define AT91C_EMAC_RCOMP (0x1 << 1)
+#define AT91C_EMAC_RXUBR (0x1 << 2)
+#define AT91C_EMAC_TXUBR (0x1 << 3)
+#define AT91C_EMAC_TUNDR (0x1 << 4)
+#define AT91C_EMAC_RLEX (0x1 << 5)
+#define AT91C_EMAC_TXERR (0x1 << 6)
+#define AT91C_EMAC_TCOMP (0x1 << 7)
+#define AT91C_EMAC_LINK (0x1 << 9)
+#define AT91C_EMAC_ROVR (0x1 << 10)
+#define AT91C_EMAC_HRESP (0x1 << 11)
+#define AT91C_EMAC_PFRE (0x1 << 12)
+#define AT91C_EMAC_PTZ (0x1 << 13)
+
+
+
+
+#define AT91C_EMAC_DATA (0xFFFF << 0)
+#define AT91C_EMAC_CODE (0x3 << 16)
+#define AT91C_EMAC_REGA (0x1F << 18)
+#define AT91C_EMAC_PHYA (0x1F << 23)
+#define AT91C_EMAC_RW (0x3 << 28)
+#define AT91C_EMAC_SOF (0x3 << 30)
+
+#define AT91C_EMAC_RMII (0x1 << 0)
+#define AT91C_EMAC_CLKEN (0x1 << 1)
+
+#define AT91C_EMAC_IP (0xFFFF << 0)
+#define AT91C_EMAC_MAG (0x1 << 16)
+#define AT91C_EMAC_ARP (0x1 << 17)
+#define AT91C_EMAC_SA1 (0x1 << 18)
+
+#define AT91C_EMAC_REVREF (0xFFFF << 0)
+#define AT91C_EMAC_PARTREF (0xFFFF << 16)
+# 2609 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define UDP_FRM_NUM (AT91_CAST(AT91_REG *) 0x00000000)
+#define UDP_GLBSTATE (AT91_CAST(AT91_REG *) 0x00000004)
+#define UDP_FADDR (AT91_CAST(AT91_REG *) 0x00000008)
+#define UDP_IER (AT91_CAST(AT91_REG *) 0x00000010)
+#define UDP_IDR (AT91_CAST(AT91_REG *) 0x00000014)
+#define UDP_IMR (AT91_CAST(AT91_REG *) 0x00000018)
+#define UDP_ISR (AT91_CAST(AT91_REG *) 0x0000001C)
+#define UDP_ICR (AT91_CAST(AT91_REG *) 0x00000020)
+#define UDP_RSTEP (AT91_CAST(AT91_REG *) 0x00000028)
+#define UDP_CSR (AT91_CAST(AT91_REG *) 0x00000030)
+#define UDP_FDR (AT91_CAST(AT91_REG *) 0x00000050)
+#define UDP_TXVC (AT91_CAST(AT91_REG *) 0x00000074)
+
+
+
+#define AT91C_UDP_FRM_NUM (0x7FF << 0)
+#define AT91C_UDP_FRM_ERR (0x1 << 16)
+#define AT91C_UDP_FRM_OK (0x1 << 17)
+
+#define AT91C_UDP_FADDEN (0x1 << 0)
+#define AT91C_UDP_CONFG (0x1 << 1)
+#define AT91C_UDP_ESR (0x1 << 2)
+#define AT91C_UDP_RSMINPR (0x1 << 3)
+#define AT91C_UDP_RMWUPE (0x1 << 4)
+
+#define AT91C_UDP_FADD (0xFF << 0)
+#define AT91C_UDP_FEN (0x1 << 8)
+
+#define AT91C_UDP_EPINT0 (0x1 << 0)
+#define AT91C_UDP_EPINT1 (0x1 << 1)
+#define AT91C_UDP_EPINT2 (0x1 << 2)
+#define AT91C_UDP_EPINT3 (0x1 << 3)
+#define AT91C_UDP_EPINT4 (0x1 << 4)
+#define AT91C_UDP_EPINT5 (0x1 << 5)
+#define AT91C_UDP_RXSUSP (0x1 << 8)
+#define AT91C_UDP_RXRSM (0x1 << 9)
+#define AT91C_UDP_EXTRSM (0x1 << 10)
+#define AT91C_UDP_SOFINT (0x1 << 11)
+#define AT91C_UDP_WAKEUP (0x1 << 13)
+
+
+
+#define AT91C_UDP_ENDBUSRES (0x1 << 12)
+
+
+#define AT91C_UDP_EP0 (0x1 << 0)
+#define AT91C_UDP_EP1 (0x1 << 1)
+#define AT91C_UDP_EP2 (0x1 << 2)
+#define AT91C_UDP_EP3 (0x1 << 3)
+#define AT91C_UDP_EP4 (0x1 << 4)
+#define AT91C_UDP_EP5 (0x1 << 5)
+
+#define AT91C_UDP_TXCOMP (0x1 << 0)
+#define AT91C_UDP_RX_DATA_BK0 (0x1 << 1)
+#define AT91C_UDP_RXSETUP (0x1 << 2)
+#define AT91C_UDP_ISOERROR (0x1 << 3)
+#define AT91C_UDP_STALLSENT (0x1 << 3)
+#define AT91C_UDP_TXPKTRDY (0x1 << 4)
+#define AT91C_UDP_FORCESTALL (0x1 << 5)
+#define AT91C_UDP_RX_DATA_BK1 (0x1 << 6)
+#define AT91C_UDP_DIR (0x1 << 7)
+#define AT91C_UDP_EPTYPE (0x7 << 8)
+#define AT91C_UDP_EPTYPE_CTRL (0x0 << 8)
+#define AT91C_UDP_EPTYPE_ISO_OUT (0x1 << 8)
+#define AT91C_UDP_EPTYPE_BULK_OUT (0x2 << 8)
+#define AT91C_UDP_EPTYPE_INT_OUT (0x3 << 8)
+#define AT91C_UDP_EPTYPE_ISO_IN (0x5 << 8)
+#define AT91C_UDP_EPTYPE_BULK_IN (0x6 << 8)
+#define AT91C_UDP_EPTYPE_INT_IN (0x7 << 8)
+#define AT91C_UDP_DTGLE (0x1 << 11)
+#define AT91C_UDP_EPEDS (0x1 << 15)
+#define AT91C_UDP_RXBYTECNT (0x7FF << 16)
+
+#define AT91C_UDP_TXVDIS (0x1 << 8)
+#define AT91C_UDP_PUON (0x1 << 9)
+# 2714 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define HcRevision (AT91_CAST(AT91_REG *) 0x00000000)
+#define HcControl (AT91_CAST(AT91_REG *) 0x00000004)
+#define HcCommandStatus (AT91_CAST(AT91_REG *) 0x00000008)
+#define HcInterruptStatus (AT91_CAST(AT91_REG *) 0x0000000C)
+#define HcInterruptEnable (AT91_CAST(AT91_REG *) 0x00000010)
+#define HcInterruptDisable (AT91_CAST(AT91_REG *) 0x00000014)
+#define HcHCCA (AT91_CAST(AT91_REG *) 0x00000018)
+#define HcPeriodCurrentED (AT91_CAST(AT91_REG *) 0x0000001C)
+#define HcControlHeadED (AT91_CAST(AT91_REG *) 0x00000020)
+#define HcControlCurrentED (AT91_CAST(AT91_REG *) 0x00000024)
+#define HcBulkHeadED (AT91_CAST(AT91_REG *) 0x00000028)
+#define HcBulkCurrentED (AT91_CAST(AT91_REG *) 0x0000002C)
+#define HcBulkDoneHead (AT91_CAST(AT91_REG *) 0x00000030)
+#define HcFmInterval (AT91_CAST(AT91_REG *) 0x00000034)
+#define HcFmRemaining (AT91_CAST(AT91_REG *) 0x00000038)
+#define HcFmNumber (AT91_CAST(AT91_REG *) 0x0000003C)
+#define HcPeriodicStart (AT91_CAST(AT91_REG *) 0x00000040)
+#define HcLSThreshold (AT91_CAST(AT91_REG *) 0x00000044)
+#define HcRhDescriptorA (AT91_CAST(AT91_REG *) 0x00000048)
+#define HcRhDescriptorB (AT91_CAST(AT91_REG *) 0x0000004C)
+#define HcRhStatus (AT91_CAST(AT91_REG *) 0x00000050)
+#define HcRhPortStatus (AT91_CAST(AT91_REG *) 0x00000054)
+# 2762 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/at91sam9260/AT91SAM9260.h"
+#define ISI_CR1 (AT91_CAST(AT91_REG *) 0x00000000)
+#define ISI_CR2 (AT91_CAST(AT91_REG *) 0x00000004)
+#define ISI_SR (AT91_CAST(AT91_REG *) 0x00000008)
+#define ISI_IER (AT91_CAST(AT91_REG *) 0x0000000C)
+#define ISI_IDR (AT91_CAST(AT91_REG *) 0x00000010)
+#define ISI_IMR (AT91_CAST(AT91_REG *) 0x00000014)
+#define ISI_PSIZE (AT91_CAST(AT91_REG *) 0x00000020)
+#define ISI_PDECF (AT91_CAST(AT91_REG *) 0x00000024)
+#define ISI_PPFBD (AT91_CAST(AT91_REG *) 0x00000028)
+#define ISI_CDBA (AT91_CAST(AT91_REG *) 0x0000002C)
+#define ISI_Y2RSET0 (AT91_CAST(AT91_REG *) 0x00000030)
+#define ISI_Y2RSET1 (AT91_CAST(AT91_REG *) 0x00000034)
+#define ISI_R2YSET0 (AT91_CAST(AT91_REG *) 0x00000038)
+#define ISI_R2YSET1 (AT91_CAST(AT91_REG *) 0x0000003C)
+#define ISI_R2YSET2 (AT91_CAST(AT91_REG *) 0x00000040)
+
+
+
+#define AT91C_ISI_RST (0x1 << 0)
+#define AT91C_ISI_DISABLE (0x1 << 1)
+#define AT91C_ISI_HSYNC_POL (0x1 << 2)
+#define AT91C_ISI_HSYNC_POL_ACTIVE_HIGH (0x0 << 2)
+#define AT91C_ISI_HSYNC_POL_ACTIVE_LOW (0x1 << 2)
+#define AT91C_ISI_VSYNC_POL (0x1 << 3)
+#define AT91C_ISI_VSYNC_POL_ACTIVE_HIGH (0x0 << 3)
+#define AT91C_ISI_VSYNC_POL_ACTIVE_LOW (0x1 << 3)
+#define AT91C_ISI_PIXCLK_POL (0x1 << 4)
+#define AT91C_ISI_PIXCLK_POL_RISING_EDGE (0x0 << 4)
+#define AT91C_ISI_PIXCLK_POL_FALLING_EDGE (0x1 << 4)
+#define AT91C_ISI_EMB_SYNC (0x1 << 6)
+#define AT91C_ISI_EMB_SYNC_HSYNC_VSYNC (0x0 << 6)
+#define AT91C_ISI_EMB_SYNC_SAV_EAV (0x1 << 6)
+#define AT91C_ISI_CRC_SYNC (0x1 << 7)
+#define AT91C_ISI_CRC_SYNC_CORRECTION_OFF (0x0 << 7)
+#define AT91C_ISI_CRC_SYNC_CORRECTION_ON (0x1 << 7)
+#define AT91C_ISI_FRATE (0x7 << 8)
+#define AT91C_ISI_FULL (0x1 << 12)
+#define AT91C_ISI_FULL_MODE_DISABLE (0x0 << 12)
+#define AT91C_ISI_FULL_MODE_ENABLE (0x1 << 12)
+#define AT91C_ISI_THMASK (0x3 << 13)
+#define AT91C_ISI_THMASK_4_8_16_BURST (0x0 << 13)
+#define AT91C_ISI_THMASK_8_16_BURST (0x1 << 13)
+#define AT91C_ISI_THMASK_16_BURST (0x2 << 13)
+#define AT91C_ISI_CODEC_ON (0x1 << 15)
+#define AT91C_ISI_SLD (0xFF << 16)
+#define AT91C_ISI_SFD (0xFF << 24)
+
+#define AT91C_ISI_IM_VSIZE (0x7FF << 0)
+#define AT91C_ISI_GS_MODE (0x1 << 11)
+#define AT91C_ISI_GS_MODE_2_PIXELS (0x0 << 11)
+#define AT91C_ISI_GS_MODE_1_PIXEL (0x1 << 11)
+#define AT91C_ISI_RGB_MODE (0x1 << 12)
+#define AT91C_ISI_RGB_MODE_RGB_888 (0x0 << 12)
+#define AT91C_ISI_RGB_MODE_RGB_565 (0x1 << 12)
+#define AT91C_ISI_GRAYSCALE (0x1 << 13)
+#define AT91C_ISI_GRAYSCALE_DISABLE (0x0 << 13)
+#define AT91C_ISI_GRAYSCALE_ENABLE (0x1 << 13)
+#define AT91C_ISI_RGB_SWAP (0x1 << 14)
+#define AT91C_ISI_RGB_SWAP_DISABLE (0x0 << 14)
+#define AT91C_ISI_RGB_SWAP_ENABLE (0x1 << 14)
+#define AT91C_ISI_COL_SPACE (0x1 << 15)
+#define AT91C_ISI_COL_SPACE_YCBCR (0x0 << 15)
+#define AT91C_ISI_COL_SPACE_RGB (0x1 << 15)
+#define AT91C_ISI_IM_HSIZE (0x7FF << 16)
+#define AT91C_ISI_YCC_SWAP (0x3 << 28)
+#define AT91C_ISI_YCC_SWAP_YCC_DEFAULT (0x0 << 28)
+#define AT91C_ISI_YCC_SWAP_YCC_MODE1 (0x1 << 28)
+#define AT91C_ISI_YCC_SWAP_YCC_MODE2 (0x2 << 28)
+#define AT91C_ISI_YCC_SWAP_YCC_MODE3 (0x3 << 28)
+#define AT91C_ISI_RGB_CFG (0x3 << 30)
+#define AT91C_ISI_RGB_CFG_RGB_DEFAULT (0x0 << 30)
+#define AT91C_ISI_RGB_CFG_RGB_MODE1 (0x1 << 30)
+#define AT91C_ISI_RGB_CFG_RGB_MODE2 (0x2 << 30)
+#define AT91C_ISI_RGB_CFG_RGB_MODE3 (0x3 << 30)
+
+#define AT91C_ISI_SOF (0x1 << 0)
+#define AT91C_ISI_DIS (0x1 << 1)
+#define AT91C_ISI_SOFTRST (0x1 << 2)
+#define AT91C_ISI_CDC_PND (0x1 << 3)
+#define AT91C_ISI_CRC_ERR (0x1 << 4)
+#define AT91C_ISI_FO_C_OVF (0x1 << 5)
+#define AT91C_ISI_FO_P_OVF (0x1 << 6)
+#define AT91C_ISI_FO_P_EMP (0x1 << 7)
+#define AT91C_ISI_FO_C_EMP (0x1 << 8)
+#define AT91C_ISI_FR_OVR (0x1 << 9)
+
+
+
+
+#define AT91C_ISI_PREV_VSIZE (0x3FF << 0)
+#define AT91C_ISI_PREV_HSIZE (0x3FF << 16)
+
+#define AT91C_ISI_DEC_FACTOR (0xFF << 0)
+
+#define AT91C_ISI_PREV_FBD_ADDR (0x0 << 0)
+
+#define AT91C_ISI_CODEC_DMA_ADDR (0x0 << 0)
+
+#define AT91C_ISI_Y2R_C0 (0xFF << 0)
+#define AT91C_ISI_Y2R_C1 (0xFF << 8)
+#define AT91C_ISI_Y2R_C2 (0xFF << 16)
+#define AT91C_ISI_Y2R_C3 (0xFF << 24)
+
+#define AT91C_ISI_Y2R_C4 (0x1FF << 0)
+#define AT91C_ISI_Y2R_YOFF (0x1 << 12)
+#define AT91C_ISI_Y2R_YOFF_0 (0x0 << 12)
+#define AT91C_ISI_Y2R_YOFF_128 (0x1 << 12)
+#define AT91C_ISI_Y2R_CROFF (0x1 << 13)
+#define AT91C_ISI_Y2R_CROFF_0 (0x0 << 13)
+#define AT91C_ISI_Y2R_CROFF_16 (0x1 << 13)
+#define AT91C_ISI_Y2R_CBOFF (0x1 << 14)
+#define AT91C_ISI_Y2R_CBOFF_0 (0x0 << 14)
+#define AT91C_ISI_Y2R_CBOFF_16 (0x1 << 14)
+
+#define AT91C_ISI_R2Y_C0 (0x7F << 0)
+#define AT91C_ISI_R2Y_C1 (0x7F << 8)
+#define AT91C_ISI_R2Y_C2 (0x7F << 16)
+#define AT91C_ISI_R2Y_ROFF (0x1 << 24)
+#define AT91C_ISI_R2Y_ROFF_0 (0x0 << 24)
+#define AT91C_ISI_R2Y_ROFF_16 (0x1 << 24)
+
+#define AT91C_ISI_R2Y_C3 (0x7F << 0)
+#define AT91C_ISI_R2Y_C4 (0x7F << 8)
+#define AT91C_ISI_R2Y_C5 (0x7F << 16)
+#define AT91C_ISI_R2Y_GOFF (0x1 << 24)
+#define AT91C_ISI_R2Y_GOFF_0 (0x0 << 24)
+#define AT91C_ISI_R2Y_GOFF_128 (0x1 << 24)
+
+#define AT91C_ISI_R2Y_C6 (0x7F << 0)
+#define AT91C_ISI_R2Y_C7 (0x7F << 8)
+#define AT91C_ISI_R2Y_C8 (0x7F << 16)
+#define AT91C_ISI_R2Y_BOFF (0x1 << 24)
+#define AT91C_ISI_R2Y_BOFF_0 (0x0 << 24)
+#define AT91C_ISI_R2Y_BOFF_128 (0x1 << 24)
+
+
+
+
+
+#define AT91C_SYS_GPBR (AT91_CAST(AT91_REG *) 0xFFFFFD50)
+
+#define AT91C_EBI_DUMMY (AT91_CAST(AT91_REG *) 0xFFFFEA00)
+
+#define AT91C_HECC_VR (AT91_CAST(AT91_REG *) 0xFFFFE8FC)
+#define AT91C_HECC_NPR (AT91_CAST(AT91_REG *) 0xFFFFE810)
+#define AT91C_HECC_SR (AT91_CAST(AT91_REG *) 0xFFFFE808)
+#define AT91C_HECC_PR (AT91_CAST(AT91_REG *) 0xFFFFE80C)
+#define AT91C_HECC_MR (AT91_CAST(AT91_REG *) 0xFFFFE804)
+#define AT91C_HECC_CR (AT91_CAST(AT91_REG *) 0xFFFFE800)
+
+#define AT91C_SDRAMC_MR (AT91_CAST(AT91_REG *) 0xFFFFEA00)
+#define AT91C_SDRAMC_IMR (AT91_CAST(AT91_REG *) 0xFFFFEA1C)
+#define AT91C_SDRAMC_LPR (AT91_CAST(AT91_REG *) 0xFFFFEA10)
+#define AT91C_SDRAMC_ISR (AT91_CAST(AT91_REG *) 0xFFFFEA20)
+#define AT91C_SDRAMC_IDR (AT91_CAST(AT91_REG *) 0xFFFFEA18)
+#define AT91C_SDRAMC_CR (AT91_CAST(AT91_REG *) 0xFFFFEA08)
+#define AT91C_SDRAMC_TR (AT91_CAST(AT91_REG *) 0xFFFFEA04)
+#define AT91C_SDRAMC_MDR (AT91_CAST(AT91_REG *) 0xFFFFEA24)
+#define AT91C_SDRAMC_HSR (AT91_CAST(AT91_REG *) 0xFFFFEA0C)
+#define AT91C_SDRAMC_IER (AT91_CAST(AT91_REG *) 0xFFFFEA14)
+
+#define AT91C_SMC_CTRL1 (AT91_CAST(AT91_REG *) 0xFFFFEC1C)
+#define AT91C_SMC_PULSE7 (AT91_CAST(AT91_REG *) 0xFFFFEC74)
+#define AT91C_SMC_PULSE6 (AT91_CAST(AT91_REG *) 0xFFFFEC64)
+#define AT91C_SMC_SETUP4 (AT91_CAST(AT91_REG *) 0xFFFFEC40)
+#define AT91C_SMC_PULSE3 (AT91_CAST(AT91_REG *) 0xFFFFEC34)
+#define AT91C_SMC_CYCLE5 (AT91_CAST(AT91_REG *) 0xFFFFEC58)
+#define AT91C_SMC_CYCLE2 (AT91_CAST(AT91_REG *) 0xFFFFEC28)
+#define AT91C_SMC_CTRL2 (AT91_CAST(AT91_REG *) 0xFFFFEC2C)
+#define AT91C_SMC_CTRL0 (AT91_CAST(AT91_REG *) 0xFFFFEC0C)
+#define AT91C_SMC_PULSE5 (AT91_CAST(AT91_REG *) 0xFFFFEC54)
+#define AT91C_SMC_PULSE1 (AT91_CAST(AT91_REG *) 0xFFFFEC14)
+#define AT91C_SMC_PULSE0 (AT91_CAST(AT91_REG *) 0xFFFFEC04)
+#define AT91C_SMC_CYCLE7 (AT91_CAST(AT91_REG *) 0xFFFFEC78)
+#define AT91C_SMC_CTRL4 (AT91_CAST(AT91_REG *) 0xFFFFEC4C)
+#define AT91C_SMC_CTRL3 (AT91_CAST(AT91_REG *) 0xFFFFEC3C)
+#define AT91C_SMC_SETUP7 (AT91_CAST(AT91_REG *) 0xFFFFEC70)
+#define AT91C_SMC_CTRL7 (AT91_CAST(AT91_REG *) 0xFFFFEC7C)
+#define AT91C_SMC_SETUP1 (AT91_CAST(AT91_REG *) 0xFFFFEC10)
+#define AT91C_SMC_CYCLE0 (AT91_CAST(AT91_REG *) 0xFFFFEC08)
+#define AT91C_SMC_CTRL5 (AT91_CAST(AT91_REG *) 0xFFFFEC5C)
+#define AT91C_SMC_CYCLE1 (AT91_CAST(AT91_REG *) 0xFFFFEC18)
+#define AT91C_SMC_CTRL6 (AT91_CAST(AT91_REG *) 0xFFFFEC6C)
+#define AT91C_SMC_SETUP0 (AT91_CAST(AT91_REG *) 0xFFFFEC00)
+#define AT91C_SMC_PULSE4 (AT91_CAST(AT91_REG *) 0xFFFFEC44)
+#define AT91C_SMC_SETUP5 (AT91_CAST(AT91_REG *) 0xFFFFEC50)
+#define AT91C_SMC_SETUP2 (AT91_CAST(AT91_REG *) 0xFFFFEC20)
+#define AT91C_SMC_CYCLE3 (AT91_CAST(AT91_REG *) 0xFFFFEC38)
+#define AT91C_SMC_CYCLE6 (AT91_CAST(AT91_REG *) 0xFFFFEC68)
+#define AT91C_SMC_SETUP6 (AT91_CAST(AT91_REG *) 0xFFFFEC60)
+#define AT91C_SMC_CYCLE4 (AT91_CAST(AT91_REG *) 0xFFFFEC48)
+#define AT91C_SMC_PULSE2 (AT91_CAST(AT91_REG *) 0xFFFFEC24)
+#define AT91C_SMC_SETUP3 (AT91_CAST(AT91_REG *) 0xFFFFEC30)
+
+#define AT91C_MATRIX_MCFG0 (AT91_CAST(AT91_REG *) 0xFFFFEE00)
+#define AT91C_MATRIX_MCFG7 (AT91_CAST(AT91_REG *) 0xFFFFEE1C)
+#define AT91C_MATRIX_SCFG1 (AT91_CAST(AT91_REG *) 0xFFFFEE44)
+#define AT91C_MATRIX_MCFG4 (AT91_CAST(AT91_REG *) 0xFFFFEE10)
+#define AT91C_MATRIX_VERSION (AT91_CAST(AT91_REG *) 0xFFFFEFFC)
+#define AT91C_MATRIX_MCFG2 (AT91_CAST(AT91_REG *) 0xFFFFEE08)
+#define AT91C_MATRIX_PRBS4 (AT91_CAST(AT91_REG *) 0xFFFFEEA4)
+#define AT91C_MATRIX_PRBS0 (AT91_CAST(AT91_REG *) 0xFFFFEE84)
+#define AT91C_MATRIX_SCFG3 (AT91_CAST(AT91_REG *) 0xFFFFEE4C)
+#define AT91C_MATRIX_MCFG6 (AT91_CAST(AT91_REG *) 0xFFFFEE18)
+#define AT91C_MATRIX_EBI (AT91_CAST(AT91_REG *) 0xFFFFEF1C)
+#define AT91C_MATRIX_SCFG0 (AT91_CAST(AT91_REG *) 0xFFFFEE40)
+#define AT91C_MATRIX_PRBS3 (AT91_CAST(AT91_REG *) 0xFFFFEE9C)
+#define AT91C_MATRIX_PRAS3 (AT91_CAST(AT91_REG *) 0xFFFFEE98)
+#define AT91C_MATRIX_PRAS0 (AT91_CAST(AT91_REG *) 0xFFFFEE80)
+#define AT91C_MATRIX_MCFG3 (AT91_CAST(AT91_REG *) 0xFFFFEE0C)
+#define AT91C_MATRIX_PRAS1 (AT91_CAST(AT91_REG *) 0xFFFFEE88)
+#define AT91C_MATRIX_PRAS2 (AT91_CAST(AT91_REG *) 0xFFFFEE90)
+#define AT91C_MATRIX_SCFG2 (AT91_CAST(AT91_REG *) 0xFFFFEE48)
+#define AT91C_MATRIX_MCFG5 (AT91_CAST(AT91_REG *) 0xFFFFEE14)
+#define AT91C_MATRIX_MCFG1 (AT91_CAST(AT91_REG *) 0xFFFFEE04)
+#define AT91C_MATRIX_PRAS4 (AT91_CAST(AT91_REG *) 0xFFFFEEA0)
+#define AT91C_MATRIX_MRCR (AT91_CAST(AT91_REG *) 0xFFFFEF00)
+#define AT91C_MATRIX_PRBS2 (AT91_CAST(AT91_REG *) 0xFFFFEE94)
+#define AT91C_MATRIX_SCFG4 (AT91_CAST(AT91_REG *) 0xFFFFEE50)
+#define AT91C_MATRIX_TEAKCFG (AT91_CAST(AT91_REG *) 0xFFFFEF2C)
+#define AT91C_MATRIX_PRBS1 (AT91_CAST(AT91_REG *) 0xFFFFEE8C)
+
+#define AT91C_CCFG_MATRIXVERSION (AT91_CAST(AT91_REG *) 0xFFFFEFFC)
+#define AT91C_CCFG_EBICSA (AT91_CAST(AT91_REG *) 0xFFFFEF1C)
+
+#define AT91C_DBGU_TCR (AT91_CAST(AT91_REG *) 0xFFFFF30C)
+#define AT91C_DBGU_RNPR (AT91_CAST(AT91_REG *) 0xFFFFF310)
+#define AT91C_DBGU_TNPR (AT91_CAST(AT91_REG *) 0xFFFFF318)
+#define AT91C_DBGU_TPR (AT91_CAST(AT91_REG *) 0xFFFFF308)
+#define AT91C_DBGU_RPR (AT91_CAST(AT91_REG *) 0xFFFFF300)
+#define AT91C_DBGU_RCR (AT91_CAST(AT91_REG *) 0xFFFFF304)
+#define AT91C_DBGU_RNCR (AT91_CAST(AT91_REG *) 0xFFFFF314)
+#define AT91C_DBGU_PTCR (AT91_CAST(AT91_REG *) 0xFFFFF320)
+#define AT91C_DBGU_PTSR (AT91_CAST(AT91_REG *) 0xFFFFF324)
+#define AT91C_DBGU_TNCR (AT91_CAST(AT91_REG *) 0xFFFFF31C)
+
+#define AT91C_DBGU_EXID (AT91_CAST(AT91_REG *) 0xFFFFF244)
+#define AT91C_DBGU_BRGR (AT91_CAST(AT91_REG *) 0xFFFFF220)
+#define AT91C_DBGU_IDR (AT91_CAST(AT91_REG *) 0xFFFFF20C)
+#define AT91C_DBGU_CSR (AT91_CAST(AT91_REG *) 0xFFFFF214)
+#define AT91C_DBGU_CIDR (AT91_CAST(AT91_REG *) 0xFFFFF240)
+#define AT91C_DBGU_MR (AT91_CAST(AT91_REG *) 0xFFFFF204)
+#define AT91C_DBGU_IMR (AT91_CAST(AT91_REG *) 0xFFFFF210)
+#define AT91C_DBGU_CR (AT91_CAST(AT91_REG *) 0xFFFFF200)
+#define AT91C_DBGU_FNTR (AT91_CAST(AT91_REG *) 0xFFFFF248)
+#define AT91C_DBGU_THR (AT91_CAST(AT91_REG *) 0xFFFFF21C)
+#define AT91C_DBGU_RHR (AT91_CAST(AT91_REG *) 0xFFFFF218)
+#define AT91C_DBGU_IER (AT91_CAST(AT91_REG *) 0xFFFFF208)
+
+#define AT91C_AIC_IVR (AT91_CAST(AT91_REG *) 0xFFFFF100)
+#define AT91C_AIC_SMR (AT91_CAST(AT91_REG *) 0xFFFFF000)
+#define AT91C_AIC_FVR (AT91_CAST(AT91_REG *) 0xFFFFF104)
+#define AT91C_AIC_DCR (AT91_CAST(AT91_REG *) 0xFFFFF138)
+#define AT91C_AIC_EOICR (AT91_CAST(AT91_REG *) 0xFFFFF130)
+#define AT91C_AIC_SVR (AT91_CAST(AT91_REG *) 0xFFFFF080)
+#define AT91C_AIC_FFSR (AT91_CAST(AT91_REG *) 0xFFFFF148)
+#define AT91C_AIC_ICCR (AT91_CAST(AT91_REG *) 0xFFFFF128)
+#define AT91C_AIC_ISR (AT91_CAST(AT91_REG *) 0xFFFFF108)
+#define AT91C_AIC_IMR (AT91_CAST(AT91_REG *) 0xFFFFF110)
+#define AT91C_AIC_IPR (AT91_CAST(AT91_REG *) 0xFFFFF10C)
+#define AT91C_AIC_FFER (AT91_CAST(AT91_REG *) 0xFFFFF140)
+#define AT91C_AIC_IECR (AT91_CAST(AT91_REG *) 0xFFFFF120)
+#define AT91C_AIC_ISCR (AT91_CAST(AT91_REG *) 0xFFFFF12C)
+#define AT91C_AIC_FFDR (AT91_CAST(AT91_REG *) 0xFFFFF144)
+#define AT91C_AIC_CISR (AT91_CAST(AT91_REG *) 0xFFFFF114)
+#define AT91C_AIC_IDCR (AT91_CAST(AT91_REG *) 0xFFFFF124)
+#define AT91C_AIC_SPU (AT91_CAST(AT91_REG *) 0xFFFFF134)
+
+#define AT91C_PIOA_ODR (AT91_CAST(AT91_REG *) 0xFFFFF414)
+#define AT91C_PIOA_SODR (AT91_CAST(AT91_REG *) 0xFFFFF430)
+#define AT91C_PIOA_ISR (AT91_CAST(AT91_REG *) 0xFFFFF44C)
+#define AT91C_PIOA_ABSR (AT91_CAST(AT91_REG *) 0xFFFFF478)
+#define AT91C_PIOA_IER (AT91_CAST(AT91_REG *) 0xFFFFF440)
+#define AT91C_PIOA_PPUDR (AT91_CAST(AT91_REG *) 0xFFFFF460)
+#define AT91C_PIOA_IMR (AT91_CAST(AT91_REG *) 0xFFFFF448)
+#define AT91C_PIOA_PER (AT91_CAST(AT91_REG *) 0xFFFFF400)
+#define AT91C_PIOA_IFDR (AT91_CAST(AT91_REG *) 0xFFFFF424)
+#define AT91C_PIOA_OWDR (AT91_CAST(AT91_REG *) 0xFFFFF4A4)
+#define AT91C_PIOA_MDSR (AT91_CAST(AT91_REG *) 0xFFFFF458)
+#define AT91C_PIOA_IDR (AT91_CAST(AT91_REG *) 0xFFFFF444)
+#define AT91C_PIOA_ODSR (AT91_CAST(AT91_REG *) 0xFFFFF438)
+#define AT91C_PIOA_PPUSR (AT91_CAST(AT91_REG *) 0xFFFFF468)
+#define AT91C_PIOA_OWSR (AT91_CAST(AT91_REG *) 0xFFFFF4A8)
+#define AT91C_PIOA_BSR (AT91_CAST(AT91_REG *) 0xFFFFF474)
+#define AT91C_PIOA_OWER (AT91_CAST(AT91_REG *) 0xFFFFF4A0)
+#define AT91C_PIOA_IFER (AT91_CAST(AT91_REG *) 0xFFFFF420)
+#define AT91C_PIOA_PDSR (AT91_CAST(AT91_REG *) 0xFFFFF43C)
+#define AT91C_PIOA_PPUER (AT91_CAST(AT91_REG *) 0xFFFFF464)
+#define AT91C_PIOA_OSR (AT91_CAST(AT91_REG *) 0xFFFFF418)
+#define AT91C_PIOA_ASR (AT91_CAST(AT91_REG *) 0xFFFFF470)
+#define AT91C_PIOA_MDDR (AT91_CAST(AT91_REG *) 0xFFFFF454)
+#define AT91C_PIOA_CODR (AT91_CAST(AT91_REG *) 0xFFFFF434)
+#define AT91C_PIOA_MDER (AT91_CAST(AT91_REG *) 0xFFFFF450)
+#define AT91C_PIOA_PDR (AT91_CAST(AT91_REG *) 0xFFFFF404)
+#define AT91C_PIOA_IFSR (AT91_CAST(AT91_REG *) 0xFFFFF428)
+#define AT91C_PIOA_OER (AT91_CAST(AT91_REG *) 0xFFFFF410)
+#define AT91C_PIOA_PSR (AT91_CAST(AT91_REG *) 0xFFFFF408)
+
+#define AT91C_PIOB_OWDR (AT91_CAST(AT91_REG *) 0xFFFFF6A4)
+#define AT91C_PIOB_MDER (AT91_CAST(AT91_REG *) 0xFFFFF650)
+#define AT91C_PIOB_PPUSR (AT91_CAST(AT91_REG *) 0xFFFFF668)
+#define AT91C_PIOB_IMR (AT91_CAST(AT91_REG *) 0xFFFFF648)
+#define AT91C_PIOB_ASR (AT91_CAST(AT91_REG *) 0xFFFFF670)
+#define AT91C_PIOB_PPUDR (AT91_CAST(AT91_REG *) 0xFFFFF660)
+#define AT91C_PIOB_PSR (AT91_CAST(AT91_REG *) 0xFFFFF608)
+#define AT91C_PIOB_IER (AT91_CAST(AT91_REG *) 0xFFFFF640)
+#define AT91C_PIOB_CODR (AT91_CAST(AT91_REG *) 0xFFFFF634)
+#define AT91C_PIOB_OWER (AT91_CAST(AT91_REG *) 0xFFFFF6A0)
+#define AT91C_PIOB_ABSR (AT91_CAST(AT91_REG *) 0xFFFFF678)
+#define AT91C_PIOB_IFDR (AT91_CAST(AT91_REG *) 0xFFFFF624)
+#define AT91C_PIOB_PDSR (AT91_CAST(AT91_REG *) 0xFFFFF63C)
+#define AT91C_PIOB_IDR (AT91_CAST(AT91_REG *) 0xFFFFF644)
+#define AT91C_PIOB_OWSR (AT91_CAST(AT91_REG *) 0xFFFFF6A8)
+#define AT91C_PIOB_PDR (AT91_CAST(AT91_REG *) 0xFFFFF604)
+#define AT91C_PIOB_ODR (AT91_CAST(AT91_REG *) 0xFFFFF614)
+#define AT91C_PIOB_IFSR (AT91_CAST(AT91_REG *) 0xFFFFF628)
+#define AT91C_PIOB_PPUER (AT91_CAST(AT91_REG *) 0xFFFFF664)
+#define AT91C_PIOB_SODR (AT91_CAST(AT91_REG *) 0xFFFFF630)
+#define AT91C_PIOB_ISR (AT91_CAST(AT91_REG *) 0xFFFFF64C)
+#define AT91C_PIOB_ODSR (AT91_CAST(AT91_REG *) 0xFFFFF638)
+#define AT91C_PIOB_OSR (AT91_CAST(AT91_REG *) 0xFFFFF618)
+#define AT91C_PIOB_MDSR (AT91_CAST(AT91_REG *) 0xFFFFF658)
+#define AT91C_PIOB_IFER (AT91_CAST(AT91_REG *) 0xFFFFF620)
+#define AT91C_PIOB_BSR (AT91_CAST(AT91_REG *) 0xFFFFF674)
+#define AT91C_PIOB_MDDR (AT91_CAST(AT91_REG *) 0xFFFFF654)
+#define AT91C_PIOB_OER (AT91_CAST(AT91_REG *) 0xFFFFF610)
+#define AT91C_PIOB_PER (AT91_CAST(AT91_REG *) 0xFFFFF600)
+
+#define AT91C_PIOC_OWDR (AT91_CAST(AT91_REG *) 0xFFFFF8A4)
+#define AT91C_PIOC_SODR (AT91_CAST(AT91_REG *) 0xFFFFF830)
+#define AT91C_PIOC_PPUER (AT91_CAST(AT91_REG *) 0xFFFFF864)
+#define AT91C_PIOC_CODR (AT91_CAST(AT91_REG *) 0xFFFFF834)
+#define AT91C_PIOC_PSR (AT91_CAST(AT91_REG *) 0xFFFFF808)
+#define AT91C_PIOC_PDR (AT91_CAST(AT91_REG *) 0xFFFFF804)
+#define AT91C_PIOC_ODR (AT91_CAST(AT91_REG *) 0xFFFFF814)
+#define AT91C_PIOC_PPUSR (AT91_CAST(AT91_REG *) 0xFFFFF868)
+#define AT91C_PIOC_ABSR (AT91_CAST(AT91_REG *) 0xFFFFF878)
+#define AT91C_PIOC_IFSR (AT91_CAST(AT91_REG *) 0xFFFFF828)
+#define AT91C_PIOC_OER (AT91_CAST(AT91_REG *) 0xFFFFF810)
+#define AT91C_PIOC_IMR (AT91_CAST(AT91_REG *) 0xFFFFF848)
+#define AT91C_PIOC_ASR (AT91_CAST(AT91_REG *) 0xFFFFF870)
+#define AT91C_PIOC_MDDR (AT91_CAST(AT91_REG *) 0xFFFFF854)
+#define AT91C_PIOC_OWSR (AT91_CAST(AT91_REG *) 0xFFFFF8A8)
+#define AT91C_PIOC_PER (AT91_CAST(AT91_REG *) 0xFFFFF800)
+#define AT91C_PIOC_IDR (AT91_CAST(AT91_REG *) 0xFFFFF844)
+#define AT91C_PIOC_MDER (AT91_CAST(AT91_REG *) 0xFFFFF850)
+#define AT91C_PIOC_PDSR (AT91_CAST(AT91_REG *) 0xFFFFF83C)
+#define AT91C_PIOC_MDSR (AT91_CAST(AT91_REG *) 0xFFFFF858)
+#define AT91C_PIOC_OWER (AT91_CAST(AT91_REG *) 0xFFFFF8A0)
+#define AT91C_PIOC_BSR (AT91_CAST(AT91_REG *) 0xFFFFF874)
+#define AT91C_PIOC_PPUDR (AT91_CAST(AT91_REG *) 0xFFFFF860)
+#define AT91C_PIOC_IFDR (AT91_CAST(AT91_REG *) 0xFFFFF824)
+#define AT91C_PIOC_IER (AT91_CAST(AT91_REG *) 0xFFFFF840)
+#define AT91C_PIOC_OSR (AT91_CAST(AT91_REG *) 0xFFFFF818)
+#define AT91C_PIOC_ODSR (AT91_CAST(AT91_REG *) 0xFFFFF838)
+#define AT91C_PIOC_ISR (AT91_CAST(AT91_REG *) 0xFFFFF84C)
+#define AT91C_PIOC_IFER (AT91_CAST(AT91_REG *) 0xFFFFF820)
+
+#define AT91C_CKGR_MOR (AT91_CAST(AT91_REG *) 0xFFFFFC20)
+#define AT91C_CKGR_PLLBR (AT91_CAST(AT91_REG *) 0xFFFFFC2C)
+#define AT91C_CKGR_MCFR (AT91_CAST(AT91_REG *) 0xFFFFFC24)
+#define AT91C_CKGR_PLLAR (AT91_CAST(AT91_REG *) 0xFFFFFC28)
+
+#define AT91C_PMC_PCER (AT91_CAST(AT91_REG *) 0xFFFFFC10)
+#define AT91C_PMC_PCKR (AT91_CAST(AT91_REG *) 0xFFFFFC40)
+#define AT91C_PMC_MCKR (AT91_CAST(AT91_REG *) 0xFFFFFC30)
+#define AT91C_PMC_PLLAR (AT91_CAST(AT91_REG *) 0xFFFFFC28)
+#define AT91C_PMC_PCDR (AT91_CAST(AT91_REG *) 0xFFFFFC14)
+#define AT91C_PMC_SCSR (AT91_CAST(AT91_REG *) 0xFFFFFC08)
+#define AT91C_PMC_MCFR (AT91_CAST(AT91_REG *) 0xFFFFFC24)
+#define AT91C_PMC_PLLICPR (AT91_CAST(AT91_REG *) 0xFFFFFC80)
+#define AT91C_PMC_IMR (AT91_CAST(AT91_REG *) 0xFFFFFC6C)
+#define AT91C_PMC_IER (AT91_CAST(AT91_REG *) 0xFFFFFC60)
+#define AT91C_PMC_MOR (AT91_CAST(AT91_REG *) 0xFFFFFC20)
+#define AT91C_PMC_IDR (AT91_CAST(AT91_REG *) 0xFFFFFC64)
+#define AT91C_PMC_PLLBR (AT91_CAST(AT91_REG *) 0xFFFFFC2C)
+#define AT91C_PMC_SCDR (AT91_CAST(AT91_REG *) 0xFFFFFC04)
+#define AT91C_PMC_PCSR (AT91_CAST(AT91_REG *) 0xFFFFFC18)
+#define AT91C_PMC_SCER (AT91_CAST(AT91_REG *) 0xFFFFFC00)
+#define AT91C_PMC_SR (AT91_CAST(AT91_REG *) 0xFFFFFC68)
+
+#define AT91C_RSTC_RCR (AT91_CAST(AT91_REG *) 0xFFFFFD00)
+#define AT91C_RSTC_VER (AT91_CAST(AT91_REG *) 0xFFFFFDFC)
+#define AT91C_RSTC_RMR (AT91_CAST(AT91_REG *) 0xFFFFFD08)
+#define AT91C_RSTC_RSR (AT91_CAST(AT91_REG *) 0xFFFFFD04)
+
+#define AT91C_SHDWC_SHSR (AT91_CAST(AT91_REG *) 0xFFFFFD18)
+#define AT91C_SHDWC_SHMR (AT91_CAST(AT91_REG *) 0xFFFFFD14)
+#define AT91C_SHDWC_SHCR (AT91_CAST(AT91_REG *) 0xFFFFFD10)
+
+#define AT91C_RTTC_RTSR (AT91_CAST(AT91_REG *) 0xFFFFFD2C)
+#define AT91C_RTTC_RTMR (AT91_CAST(AT91_REG *) 0xFFFFFD20)
+#define AT91C_RTTC_RTVR (AT91_CAST(AT91_REG *) 0xFFFFFD28)
+#define AT91C_RTTC_RTAR (AT91_CAST(AT91_REG *) 0xFFFFFD24)
+
+#define AT91C_PITC_PIVR (AT91_CAST(AT91_REG *) 0xFFFFFD38)
+#define AT91C_PITC_PISR (AT91_CAST(AT91_REG *) 0xFFFFFD34)
+#define AT91C_PITC_PIIR (AT91_CAST(AT91_REG *) 0xFFFFFD3C)
+#define AT91C_PITC_PIMR (AT91_CAST(AT91_REG *) 0xFFFFFD30)
+
+#define AT91C_WDTC_WDCR (AT91_CAST(AT91_REG *) 0xFFFFFD40)
+#define AT91C_WDTC_WDSR (AT91_CAST(AT91_REG *) 0xFFFFFD48)
+#define AT91C_WDTC_WDMR (AT91_CAST(AT91_REG *) 0xFFFFFD44)
+
+#define AT91C_TC0_SR (AT91_CAST(AT91_REG *) 0xFFFA0020)
+#define AT91C_TC0_RC (AT91_CAST(AT91_REG *) 0xFFFA001C)
+#define AT91C_TC0_RB (AT91_CAST(AT91_REG *) 0xFFFA0018)
+#define AT91C_TC0_CCR (AT91_CAST(AT91_REG *) 0xFFFA0000)
+#define AT91C_TC0_CMR (AT91_CAST(AT91_REG *) 0xFFFA0004)
+#define AT91C_TC0_IER (AT91_CAST(AT91_REG *) 0xFFFA0024)
+#define AT91C_TC0_RA (AT91_CAST(AT91_REG *) 0xFFFA0014)
+#define AT91C_TC0_IDR (AT91_CAST(AT91_REG *) 0xFFFA0028)
+#define AT91C_TC0_CV (AT91_CAST(AT91_REG *) 0xFFFA0010)
+#define AT91C_TC0_IMR (AT91_CAST(AT91_REG *) 0xFFFA002C)
+
+#define AT91C_TC1_RB (AT91_CAST(AT91_REG *) 0xFFFA0058)
+#define AT91C_TC1_CCR (AT91_CAST(AT91_REG *) 0xFFFA0040)
+#define AT91C_TC1_IER (AT91_CAST(AT91_REG *) 0xFFFA0064)
+#define AT91C_TC1_IDR (AT91_CAST(AT91_REG *) 0xFFFA0068)
+#define AT91C_TC1_SR (AT91_CAST(AT91_REG *) 0xFFFA0060)
+#define AT91C_TC1_CMR (AT91_CAST(AT91_REG *) 0xFFFA0044)
+#define AT91C_TC1_RA (AT91_CAST(AT91_REG *) 0xFFFA0054)
+#define AT91C_TC1_RC (AT91_CAST(AT91_REG *) 0xFFFA005C)
+#define AT91C_TC1_IMR (AT91_CAST(AT91_REG *) 0xFFFA006C)
+#define AT91C_TC1_CV (AT91_CAST(AT91_REG *) 0xFFFA0050)
+
+#define AT91C_TC2_CMR (AT91_CAST(AT91_REG *) 0xFFFA0084)
+#define AT91C_TC2_CCR (AT91_CAST(AT91_REG *) 0xFFFA0080)
+#define AT91C_TC2_CV (AT91_CAST(AT91_REG *) 0xFFFA0090)
+#define AT91C_TC2_RA (AT91_CAST(AT91_REG *) 0xFFFA0094)
+#define AT91C_TC2_RB (AT91_CAST(AT91_REG *) 0xFFFA0098)
+#define AT91C_TC2_IDR (AT91_CAST(AT91_REG *) 0xFFFA00A8)
+#define AT91C_TC2_IMR (AT91_CAST(AT91_REG *) 0xFFFA00AC)
+#define AT91C_TC2_RC (AT91_CAST(AT91_REG *) 0xFFFA009C)
+#define AT91C_TC2_IER (AT91_CAST(AT91_REG *) 0xFFFA00A4)
+#define AT91C_TC2_SR (AT91_CAST(AT91_REG *) 0xFFFA00A0)
+
+#define AT91C_TC3_IER (AT91_CAST(AT91_REG *) 0xFFFDC024)
+#define AT91C_TC3_RB (AT91_CAST(AT91_REG *) 0xFFFDC018)
+#define AT91C_TC3_CMR (AT91_CAST(AT91_REG *) 0xFFFDC004)
+#define AT91C_TC3_RC (AT91_CAST(AT91_REG *) 0xFFFDC01C)
+#define AT91C_TC3_CCR (AT91_CAST(AT91_REG *) 0xFFFDC000)
+#define AT91C_TC3_SR (AT91_CAST(AT91_REG *) 0xFFFDC020)
+#define AT91C_TC3_CV (AT91_CAST(AT91_REG *) 0xFFFDC010)
+#define AT91C_TC3_RA (AT91_CAST(AT91_REG *) 0xFFFDC014)
+#define AT91C_TC3_IDR (AT91_CAST(AT91_REG *) 0xFFFDC028)
+#define AT91C_TC3_IMR (AT91_CAST(AT91_REG *) 0xFFFDC02C)
+
+#define AT91C_TC4_CMR (AT91_CAST(AT91_REG *) 0xFFFDC044)
+#define AT91C_TC4_RC (AT91_CAST(AT91_REG *) 0xFFFDC05C)
+#define AT91C_TC4_SR (AT91_CAST(AT91_REG *) 0xFFFDC060)
+#define AT91C_TC4_RB (AT91_CAST(AT91_REG *) 0xFFFDC058)
+#define AT91C_TC4_IER (AT91_CAST(AT91_REG *) 0xFFFDC064)
+#define AT91C_TC4_CV (AT91_CAST(AT91_REG *) 0xFFFDC050)
+#define AT91C_TC4_RA (AT91_CAST(AT91_REG *) 0xFFFDC054)
+#define AT91C_TC4_IDR (AT91_CAST(AT91_REG *) 0xFFFDC068)
+#define AT91C_TC4_IMR (AT91_CAST(AT91_REG *) 0xFFFDC06C)
+#define AT91C_TC4_CCR (AT91_CAST(AT91_REG *) 0xFFFDC040)
+
+#define AT91C_TC5_RB (AT91_CAST(AT91_REG *) 0xFFFDC098)
+#define AT91C_TC5_RA (AT91_CAST(AT91_REG *) 0xFFFDC094)
+#define AT91C_TC5_CV (AT91_CAST(AT91_REG *) 0xFFFDC090)
+#define AT91C_TC5_CCR (AT91_CAST(AT91_REG *) 0xFFFDC080)
+#define AT91C_TC5_SR (AT91_CAST(AT91_REG *) 0xFFFDC0A0)
+#define AT91C_TC5_IER (AT91_CAST(AT91_REG *) 0xFFFDC0A4)
+#define AT91C_TC5_IDR (AT91_CAST(AT91_REG *) 0xFFFDC0A8)
+#define AT91C_TC5_RC (AT91_CAST(AT91_REG *) 0xFFFDC09C)
+#define AT91C_TC5_IMR (AT91_CAST(AT91_REG *) 0xFFFDC0AC)
+#define AT91C_TC5_CMR (AT91_CAST(AT91_REG *) 0xFFFDC084)
+
+#define AT91C_TCB0_ADDRSIZE (AT91_CAST(AT91_REG *) 0xFFFA00EC)
+#define AT91C_TCB0_BMR (AT91_CAST(AT91_REG *) 0xFFFA00C4)
+#define AT91C_TCB0_VER (AT91_CAST(AT91_REG *) 0xFFFA00FC)
+#define AT91C_TCB0_FEATURES (AT91_CAST(AT91_REG *) 0xFFFA00F8)
+#define AT91C_TCB0_IPNAME1 (AT91_CAST(AT91_REG *) 0xFFFA00F0)
+#define AT91C_TCB0_BCR (AT91_CAST(AT91_REG *) 0xFFFA00C0)
+#define AT91C_TCB0_IPNAME2 (AT91_CAST(AT91_REG *) 0xFFFA00F4)
+
+#define AT91C_TCB1_VER (AT91_CAST(AT91_REG *) 0xFFFDC0FC)
+#define AT91C_TCB1_IPNAME2 (AT91_CAST(AT91_REG *) 0xFFFDC0F4)
+#define AT91C_TCB1_BCR (AT91_CAST(AT91_REG *) 0xFFFDC0C0)
+#define AT91C_TCB1_IPNAME1 (AT91_CAST(AT91_REG *) 0xFFFDC0F0)
+#define AT91C_TCB1_ADDRSIZE (AT91_CAST(AT91_REG *) 0xFFFDC0EC)
+#define AT91C_TCB1_BMR (AT91_CAST(AT91_REG *) 0xFFFDC0C4)
+#define AT91C_TCB1_FEATURES (AT91_CAST(AT91_REG *) 0xFFFDC0F8)
+
+#define AT91C_MCI_RNCR (AT91_CAST(AT91_REG *) 0xFFFA8114)
+#define AT91C_MCI_TCR (AT91_CAST(AT91_REG *) 0xFFFA810C)
+#define AT91C_MCI_RCR (AT91_CAST(AT91_REG *) 0xFFFA8104)
+#define AT91C_MCI_TNPR (AT91_CAST(AT91_REG *) 0xFFFA8118)
+#define AT91C_MCI_RNPR (AT91_CAST(AT91_REG *) 0xFFFA8110)
+#define AT91C_MCI_RPR (AT91_CAST(AT91_REG *) 0xFFFA8100)
+#define AT91C_MCI_TNCR (AT91_CAST(AT91_REG *) 0xFFFA811C)
+#define AT91C_MCI_TPR (AT91_CAST(AT91_REG *) 0xFFFA8108)
+#define AT91C_MCI_PTSR (AT91_CAST(AT91_REG *) 0xFFFA8124)
+#define AT91C_MCI_PTCR (AT91_CAST(AT91_REG *) 0xFFFA8120)
+
+#define AT91C_MCI_RDR (AT91_CAST(AT91_REG *) 0xFFFA8030)
+#define AT91C_MCI_CMDR (AT91_CAST(AT91_REG *) 0xFFFA8014)
+#define AT91C_MCI_VR (AT91_CAST(AT91_REG *) 0xFFFA80FC)
+#define AT91C_MCI_IDR (AT91_CAST(AT91_REG *) 0xFFFA8048)
+#define AT91C_MCI_DTOR (AT91_CAST(AT91_REG *) 0xFFFA8008)
+#define AT91C_MCI_TDR (AT91_CAST(AT91_REG *) 0xFFFA8034)
+#define AT91C_MCI_IER (AT91_CAST(AT91_REG *) 0xFFFA8044)
+#define AT91C_MCI_BLKR (AT91_CAST(AT91_REG *) 0xFFFA8018)
+#define AT91C_MCI_MR (AT91_CAST(AT91_REG *) 0xFFFA8004)
+#define AT91C_MCI_IMR (AT91_CAST(AT91_REG *) 0xFFFA804C)
+#define AT91C_MCI_CR (AT91_CAST(AT91_REG *) 0xFFFA8000)
+#define AT91C_MCI_ARGR (AT91_CAST(AT91_REG *) 0xFFFA8010)
+#define AT91C_MCI_SDCR (AT91_CAST(AT91_REG *) 0xFFFA800C)
+#define AT91C_MCI_SR (AT91_CAST(AT91_REG *) 0xFFFA8040)
+#define AT91C_MCI_RSPR (AT91_CAST(AT91_REG *) 0xFFFA8020)
+
+#define AT91C_TWI_PTSR (AT91_CAST(AT91_REG *) 0xFFFAC124)
+#define AT91C_TWI_RPR (AT91_CAST(AT91_REG *) 0xFFFAC100)
+#define AT91C_TWI_RNCR (AT91_CAST(AT91_REG *) 0xFFFAC114)
+#define AT91C_TWI_RCR (AT91_CAST(AT91_REG *) 0xFFFAC104)
+#define AT91C_TWI_PTCR (AT91_CAST(AT91_REG *) 0xFFFAC120)
+#define AT91C_TWI_TPR (AT91_CAST(AT91_REG *) 0xFFFAC108)
+#define AT91C_TWI_RNPR (AT91_CAST(AT91_REG *) 0xFFFAC110)
+#define AT91C_TWI_TNPR (AT91_CAST(AT91_REG *) 0xFFFAC118)
+#define AT91C_TWI_TCR (AT91_CAST(AT91_REG *) 0xFFFAC10C)
+#define AT91C_TWI_TNCR (AT91_CAST(AT91_REG *) 0xFFFAC11C)
+
+#define AT91C_TWI_CWGR (AT91_CAST(AT91_REG *) 0xFFFAC010)
+#define AT91C_TWI_IER (AT91_CAST(AT91_REG *) 0xFFFAC024)
+#define AT91C_TWI_MMR (AT91_CAST(AT91_REG *) 0xFFFAC004)
+#define AT91C_TWI_IPNAME1 (AT91_CAST(AT91_REG *) 0xFFFAC0F0)
+#define AT91C_TWI_IMR (AT91_CAST(AT91_REG *) 0xFFFAC02C)
+#define AT91C_TWI_FEATURES (AT91_CAST(AT91_REG *) 0xFFFAC0F8)
+#define AT91C_TWI_THR (AT91_CAST(AT91_REG *) 0xFFFAC034)
+#define AT91C_TWI_IDR (AT91_CAST(AT91_REG *) 0xFFFAC028)
+#define AT91C_TWI_SMR (AT91_CAST(AT91_REG *) 0xFFFAC008)
+#define AT91C_TWI_IADR (AT91_CAST(AT91_REG *) 0xFFFAC00C)
+#define AT91C_TWI_RHR (AT91_CAST(AT91_REG *) 0xFFFAC030)
+#define AT91C_TWI_SR (AT91_CAST(AT91_REG *) 0xFFFAC020)
+#define AT91C_TWI_CR (AT91_CAST(AT91_REG *) 0xFFFAC000)
+#define AT91C_TWI_VER (AT91_CAST(AT91_REG *) 0xFFFAC0FC)
+#define AT91C_TWI_IPNAME2 (AT91_CAST(AT91_REG *) 0xFFFAC0F4)
+#define AT91C_TWI_ADDRSIZE (AT91_CAST(AT91_REG *) 0xFFFAC0EC)
+
+#define AT91C_US0_TCR (AT91_CAST(AT91_REG *) 0xFFFB010C)
+#define AT91C_US0_PTCR (AT91_CAST(AT91_REG *) 0xFFFB0120)
+#define AT91C_US0_RNCR (AT91_CAST(AT91_REG *) 0xFFFB0114)
+#define AT91C_US0_PTSR (AT91_CAST(AT91_REG *) 0xFFFB0124)
+#define AT91C_US0_TNCR (AT91_CAST(AT91_REG *) 0xFFFB011C)
+#define AT91C_US0_RNPR (AT91_CAST(AT91_REG *) 0xFFFB0110)
+#define AT91C_US0_RCR (AT91_CAST(AT91_REG *) 0xFFFB0104)
+#define AT91C_US0_TPR (AT91_CAST(AT91_REG *) 0xFFFB0108)
+#define AT91C_US0_TNPR (AT91_CAST(AT91_REG *) 0xFFFB0118)
+#define AT91C_US0_RPR (AT91_CAST(AT91_REG *) 0xFFFB0100)
+
+#define AT91C_US0_RHR (AT91_CAST(AT91_REG *) 0xFFFB0018)
+#define AT91C_US0_NER (AT91_CAST(AT91_REG *) 0xFFFB0044)
+#define AT91C_US0_IER (AT91_CAST(AT91_REG *) 0xFFFB0008)
+#define AT91C_US0_CR (AT91_CAST(AT91_REG *) 0xFFFB0000)
+#define AT91C_US0_THR (AT91_CAST(AT91_REG *) 0xFFFB001C)
+#define AT91C_US0_CSR (AT91_CAST(AT91_REG *) 0xFFFB0014)
+#define AT91C_US0_BRGR (AT91_CAST(AT91_REG *) 0xFFFB0020)
+#define AT91C_US0_RTOR (AT91_CAST(AT91_REG *) 0xFFFB0024)
+#define AT91C_US0_TTGR (AT91_CAST(AT91_REG *) 0xFFFB0028)
+#define AT91C_US0_IDR (AT91_CAST(AT91_REG *) 0xFFFB000C)
+#define AT91C_US0_MR (AT91_CAST(AT91_REG *) 0xFFFB0004)
+#define AT91C_US0_IF (AT91_CAST(AT91_REG *) 0xFFFB004C)
+#define AT91C_US0_FIDI (AT91_CAST(AT91_REG *) 0xFFFB0040)
+#define AT91C_US0_IMR (AT91_CAST(AT91_REG *) 0xFFFB0010)
+
+#define AT91C_US1_PTCR (AT91_CAST(AT91_REG *) 0xFFFB4120)
+#define AT91C_US1_RCR (AT91_CAST(AT91_REG *) 0xFFFB4104)
+#define AT91C_US1_RPR (AT91_CAST(AT91_REG *) 0xFFFB4100)
+#define AT91C_US1_PTSR (AT91_CAST(AT91_REG *) 0xFFFB4124)
+#define AT91C_US1_TPR (AT91_CAST(AT91_REG *) 0xFFFB4108)
+#define AT91C_US1_TCR (AT91_CAST(AT91_REG *) 0xFFFB410C)
+#define AT91C_US1_RNPR (AT91_CAST(AT91_REG *) 0xFFFB4110)
+#define AT91C_US1_TNCR (AT91_CAST(AT91_REG *) 0xFFFB411C)
+#define AT91C_US1_RNCR (AT91_CAST(AT91_REG *) 0xFFFB4114)
+#define AT91C_US1_TNPR (AT91_CAST(AT91_REG *) 0xFFFB4118)
+
+#define AT91C_US1_THR (AT91_CAST(AT91_REG *) 0xFFFB401C)
+#define AT91C_US1_TTGR (AT91_CAST(AT91_REG *) 0xFFFB4028)
+#define AT91C_US1_BRGR (AT91_CAST(AT91_REG *) 0xFFFB4020)
+#define AT91C_US1_IDR (AT91_CAST(AT91_REG *) 0xFFFB400C)
+#define AT91C_US1_MR (AT91_CAST(AT91_REG *) 0xFFFB4004)
+#define AT91C_US1_RTOR (AT91_CAST(AT91_REG *) 0xFFFB4024)
+#define AT91C_US1_CR (AT91_CAST(AT91_REG *) 0xFFFB4000)
+#define AT91C_US1_IMR (AT91_CAST(AT91_REG *) 0xFFFB4010)
+#define AT91C_US1_FIDI (AT91_CAST(AT91_REG *) 0xFFFB4040)
+#define AT91C_US1_RHR (AT91_CAST(AT91_REG *) 0xFFFB4018)
+#define AT91C_US1_IER (AT91_CAST(AT91_REG *) 0xFFFB4008)
+#define AT91C_US1_CSR (AT91_CAST(AT91_REG *) 0xFFFB4014)
+#define AT91C_US1_IF (AT91_CAST(AT91_REG *) 0xFFFB404C)
+#define AT91C_US1_NER (AT91_CAST(AT91_REG *) 0xFFFB4044)
+
+#define AT91C_US2_TNCR (AT91_CAST(AT91_REG *) 0xFFFB811C)
+#define AT91C_US2_RNCR (AT91_CAST(AT91_REG *) 0xFFFB8114)
+#define AT91C_US2_TNPR (AT91_CAST(AT91_REG *) 0xFFFB8118)
+#define AT91C_US2_PTCR (AT91_CAST(AT91_REG *) 0xFFFB8120)
+#define AT91C_US2_TCR (AT91_CAST(AT91_REG *) 0xFFFB810C)
+#define AT91C_US2_RPR (AT91_CAST(AT91_REG *) 0xFFFB8100)
+#define AT91C_US2_TPR (AT91_CAST(AT91_REG *) 0xFFFB8108)
+#define AT91C_US2_RCR (AT91_CAST(AT91_REG *) 0xFFFB8104)
+#define AT91C_US2_PTSR (AT91_CAST(AT91_REG *) 0xFFFB8124)
+#define AT91C_US2_RNPR (AT91_CAST(AT91_REG *) 0xFFFB8110)
+
+#define AT91C_US2_RTOR (AT91_CAST(AT91_REG *) 0xFFFB8024)
+#define AT91C_US2_CSR (AT91_CAST(AT91_REG *) 0xFFFB8014)
+#define AT91C_US2_CR (AT91_CAST(AT91_REG *) 0xFFFB8000)
+#define AT91C_US2_BRGR (AT91_CAST(AT91_REG *) 0xFFFB8020)
+#define AT91C_US2_NER (AT91_CAST(AT91_REG *) 0xFFFB8044)
+#define AT91C_US2_FIDI (AT91_CAST(AT91_REG *) 0xFFFB8040)
+#define AT91C_US2_TTGR (AT91_CAST(AT91_REG *) 0xFFFB8028)
+#define AT91C_US2_RHR (AT91_CAST(AT91_REG *) 0xFFFB8018)
+#define AT91C_US2_IDR (AT91_CAST(AT91_REG *) 0xFFFB800C)
+#define AT91C_US2_THR (AT91_CAST(AT91_REG *) 0xFFFB801C)
+#define AT91C_US2_MR (AT91_CAST(AT91_REG *) 0xFFFB8004)
+#define AT91C_US2_IMR (AT91_CAST(AT91_REG *) 0xFFFB8010)
+#define AT91C_US2_IF (AT91_CAST(AT91_REG *) 0xFFFB804C)
+#define AT91C_US2_IER (AT91_CAST(AT91_REG *) 0xFFFB8008)
+
+#define AT91C_US3_RNPR (AT91_CAST(AT91_REG *) 0xFFFD0110)
+#define AT91C_US3_RNCR (AT91_CAST(AT91_REG *) 0xFFFD0114)
+#define AT91C_US3_PTSR (AT91_CAST(AT91_REG *) 0xFFFD0124)
+#define AT91C_US3_PTCR (AT91_CAST(AT91_REG *) 0xFFFD0120)
+#define AT91C_US3_TCR (AT91_CAST(AT91_REG *) 0xFFFD010C)
+#define AT91C_US3_TNPR (AT91_CAST(AT91_REG *) 0xFFFD0118)
+#define AT91C_US3_RCR (AT91_CAST(AT91_REG *) 0xFFFD0104)
+#define AT91C_US3_TPR (AT91_CAST(AT91_REG *) 0xFFFD0108)
+#define AT91C_US3_TNCR (AT91_CAST(AT91_REG *) 0xFFFD011C)
+#define AT91C_US3_RPR (AT91_CAST(AT91_REG *) 0xFFFD0100)
+
+#define AT91C_US3_NER (AT91_CAST(AT91_REG *) 0xFFFD0044)
+#define AT91C_US3_RTOR (AT91_CAST(AT91_REG *) 0xFFFD0024)
+#define AT91C_US3_IDR (AT91_CAST(AT91_REG *) 0xFFFD000C)
+#define AT91C_US3_MR (AT91_CAST(AT91_REG *) 0xFFFD0004)
+#define AT91C_US3_FIDI (AT91_CAST(AT91_REG *) 0xFFFD0040)
+#define AT91C_US3_BRGR (AT91_CAST(AT91_REG *) 0xFFFD0020)
+#define AT91C_US3_THR (AT91_CAST(AT91_REG *) 0xFFFD001C)
+#define AT91C_US3_CR (AT91_CAST(AT91_REG *) 0xFFFD0000)
+#define AT91C_US3_IF (AT91_CAST(AT91_REG *) 0xFFFD004C)
+#define AT91C_US3_IER (AT91_CAST(AT91_REG *) 0xFFFD0008)
+#define AT91C_US3_TTGR (AT91_CAST(AT91_REG *) 0xFFFD0028)
+#define AT91C_US3_RHR (AT91_CAST(AT91_REG *) 0xFFFD0018)
+#define AT91C_US3_IMR (AT91_CAST(AT91_REG *) 0xFFFD0010)
+#define AT91C_US3_CSR (AT91_CAST(AT91_REG *) 0xFFFD0014)
+
+#define AT91C_US4_TNCR (AT91_CAST(AT91_REG *) 0xFFFD411C)
+#define AT91C_US4_RPR (AT91_CAST(AT91_REG *) 0xFFFD4100)
+#define AT91C_US4_RNCR (AT91_CAST(AT91_REG *) 0xFFFD4114)
+#define AT91C_US4_TPR (AT91_CAST(AT91_REG *) 0xFFFD4108)
+#define AT91C_US4_PTCR (AT91_CAST(AT91_REG *) 0xFFFD4120)
+#define AT91C_US4_TCR (AT91_CAST(AT91_REG *) 0xFFFD410C)
+#define AT91C_US4_RCR (AT91_CAST(AT91_REG *) 0xFFFD4104)
+#define AT91C_US4_RNPR (AT91_CAST(AT91_REG *) 0xFFFD4110)
+#define AT91C_US4_TNPR (AT91_CAST(AT91_REG *) 0xFFFD4118)
+#define AT91C_US4_PTSR (AT91_CAST(AT91_REG *) 0xFFFD4124)
+
+#define AT91C_US4_BRGR (AT91_CAST(AT91_REG *) 0xFFFD4020)
+#define AT91C_US4_THR (AT91_CAST(AT91_REG *) 0xFFFD401C)
+#define AT91C_US4_RTOR (AT91_CAST(AT91_REG *) 0xFFFD4024)
+#define AT91C_US4_IMR (AT91_CAST(AT91_REG *) 0xFFFD4010)
+#define AT91C_US4_NER (AT91_CAST(AT91_REG *) 0xFFFD4044)
+#define AT91C_US4_TTGR (AT91_CAST(AT91_REG *) 0xFFFD4028)
+#define AT91C_US4_FIDI (AT91_CAST(AT91_REG *) 0xFFFD4040)
+#define AT91C_US4_MR (AT91_CAST(AT91_REG *) 0xFFFD4004)
+#define AT91C_US4_IER (AT91_CAST(AT91_REG *) 0xFFFD4008)
+#define AT91C_US4_RHR (AT91_CAST(AT91_REG *) 0xFFFD4018)
+#define AT91C_US4_CR (AT91_CAST(AT91_REG *) 0xFFFD4000)
+#define AT91C_US4_IF (AT91_CAST(AT91_REG *) 0xFFFD404C)
+#define AT91C_US4_IDR (AT91_CAST(AT91_REG *) 0xFFFD400C)
+#define AT91C_US4_CSR (AT91_CAST(AT91_REG *) 0xFFFD4014)
+
+#define AT91C_US5_PTSR (AT91_CAST(AT91_REG *) 0xFFFD8124)
+#define AT91C_US5_PTCR (AT91_CAST(AT91_REG *) 0xFFFD8120)
+#define AT91C_US5_TNPR (AT91_CAST(AT91_REG *) 0xFFFD8118)
+#define AT91C_US5_TNCR (AT91_CAST(AT91_REG *) 0xFFFD811C)
+#define AT91C_US5_RNPR (AT91_CAST(AT91_REG *) 0xFFFD8110)
+#define AT91C_US5_RNCR (AT91_CAST(AT91_REG *) 0xFFFD8114)
+#define AT91C_US5_RPR (AT91_CAST(AT91_REG *) 0xFFFD8100)
+#define AT91C_US5_TCR (AT91_CAST(AT91_REG *) 0xFFFD810C)
+#define AT91C_US5_TPR (AT91_CAST(AT91_REG *) 0xFFFD8108)
+#define AT91C_US5_RCR (AT91_CAST(AT91_REG *) 0xFFFD8104)
+
+#define AT91C_US5_IF (AT91_CAST(AT91_REG *) 0xFFFD804C)
+#define AT91C_US5_RTOR (AT91_CAST(AT91_REG *) 0xFFFD8024)
+#define AT91C_US5_NER (AT91_CAST(AT91_REG *) 0xFFFD8044)
+#define AT91C_US5_IMR (AT91_CAST(AT91_REG *) 0xFFFD8010)
+#define AT91C_US5_RHR (AT91_CAST(AT91_REG *) 0xFFFD8018)
+#define AT91C_US5_CSR (AT91_CAST(AT91_REG *) 0xFFFD8014)
+#define AT91C_US5_MR (AT91_CAST(AT91_REG *) 0xFFFD8004)
+#define AT91C_US5_IDR (AT91_CAST(AT91_REG *) 0xFFFD800C)
+#define AT91C_US5_THR (AT91_CAST(AT91_REG *) 0xFFFD801C)
+#define AT91C_US5_FIDI (AT91_CAST(AT91_REG *) 0xFFFD8040)
+#define AT91C_US5_TTGR (AT91_CAST(AT91_REG *) 0xFFFD8028)
+#define AT91C_US5_BRGR (AT91_CAST(AT91_REG *) 0xFFFD8020)
+#define AT91C_US5_CR (AT91_CAST(AT91_REG *) 0xFFFD8000)
+#define AT91C_US5_IER (AT91_CAST(AT91_REG *) 0xFFFD8008)
+
+#define AT91C_SSC0_TNPR (AT91_CAST(AT91_REG *) 0xFFFBC118)
+#define AT91C_SSC0_TCR (AT91_CAST(AT91_REG *) 0xFFFBC10C)
+#define AT91C_SSC0_RNCR (AT91_CAST(AT91_REG *) 0xFFFBC114)
+#define AT91C_SSC0_RPR (AT91_CAST(AT91_REG *) 0xFFFBC100)
+#define AT91C_SSC0_TPR (AT91_CAST(AT91_REG *) 0xFFFBC108)
+#define AT91C_SSC0_RCR (AT91_CAST(AT91_REG *) 0xFFFBC104)
+#define AT91C_SSC0_RNPR (AT91_CAST(AT91_REG *) 0xFFFBC110)
+#define AT91C_SSC0_PTCR (AT91_CAST(AT91_REG *) 0xFFFBC120)
+#define AT91C_SSC0_TNCR (AT91_CAST(AT91_REG *) 0xFFFBC11C)
+#define AT91C_SSC0_PTSR (AT91_CAST(AT91_REG *) 0xFFFBC124)
+
+#define AT91C_SSC0_IMR (AT91_CAST(AT91_REG *) 0xFFFBC04C)
+#define AT91C_SSC0_RFMR (AT91_CAST(AT91_REG *) 0xFFFBC014)
+#define AT91C_SSC0_CR (AT91_CAST(AT91_REG *) 0xFFFBC000)
+#define AT91C_SSC0_TFMR (AT91_CAST(AT91_REG *) 0xFFFBC01C)
+#define AT91C_SSC0_CMR (AT91_CAST(AT91_REG *) 0xFFFBC004)
+#define AT91C_SSC0_IER (AT91_CAST(AT91_REG *) 0xFFFBC044)
+#define AT91C_SSC0_RHR (AT91_CAST(AT91_REG *) 0xFFFBC020)
+#define AT91C_SSC0_RCMR (AT91_CAST(AT91_REG *) 0xFFFBC010)
+#define AT91C_SSC0_SR (AT91_CAST(AT91_REG *) 0xFFFBC040)
+#define AT91C_SSC0_RSHR (AT91_CAST(AT91_REG *) 0xFFFBC030)
+#define AT91C_SSC0_THR (AT91_CAST(AT91_REG *) 0xFFFBC024)
+#define AT91C_SSC0_TCMR (AT91_CAST(AT91_REG *) 0xFFFBC018)
+#define AT91C_SSC0_IDR (AT91_CAST(AT91_REG *) 0xFFFBC048)
+#define AT91C_SSC0_TSHR (AT91_CAST(AT91_REG *) 0xFFFBC034)
+
+#define AT91C_SPI0_PTCR (AT91_CAST(AT91_REG *) 0xFFFC8120)
+#define AT91C_SPI0_TCR (AT91_CAST(AT91_REG *) 0xFFFC810C)
+#define AT91C_SPI0_RPR (AT91_CAST(AT91_REG *) 0xFFFC8100)
+#define AT91C_SPI0_TPR (AT91_CAST(AT91_REG *) 0xFFFC8108)
+#define AT91C_SPI0_PTSR (AT91_CAST(AT91_REG *) 0xFFFC8124)
+#define AT91C_SPI0_RNCR (AT91_CAST(AT91_REG *) 0xFFFC8114)
+#define AT91C_SPI0_TNPR (AT91_CAST(AT91_REG *) 0xFFFC8118)
+#define AT91C_SPI0_RCR (AT91_CAST(AT91_REG *) 0xFFFC8104)
+#define AT91C_SPI0_RNPR (AT91_CAST(AT91_REG *) 0xFFFC8110)
+#define AT91C_SPI0_TNCR (AT91_CAST(AT91_REG *) 0xFFFC811C)
+
+#define AT91C_SPI0_IDR (AT91_CAST(AT91_REG *) 0xFFFC8018)
+#define AT91C_SPI0_TDR (AT91_CAST(AT91_REG *) 0xFFFC800C)
+#define AT91C_SPI0_SR (AT91_CAST(AT91_REG *) 0xFFFC8010)
+#define AT91C_SPI0_CR (AT91_CAST(AT91_REG *) 0xFFFC8000)
+#define AT91C_SPI0_CSR (AT91_CAST(AT91_REG *) 0xFFFC8030)
+#define AT91C_SPI0_RDR (AT91_CAST(AT91_REG *) 0xFFFC8008)
+#define AT91C_SPI0_MR (AT91_CAST(AT91_REG *) 0xFFFC8004)
+#define AT91C_SPI0_IER (AT91_CAST(AT91_REG *) 0xFFFC8014)
+#define AT91C_SPI0_IMR (AT91_CAST(AT91_REG *) 0xFFFC801C)
+
+#define AT91C_SPI1_PTCR (AT91_CAST(AT91_REG *) 0xFFFCC120)
+#define AT91C_SPI1_RNPR (AT91_CAST(AT91_REG *) 0xFFFCC110)
+#define AT91C_SPI1_RCR (AT91_CAST(AT91_REG *) 0xFFFCC104)
+#define AT91C_SPI1_TPR (AT91_CAST(AT91_REG *) 0xFFFCC108)
+#define AT91C_SPI1_PTSR (AT91_CAST(AT91_REG *) 0xFFFCC124)
+#define AT91C_SPI1_TNCR (AT91_CAST(AT91_REG *) 0xFFFCC11C)
+#define AT91C_SPI1_RPR (AT91_CAST(AT91_REG *) 0xFFFCC100)
+#define AT91C_SPI1_TCR (AT91_CAST(AT91_REG *) 0xFFFCC10C)
+#define AT91C_SPI1_RNCR (AT91_CAST(AT91_REG *) 0xFFFCC114)
+#define AT91C_SPI1_TNPR (AT91_CAST(AT91_REG *) 0xFFFCC118)
+
+#define AT91C_SPI1_IER (AT91_CAST(AT91_REG *) 0xFFFCC014)
+#define AT91C_SPI1_RDR (AT91_CAST(AT91_REG *) 0xFFFCC008)
+#define AT91C_SPI1_SR (AT91_CAST(AT91_REG *) 0xFFFCC010)
+#define AT91C_SPI1_IMR (AT91_CAST(AT91_REG *) 0xFFFCC01C)
+#define AT91C_SPI1_TDR (AT91_CAST(AT91_REG *) 0xFFFCC00C)
+#define AT91C_SPI1_IDR (AT91_CAST(AT91_REG *) 0xFFFCC018)
+#define AT91C_SPI1_CSR (AT91_CAST(AT91_REG *) 0xFFFCC030)
+#define AT91C_SPI1_CR (AT91_CAST(AT91_REG *) 0xFFFCC000)
+#define AT91C_SPI1_MR (AT91_CAST(AT91_REG *) 0xFFFCC004)
+
+#define AT91C_ADC_PTCR (AT91_CAST(AT91_REG *) 0xFFFE0120)
+#define AT91C_ADC_TPR (AT91_CAST(AT91_REG *) 0xFFFE0108)
+#define AT91C_ADC_TCR (AT91_CAST(AT91_REG *) 0xFFFE010C)
+#define AT91C_ADC_RCR (AT91_CAST(AT91_REG *) 0xFFFE0104)
+#define AT91C_ADC_PTSR (AT91_CAST(AT91_REG *) 0xFFFE0124)
+#define AT91C_ADC_RNPR (AT91_CAST(AT91_REG *) 0xFFFE0110)
+#define AT91C_ADC_RPR (AT91_CAST(AT91_REG *) 0xFFFE0100)
+#define AT91C_ADC_TNCR (AT91_CAST(AT91_REG *) 0xFFFE011C)
+#define AT91C_ADC_RNCR (AT91_CAST(AT91_REG *) 0xFFFE0114)
+#define AT91C_ADC_TNPR (AT91_CAST(AT91_REG *) 0xFFFE0118)
+
+#define AT91C_ADC_CHDR (AT91_CAST(AT91_REG *) 0xFFFE0014)
+#define AT91C_ADC_CDR3 (AT91_CAST(AT91_REG *) 0xFFFE003C)
+#define AT91C_ADC_CHER (AT91_CAST(AT91_REG *) 0xFFFE0010)
+#define AT91C_ADC_CHSR (AT91_CAST(AT91_REG *) 0xFFFE0018)
+#define AT91C_ADC_CR (AT91_CAST(AT91_REG *) 0xFFFE0000)
+#define AT91C_ADC_IMR (AT91_CAST(AT91_REG *) 0xFFFE002C)
+#define AT91C_ADC_MR (AT91_CAST(AT91_REG *) 0xFFFE0004)
+#define AT91C_ADC_CDR2 (AT91_CAST(AT91_REG *) 0xFFFE0038)
+#define AT91C_ADC_SR (AT91_CAST(AT91_REG *) 0xFFFE001C)
+#define AT91C_ADC_LCDR (AT91_CAST(AT91_REG *) 0xFFFE0020)
+#define AT91C_ADC_IER (AT91_CAST(AT91_REG *) 0xFFFE0024)
+#define AT91C_ADC_CDR1 (AT91_CAST(AT91_REG *) 0xFFFE0034)
+#define AT91C_ADC_IDR (AT91_CAST(AT91_REG *) 0xFFFE0028)
+#define AT91C_ADC_CDR0 (AT91_CAST(AT91_REG *) 0xFFFE0030)
+
+#define AT91C_EMACB_USRIO (AT91_CAST(AT91_REG *) 0xFFFC40C0)
+#define AT91C_EMACB_RSE (AT91_CAST(AT91_REG *) 0xFFFC4074)
+#define AT91C_EMACB_SCF (AT91_CAST(AT91_REG *) 0xFFFC4044)
+#define AT91C_EMACB_STE (AT91_CAST(AT91_REG *) 0xFFFC4084)
+#define AT91C_EMACB_SA1H (AT91_CAST(AT91_REG *) 0xFFFC409C)
+#define AT91C_EMACB_ROV (AT91_CAST(AT91_REG *) 0xFFFC4070)
+#define AT91C_EMACB_TBQP (AT91_CAST(AT91_REG *) 0xFFFC401C)
+#define AT91C_EMACB_IMR (AT91_CAST(AT91_REG *) 0xFFFC4030)
+#define AT91C_EMACB_IER (AT91_CAST(AT91_REG *) 0xFFFC4028)
+#define AT91C_EMACB_REV (AT91_CAST(AT91_REG *) 0xFFFC40FC)
+#define AT91C_EMACB_SA3L (AT91_CAST(AT91_REG *) 0xFFFC40A8)
+#define AT91C_EMACB_ELE (AT91_CAST(AT91_REG *) 0xFFFC4078)
+#define AT91C_EMACB_HRT (AT91_CAST(AT91_REG *) 0xFFFC4094)
+#define AT91C_EMACB_SA2L (AT91_CAST(AT91_REG *) 0xFFFC40A0)
+#define AT91C_EMACB_RRE (AT91_CAST(AT91_REG *) 0xFFFC406C)
+#define AT91C_EMACB_FRO (AT91_CAST(AT91_REG *) 0xFFFC404C)
+#define AT91C_EMACB_TPQ (AT91_CAST(AT91_REG *) 0xFFFC40BC)
+#define AT91C_EMACB_ISR (AT91_CAST(AT91_REG *) 0xFFFC4024)
+#define AT91C_EMACB_TSR (AT91_CAST(AT91_REG *) 0xFFFC4014)
+#define AT91C_EMACB_RLE (AT91_CAST(AT91_REG *) 0xFFFC4088)
+#define AT91C_EMACB_USF (AT91_CAST(AT91_REG *) 0xFFFC4080)
+#define AT91C_EMACB_WOL (AT91_CAST(AT91_REG *) 0xFFFC40C4)
+#define AT91C_EMACB_TPF (AT91_CAST(AT91_REG *) 0xFFFC408C)
+#define AT91C_EMACB_PTR (AT91_CAST(AT91_REG *) 0xFFFC4038)
+#define AT91C_EMACB_TUND (AT91_CAST(AT91_REG *) 0xFFFC4064)
+#define AT91C_EMACB_MAN (AT91_CAST(AT91_REG *) 0xFFFC4034)
+#define AT91C_EMACB_RJA (AT91_CAST(AT91_REG *) 0xFFFC407C)
+#define AT91C_EMACB_SA4L (AT91_CAST(AT91_REG *) 0xFFFC40B0)
+#define AT91C_EMACB_CSE (AT91_CAST(AT91_REG *) 0xFFFC4068)
+#define AT91C_EMACB_HRB (AT91_CAST(AT91_REG *) 0xFFFC4090)
+#define AT91C_EMACB_ALE (AT91_CAST(AT91_REG *) 0xFFFC4054)
+#define AT91C_EMACB_SA1L (AT91_CAST(AT91_REG *) 0xFFFC4098)
+#define AT91C_EMACB_NCR (AT91_CAST(AT91_REG *) 0xFFFC4000)
+#define AT91C_EMACB_FTO (AT91_CAST(AT91_REG *) 0xFFFC4040)
+#define AT91C_EMACB_ECOL (AT91_CAST(AT91_REG *) 0xFFFC4060)
+#define AT91C_EMACB_DTF (AT91_CAST(AT91_REG *) 0xFFFC4058)
+#define AT91C_EMACB_SA4H (AT91_CAST(AT91_REG *) 0xFFFC40B4)
+#define AT91C_EMACB_FCSE (AT91_CAST(AT91_REG *) 0xFFFC4050)
+#define AT91C_EMACB_TID (AT91_CAST(AT91_REG *) 0xFFFC40B8)
+#define AT91C_EMACB_PFR (AT91_CAST(AT91_REG *) 0xFFFC403C)
+#define AT91C_EMACB_IDR (AT91_CAST(AT91_REG *) 0xFFFC402C)
+#define AT91C_EMACB_SA3H (AT91_CAST(AT91_REG *) 0xFFFC40AC)
+#define AT91C_EMACB_NSR (AT91_CAST(AT91_REG *) 0xFFFC4008)
+#define AT91C_EMACB_MCF (AT91_CAST(AT91_REG *) 0xFFFC4048)
+#define AT91C_EMACB_RBQP (AT91_CAST(AT91_REG *) 0xFFFC4018)
+#define AT91C_EMACB_RSR (AT91_CAST(AT91_REG *) 0xFFFC4020)
+#define AT91C_EMACB_SA2H (AT91_CAST(AT91_REG *) 0xFFFC40A4)
+#define AT91C_EMACB_NCFGR (AT91_CAST(AT91_REG *) 0xFFFC4004)
+#define AT91C_EMACB_LCOL (AT91_CAST(AT91_REG *) 0xFFFC405C)
+
+#define AT91C_UDP_GLBSTATE (AT91_CAST(AT91_REG *) 0xFFFA4004)
+#define AT91C_UDP_FDR (AT91_CAST(AT91_REG *) 0xFFFA4050)
+#define AT91C_UDP_RSTEP (AT91_CAST(AT91_REG *) 0xFFFA4028)
+#define AT91C_UDP_FADDR (AT91_CAST(AT91_REG *) 0xFFFA4008)
+#define AT91C_UDP_NUM (AT91_CAST(AT91_REG *) 0xFFFA4000)
+#define AT91C_UDP_IDR (AT91_CAST(AT91_REG *) 0xFFFA4014)
+#define AT91C_UDP_IMR (AT91_CAST(AT91_REG *) 0xFFFA4018)
+#define AT91C_UDP_CSR (AT91_CAST(AT91_REG *) 0xFFFA4030)
+#define AT91C_UDP_IER (AT91_CAST(AT91_REG *) 0xFFFA4010)
+#define AT91C_UDP_ICR (AT91_CAST(AT91_REG *) 0xFFFA4020)
+#define AT91C_UDP_TXVC (AT91_CAST(AT91_REG *) 0xFFFA4074)
+#define AT91C_UDP_ISR (AT91_CAST(AT91_REG *) 0xFFFA401C)
+
+#define AT91C_UHP_HcInterruptStatus (AT91_CAST(AT91_REG *) 0x0050000C)
+#define AT91C_UHP_HcCommandStatus (AT91_CAST(AT91_REG *) 0x00500008)
+#define AT91C_UHP_HcRhStatus (AT91_CAST(AT91_REG *) 0x00500050)
+#define AT91C_UHP_HcInterruptDisable (AT91_CAST(AT91_REG *) 0x00500014)
+#define AT91C_UHP_HcPeriodicStart (AT91_CAST(AT91_REG *) 0x00500040)
+#define AT91C_UHP_HcControlCurrentED (AT91_CAST(AT91_REG *) 0x00500024)
+#define AT91C_UHP_HcPeriodCurrentED (AT91_CAST(AT91_REG *) 0x0050001C)
+#define AT91C_UHP_HcBulkHeadED (AT91_CAST(AT91_REG *) 0x00500028)
+#define AT91C_UHP_HcRevision (AT91_CAST(AT91_REG *) 0x00500000)
+#define AT91C_UHP_HcBulkCurrentED (AT91_CAST(AT91_REG *) 0x0050002C)
+#define AT91C_UHP_HcRhDescriptorB (AT91_CAST(AT91_REG *) 0x0050004C)
+#define AT91C_UHP_HcControlHeadED (AT91_CAST(AT91_REG *) 0x00500020)
+#define AT91C_UHP_HcFmRemaining (AT91_CAST(AT91_REG *) 0x00500038)
+#define AT91C_UHP_HcHCCA (AT91_CAST(AT91_REG *) 0x00500018)
+#define AT91C_UHP_HcLSThreshold (AT91_CAST(AT91_REG *) 0x00500044)
+#define AT91C_UHP_HcRhPortStatus (AT91_CAST(AT91_REG *) 0x00500054)
+#define AT91C_UHP_HcInterruptEnable (AT91_CAST(AT91_REG *) 0x00500010)
+#define AT91C_UHP_HcFmNumber (AT91_CAST(AT91_REG *) 0x0050003C)
+#define AT91C_UHP_HcFmInterval (AT91_CAST(AT91_REG *) 0x00500034)
+#define AT91C_UHP_HcControl (AT91_CAST(AT91_REG *) 0x00500004)
+#define AT91C_UHP_HcBulkDoneHead (AT91_CAST(AT91_REG *) 0x00500030)
+#define AT91C_UHP_HcRhDescriptorA (AT91_CAST(AT91_REG *) 0x00500048)
+
+#define AT91C_ISI_PSIZE (AT91_CAST(AT91_REG *) 0xFFFC0020)
+#define AT91C_ISI_CR1 (AT91_CAST(AT91_REG *) 0xFFFC0000)
+#define AT91C_ISI_R2YSET1 (AT91_CAST(AT91_REG *) 0xFFFC003C)
+#define AT91C_ISI_CDBA (AT91_CAST(AT91_REG *) 0xFFFC002C)
+#define AT91C_ISI_IDR (AT91_CAST(AT91_REG *) 0xFFFC0010)
+#define AT91C_ISI_R2YSET2 (AT91_CAST(AT91_REG *) 0xFFFC0040)
+#define AT91C_ISI_Y2RSET1 (AT91_CAST(AT91_REG *) 0xFFFC0034)
+#define AT91C_ISI_PPFBD (AT91_CAST(AT91_REG *) 0xFFFC0028)
+#define AT91C_ISI_CR2 (AT91_CAST(AT91_REG *) 0xFFFC0004)
+#define AT91C_ISI_Y2RSET0 (AT91_CAST(AT91_REG *) 0xFFFC0030)
+#define AT91C_ISI_PDECF (AT91_CAST(AT91_REG *) 0xFFFC0024)
+#define AT91C_ISI_IMR (AT91_CAST(AT91_REG *) 0xFFFC0014)
+#define AT91C_ISI_IER (AT91_CAST(AT91_REG *) 0xFFFC000C)
+#define AT91C_ISI_R2YSET0 (AT91_CAST(AT91_REG *) 0xFFFC0038)
+#define AT91C_ISI_SR (AT91_CAST(AT91_REG *) 0xFFFC0008)
+
+
+
+
+#define AT91C_PIO_PA0 (1 << 0)
+#define AT91C_PA0_SPI0_MISO (AT91C_PIO_PA0)
+#define AT91C_PA0_MCDB0 (AT91C_PIO_PA0)
+#define AT91C_PIO_PA1 (1 << 1)
+#define AT91C_PA1_SPI0_MOSI (AT91C_PIO_PA1)
+#define AT91C_PA1_MCCDB (AT91C_PIO_PA1)
+#define AT91C_PIO_PA10 (1 << 10)
+#define AT91C_PA10_MCI_DA2 (AT91C_PIO_PA10)
+#define AT91C_PA10_ETX2_0 (AT91C_PIO_PA10)
+#define AT91C_PIO_PA11 (1 << 11)
+#define AT91C_PA11_MCI_DA3 (AT91C_PIO_PA11)
+#define AT91C_PA11_ETX3_0 (AT91C_PIO_PA11)
+#define AT91C_PIO_PA12 (1 << 12)
+#define AT91C_PA12_ETX0 (AT91C_PIO_PA12)
+#define AT91C_PIO_PA13 (1 << 13)
+#define AT91C_PA13_ETX1 (AT91C_PIO_PA13)
+#define AT91C_PIO_PA14 (1 << 14)
+#define AT91C_PA14_ERX0 (AT91C_PIO_PA14)
+#define AT91C_PIO_PA15 (1 << 15)
+#define AT91C_PA15_ERX1 (AT91C_PIO_PA15)
+#define AT91C_PIO_PA16 (1 << 16)
+#define AT91C_PA16_ETXEN (AT91C_PIO_PA16)
+#define AT91C_PIO_PA17 (1 << 17)
+#define AT91C_PA17_ERXDV (AT91C_PIO_PA17)
+#define AT91C_PIO_PA18 (1 << 18)
+#define AT91C_PA18_ERXER (AT91C_PIO_PA18)
+#define AT91C_PIO_PA19 (1 << 19)
+#define AT91C_PA19_ETXCK (AT91C_PIO_PA19)
+#define AT91C_PIO_PA2 (1 << 2)
+#define AT91C_PA2_SPI0_SPCK (AT91C_PIO_PA2)
+#define AT91C_PIO_PA20 (1 << 20)
+#define AT91C_PA20_EMDC (AT91C_PIO_PA20)
+#define AT91C_PIO_PA21 (1 << 21)
+#define AT91C_PA21_EMDIO (AT91C_PIO_PA21)
+#define AT91C_PIO_PA22 (1 << 22)
+#define AT91C_PA22_ADTRG (AT91C_PIO_PA22)
+#define AT91C_PA22_ETXER (AT91C_PIO_PA22)
+#define AT91C_PIO_PA23 (1 << 23)
+#define AT91C_PA23_TWD (AT91C_PIO_PA23)
+#define AT91C_PA23_ETX2_1 (AT91C_PIO_PA23)
+#define AT91C_PIO_PA24 (1 << 24)
+#define AT91C_PA24_TWCK (AT91C_PIO_PA24)
+#define AT91C_PA24_ETX3_1 (AT91C_PIO_PA24)
+#define AT91C_PIO_PA25 (1 << 25)
+#define AT91C_PA25_TCLK0 (AT91C_PIO_PA25)
+#define AT91C_PA25_ERX2 (AT91C_PIO_PA25)
+#define AT91C_PIO_PA26 (1 << 26)
+#define AT91C_PA26_TIOA0 (AT91C_PIO_PA26)
+#define AT91C_PA26_ERX3 (AT91C_PIO_PA26)
+#define AT91C_PIO_PA27 (1 << 27)
+#define AT91C_PA27_TIOA1 (AT91C_PIO_PA27)
+#define AT91C_PA27_ERXCK (AT91C_PIO_PA27)
+#define AT91C_PIO_PA28 (1 << 28)
+#define AT91C_PA28_TIOA2 (AT91C_PIO_PA28)
+#define AT91C_PA28_ECRS (AT91C_PIO_PA28)
+#define AT91C_PIO_PA29 (1 << 29)
+#define AT91C_PA29_SCK1 (AT91C_PIO_PA29)
+#define AT91C_PA29_ECOL (AT91C_PIO_PA29)
+#define AT91C_PIO_PA3 (1 << 3)
+#define AT91C_PA3_SPI0_NPCS0 (AT91C_PIO_PA3)
+#define AT91C_PA3_MCDB3 (AT91C_PIO_PA3)
+#define AT91C_PIO_PA30 (1 << 30)
+#define AT91C_PA30_SCK2 (AT91C_PIO_PA30)
+#define AT91C_PA30_RXD4 (AT91C_PIO_PA30)
+#define AT91C_PIO_PA31 (1 << 31)
+#define AT91C_PA31_SCK0 (AT91C_PIO_PA31)
+#define AT91C_PA31_TXD4 (AT91C_PIO_PA31)
+#define AT91C_PIO_PA4 (1 << 4)
+#define AT91C_PA4_RTS2 (AT91C_PIO_PA4)
+#define AT91C_PA4_MCDB2 (AT91C_PIO_PA4)
+#define AT91C_PIO_PA5 (1 << 5)
+#define AT91C_PA5_CTS2 (AT91C_PIO_PA5)
+#define AT91C_PA5_MCDB1 (AT91C_PIO_PA5)
+#define AT91C_PIO_PA6 (1 << 6)
+#define AT91C_PA6_MCDA0 (AT91C_PIO_PA6)
+#define AT91C_PIO_PA7 (1 << 7)
+#define AT91C_PA7_MCCDA (AT91C_PIO_PA7)
+#define AT91C_PIO_PA8 (1 << 8)
+#define AT91C_PA8_MCCK (AT91C_PIO_PA8)
+#define AT91C_PIO_PA9 (1 << 9)
+#define AT91C_PA9_MCDA1 (AT91C_PIO_PA9)
+#define AT91C_PIO_PB0 (1 << 0)
+#define AT91C_PB0_SPI1_MISO (AT91C_PIO_PB0)
+#define AT91C_PB0_TIOA3 (AT91C_PIO_PB0)
+#define AT91C_PIO_PB1 (1 << 1)
+#define AT91C_PB1_SPI1_MOSI (AT91C_PIO_PB1)
+#define AT91C_PB1_TIOB3 (AT91C_PIO_PB1)
+#define AT91C_PIO_PB10 (1 << 10)
+#define AT91C_PB10_TXD3 (AT91C_PIO_PB10)
+#define AT91C_PB10_ISI_D8 (AT91C_PIO_PB10)
+#define AT91C_PIO_PB11 (1 << 11)
+#define AT91C_PB11_RXD3 (AT91C_PIO_PB11)
+#define AT91C_PB11_ISI_D9 (AT91C_PIO_PB11)
+#define AT91C_PIO_PB12 (1 << 12)
+#define AT91C_PB12_TXD5 (AT91C_PIO_PB12)
+#define AT91C_PB12_ISI_D10 (AT91C_PIO_PB12)
+#define AT91C_PIO_PB13 (1 << 13)
+#define AT91C_PB13_RXD5 (AT91C_PIO_PB13)
+#define AT91C_PB13_ISI_D11 (AT91C_PIO_PB13)
+#define AT91C_PIO_PB14 (1 << 14)
+#define AT91C_PB14_DRXD (AT91C_PIO_PB14)
+#define AT91C_PIO_PB15 (1 << 15)
+#define AT91C_PB15_DTXD (AT91C_PIO_PB15)
+#define AT91C_PIO_PB16 (1 << 16)
+#define AT91C_PB16_TK0 (AT91C_PIO_PB16)
+#define AT91C_PB16_TCLK3 (AT91C_PIO_PB16)
+#define AT91C_PIO_PB17 (1 << 17)
+#define AT91C_PB17_TF0 (AT91C_PIO_PB17)
+#define AT91C_PB17_TCLK4 (AT91C_PIO_PB17)
+#define AT91C_PIO_PB18 (1 << 18)
+#define AT91C_PB18_TD0 (AT91C_PIO_PB18)
+#define AT91C_PB18_TIOB4 (AT91C_PIO_PB18)
+#define AT91C_PIO_PB19 (1 << 19)
+#define AT91C_PB19_RD0 (AT91C_PIO_PB19)
+#define AT91C_PB19_TIOB5 (AT91C_PIO_PB19)
+#define AT91C_PIO_PB2 (1 << 2)
+#define AT91C_PB2_SPI1_SPCK (AT91C_PIO_PB2)
+#define AT91C_PB2_TIOA4 (AT91C_PIO_PB2)
+#define AT91C_PIO_PB20 (1 << 20)
+#define AT91C_PB20_RK0 (AT91C_PIO_PB20)
+#define AT91C_PB20_ISI_D0 (AT91C_PIO_PB20)
+#define AT91C_PIO_PB21 (1 << 21)
+#define AT91C_PB21_RF0 (AT91C_PIO_PB21)
+#define AT91C_PB21_ISI_D1 (AT91C_PIO_PB21)
+#define AT91C_PIO_PB22 (1 << 22)
+#define AT91C_PB22_DSR0 (AT91C_PIO_PB22)
+#define AT91C_PB22_ISI_D2 (AT91C_PIO_PB22)
+#define AT91C_PIO_PB23 (1 << 23)
+#define AT91C_PB23_DCD0 (AT91C_PIO_PB23)
+#define AT91C_PB23_ISI_D3 (AT91C_PIO_PB23)
+#define AT91C_PIO_PB24 (1 << 24)
+#define AT91C_PB24_DTR0 (AT91C_PIO_PB24)
+#define AT91C_PB24_ISI_D4 (AT91C_PIO_PB24)
+#define AT91C_PIO_PB25 (1 << 25)
+#define AT91C_PB25_RI0 (AT91C_PIO_PB25)
+#define AT91C_PB25_ISI_D5 (AT91C_PIO_PB25)
+#define AT91C_PIO_PB26 (1 << 26)
+#define AT91C_PB26_RTS0 (AT91C_PIO_PB26)
+#define AT91C_PB26_ISI_D6 (AT91C_PIO_PB26)
+#define AT91C_PIO_PB27 (1 << 27)
+#define AT91C_PB27_CTS0 (AT91C_PIO_PB27)
+#define AT91C_PB27_ISI_D7 (AT91C_PIO_PB27)
+#define AT91C_PIO_PB28 (1 << 28)
+#define AT91C_PB28_RTS1 (AT91C_PIO_PB28)
+#define AT91C_PB28_ISI_PCK (AT91C_PIO_PB28)
+#define AT91C_PIO_PB29 (1 << 29)
+#define AT91C_PB29_CTS1 (AT91C_PIO_PB29)
+#define AT91C_PB29_ISI_VSYNC (AT91C_PIO_PB29)
+#define AT91C_PIO_PB3 (1 << 3)
+#define AT91C_PB3_SPI1_NPCS0 (AT91C_PIO_PB3)
+#define AT91C_PB3_TIOA5 (AT91C_PIO_PB3)
+#define AT91C_PIO_PB30 (1 << 30)
+#define AT91C_PB30_PCK0_0 (AT91C_PIO_PB30)
+#define AT91C_PB30_ISI_HSYNC (AT91C_PIO_PB30)
+#define AT91C_PIO_PB31 (1 << 31)
+#define AT91C_PB31_PCK1_0 (AT91C_PIO_PB31)
+#define AT91C_PB31_ISI_MCK (AT91C_PIO_PB31)
+#define AT91C_PIO_PB4 (1 << 4)
+#define AT91C_PB4_TXD0 (AT91C_PIO_PB4)
+#define AT91C_PIO_PB5 (1 << 5)
+#define AT91C_PB5_RXD0 (AT91C_PIO_PB5)
+#define AT91C_PIO_PB6 (1 << 6)
+#define AT91C_PB6_TXD1 (AT91C_PIO_PB6)
+#define AT91C_PB6_TCLK1 (AT91C_PIO_PB6)
+#define AT91C_PIO_PB7 (1 << 7)
+#define AT91C_PB7_RXD1 (AT91C_PIO_PB7)
+#define AT91C_PB7_TCLK2 (AT91C_PIO_PB7)
+#define AT91C_PIO_PB8 (1 << 8)
+#define AT91C_PB8_TXD2 (AT91C_PIO_PB8)
+#define AT91C_PIO_PB9 (1 << 9)
+#define AT91C_PB9_RXD2 (AT91C_PIO_PB9)
+#define AT91C_PIO_PC0 (1 << 0)
+#define AT91C_PC0_AD0 (AT91C_PIO_PC0)
+#define AT91C_PC0_SCK3 (AT91C_PIO_PC0)
+#define AT91C_PIO_PC1 (1 << 1)
+#define AT91C_PC1_AD1 (AT91C_PIO_PC1)
+#define AT91C_PC1_PCK0_1 (AT91C_PIO_PC1)
+#define AT91C_PIO_PC10 (1 << 10)
+#define AT91C_PC10_A25_CFRNW (AT91C_PIO_PC10)
+#define AT91C_PC10_CTS3 (AT91C_PIO_PC10)
+#define AT91C_PIO_PC11 (1 << 11)
+#define AT91C_PC11_NCS2 (AT91C_PIO_PC11)
+#define AT91C_PC11_SPI0_NPCS1 (AT91C_PIO_PC11)
+#define AT91C_PIO_PC12 (1 << 12)
+#define AT91C_PC12_IRQ0 (AT91C_PIO_PC12)
+#define AT91C_PC12_NCS7 (AT91C_PIO_PC12)
+#define AT91C_PIO_PC13 (1 << 13)
+#define AT91C_PC13_FIQ (AT91C_PIO_PC13)
+#define AT91C_PC13_NCS6 (AT91C_PIO_PC13)
+#define AT91C_PIO_PC14 (1 << 14)
+#define AT91C_PC14_NCS3_NANDCS (AT91C_PIO_PC14)
+#define AT91C_PC14_IRQ2 (AT91C_PIO_PC14)
+#define AT91C_PIO_PC15 (1 << 15)
+#define AT91C_PC15_NWAIT (AT91C_PIO_PC15)
+#define AT91C_PC15_IRQ1 (AT91C_PIO_PC15)
+#define AT91C_PIO_PC16 (1 << 16)
+#define AT91C_PC16_D16 (AT91C_PIO_PC16)
+#define AT91C_PC16_SPI0_NPCS2 (AT91C_PIO_PC16)
+#define AT91C_PIO_PC17 (1 << 17)
+#define AT91C_PC17_D17 (AT91C_PIO_PC17)
+#define AT91C_PC17_SPI0_NPCS3 (AT91C_PIO_PC17)
+#define AT91C_PIO_PC18 (1 << 18)
+#define AT91C_PC18_D18 (AT91C_PIO_PC18)
+#define AT91C_PC18_SPI1_NPCS1_1 (AT91C_PIO_PC18)
+#define AT91C_PIO_PC19 (1 << 19)
+#define AT91C_PC19_D19 (AT91C_PIO_PC19)
+#define AT91C_PC19_SPI1_NPCS2_1 (AT91C_PIO_PC19)
+#define AT91C_PIO_PC2 (1 << 2)
+#define AT91C_PC2_AD2 (AT91C_PIO_PC2)
+#define AT91C_PC2_PCK1_1 (AT91C_PIO_PC2)
+#define AT91C_PIO_PC20 (1 << 20)
+#define AT91C_PC20_D20 (AT91C_PIO_PC20)
+#define AT91C_PC20_SPI1_NPCS3_1 (AT91C_PIO_PC20)
+#define AT91C_PIO_PC21 (1 << 21)
+#define AT91C_PC21_D21 (AT91C_PIO_PC21)
+#define AT91C_PC21_EF100 (AT91C_PIO_PC21)
+#define AT91C_PIO_PC22 (1 << 22)
+#define AT91C_PC22_D22 (AT91C_PIO_PC22)
+#define AT91C_PC22_TCLK5 (AT91C_PIO_PC22)
+#define AT91C_PIO_PC23 (1 << 23)
+#define AT91C_PC23_D23 (AT91C_PIO_PC23)
+#define AT91C_PIO_PC24 (1 << 24)
+#define AT91C_PC24_D24 (AT91C_PIO_PC24)
+#define AT91C_PIO_PC25 (1 << 25)
+#define AT91C_PC25_D25 (AT91C_PIO_PC25)
+#define AT91C_PIO_PC26 (1 << 26)
+#define AT91C_PC26_D26 (AT91C_PIO_PC26)
+#define AT91C_PIO_PC27 (1 << 27)
+#define AT91C_PC27_D27 (AT91C_PIO_PC27)
+#define AT91C_PIO_PC28 (1 << 28)
+#define AT91C_PC28_D28 (AT91C_PIO_PC28)
+#define AT91C_PIO_PC29 (1 << 29)
+#define AT91C_PC29_D29 (AT91C_PIO_PC29)
+#define AT91C_PIO_PC3 (1 << 3)
+#define AT91C_PC3_AD3 (AT91C_PIO_PC3)
+#define AT91C_PC3_SPI1_NPCS3_0 (AT91C_PIO_PC3)
+#define AT91C_PIO_PC30 (1 << 30)
+#define AT91C_PC30_D30 (AT91C_PIO_PC30)
+#define AT91C_PIO_PC31 (1 << 31)
+#define AT91C_PC31_D31 (AT91C_PIO_PC31)
+#define AT91C_PIO_PC4 (1 << 4)
+#define AT91C_PC4_A23 (AT91C_PIO_PC4)
+#define AT91C_PC4_SPI1_NPCS2_0 (AT91C_PIO_PC4)
+#define AT91C_PIO_PC5 (1 << 5)
+#define AT91C_PC5_A24 (AT91C_PIO_PC5)
+#define AT91C_PC5_SPI1_NPCS1_0 (AT91C_PIO_PC5)
+#define AT91C_PIO_PC6 (1 << 6)
+#define AT91C_PC6_TIOB2 (AT91C_PIO_PC6)
+#define AT91C_PC6_CFCE1 (AT91C_PIO_PC6)
+#define AT91C_PIO_PC7 (1 << 7)
+#define AT91C_PC7_TIOB1 (AT91C_PIO_PC7)
+#define AT91C_PC7_CFCE2 (AT91C_PIO_PC7)
+#define AT91C_PIO_PC8 (1 << 8)
+#define AT91C_PC8_NCS4_CFCS0 (AT91C_PIO_PC8)
+#define AT91C_PC8_RTS3 (AT91C_PIO_PC8)
+#define AT91C_PIO_PC9 (1 << 9)
+#define AT91C_PC9_NCS5_CFCS1 (AT91C_PIO_PC9)
+#define AT91C_PC9_TIOB0 (AT91C_PIO_PC9)
+
+
+
+
+#define AT91C_ID_FIQ ( 0)
+#define AT91C_ID_SYS ( 1)
+#define AT91C_ID_PIOA ( 2)
+#define AT91C_ID_PIOB ( 3)
+#define AT91C_ID_PIOC ( 4)
+#define AT91C_ID_ADC ( 5)
+#define AT91C_ID_US0 ( 6)
+#define AT91C_ID_US1 ( 7)
+#define AT91C_ID_US2 ( 8)
+#define AT91C_ID_MCI ( 9)
+#define AT91C_ID_UDP (10)
+#define AT91C_ID_TWI (11)
+#define AT91C_ID_SPI0 (12)
+#define AT91C_ID_SPI1 (13)
+#define AT91C_ID_SSC0 (14)
+#define AT91C_ID_TC0 (17)
+#define AT91C_ID_TC1 (18)
+#define AT91C_ID_TC2 (19)
+#define AT91C_ID_UHP (20)
+#define AT91C_ID_EMAC (21)
+#define AT91C_ID_ISI (22)
+#define AT91C_ID_US3 (23)
+#define AT91C_ID_US4 (24)
+#define AT91C_ID_US5 (25)
+#define AT91C_ID_TC3 (26)
+#define AT91C_ID_TC4 (27)
+#define AT91C_ID_TC5 (28)
+#define AT91C_ID_IRQ0 (29)
+#define AT91C_ID_IRQ1 (30)
+#define AT91C_ID_IRQ2 (31)
+#define AT91C_ALL_INT (0xFFFE7FFF)
+
+
+
+
+#define AT91C_BASE_SYS (AT91_CAST(AT91PS_SYS) 0xFFFFC000)
+#define AT91C_BASE_EBI (AT91_CAST(AT91PS_EBI) 0xFFFFEA00)
+#define AT91C_BASE_HECC (AT91_CAST(AT91PS_ECC) 0xFFFFE800)
+#define AT91C_BASE_SDRAMC (AT91_CAST(AT91PS_SDRAMC) 0xFFFFEA00)
+#define AT91C_BASE_SMC (AT91_CAST(AT91PS_SMC) 0xFFFFEC00)
+#define AT91C_BASE_MATRIX (AT91_CAST(AT91PS_MATRIX) 0xFFFFEE00)
+#define AT91C_BASE_CCFG (AT91_CAST(AT91PS_CCFG) 0xFFFFEF10)
+#define AT91C_BASE_PDC_DBGU (AT91_CAST(AT91PS_PDC) 0xFFFFF300)
+#define AT91C_BASE_DBGU (AT91_CAST(AT91PS_DBGU) 0xFFFFF200)
+#define AT91C_BASE_AIC (AT91_CAST(AT91PS_AIC) 0xFFFFF000)
+#define AT91C_BASE_PIOA (AT91_CAST(AT91PS_PIO) 0xFFFFF400)
+#define AT91C_BASE_PIOB (AT91_CAST(AT91PS_PIO) 0xFFFFF600)
+#define AT91C_BASE_PIOC (AT91_CAST(AT91PS_PIO) 0xFFFFF800)
+#define AT91C_BASE_CKGR (AT91_CAST(AT91PS_CKGR) 0xFFFFFC20)
+#define AT91C_BASE_PMC (AT91_CAST(AT91PS_PMC) 0xFFFFFC00)
+#define AT91C_BASE_RSTC (AT91_CAST(AT91PS_RSTC) 0xFFFFFD00)
+#define AT91C_BASE_SHDWC (AT91_CAST(AT91PS_SHDWC) 0xFFFFFD10)
+#define AT91C_BASE_RTTC (AT91_CAST(AT91PS_RTTC) 0xFFFFFD20)
+#define AT91C_BASE_PITC (AT91_CAST(AT91PS_PITC) 0xFFFFFD30)
+#define AT91C_BASE_WDTC (AT91_CAST(AT91PS_WDTC) 0xFFFFFD40)
+#define AT91C_BASE_TC0 (AT91_CAST(AT91PS_TC) 0xFFFA0000)
+#define AT91C_BASE_TC1 (AT91_CAST(AT91PS_TC) 0xFFFA0040)
+#define AT91C_BASE_TC2 (AT91_CAST(AT91PS_TC) 0xFFFA0080)
+#define AT91C_BASE_TC3 (AT91_CAST(AT91PS_TC) 0xFFFDC000)
+#define AT91C_BASE_TC4 (AT91_CAST(AT91PS_TC) 0xFFFDC040)
+#define AT91C_BASE_TC5 (AT91_CAST(AT91PS_TC) 0xFFFDC080)
+#define AT91C_BASE_TCB0 (AT91_CAST(AT91PS_TCB) 0xFFFA0000)
+#define AT91C_BASE_TCB1 (AT91_CAST(AT91PS_TCB) 0xFFFDC000)
+#define AT91C_BASE_PDC_MCI (AT91_CAST(AT91PS_PDC) 0xFFFA8100)
+#define AT91C_BASE_MCI (AT91_CAST(AT91PS_MCI) 0xFFFA8000)
+#define AT91C_BASE_PDC_TWI (AT91_CAST(AT91PS_PDC) 0xFFFAC100)
+#define AT91C_BASE_TWI (AT91_CAST(AT91PS_TWI) 0xFFFAC000)
+#define AT91C_BASE_PDC_US0 (AT91_CAST(AT91PS_PDC) 0xFFFB0100)
+#define AT91C_BASE_US0 (AT91_CAST(AT91PS_USART) 0xFFFB0000)
+#define AT91C_BASE_PDC_US1 (AT91_CAST(AT91PS_PDC) 0xFFFB4100)
+#define AT91C_BASE_US1 (AT91_CAST(AT91PS_USART) 0xFFFB4000)
+#define AT91C_BASE_PDC_US2 (AT91_CAST(AT91PS_PDC) 0xFFFB8100)
+#define AT91C_BASE_US2 (AT91_CAST(AT91PS_USART) 0xFFFB8000)
+#define AT91C_BASE_PDC_US3 (AT91_CAST(AT91PS_PDC) 0xFFFD0100)
+#define AT91C_BASE_US3 (AT91_CAST(AT91PS_USART) 0xFFFD0000)
+#define AT91C_BASE_PDC_US4 (AT91_CAST(AT91PS_PDC) 0xFFFD4100)
+#define AT91C_BASE_US4 (AT91_CAST(AT91PS_USART) 0xFFFD4000)
+#define AT91C_BASE_PDC_US5 (AT91_CAST(AT91PS_PDC) 0xFFFD8100)
+#define AT91C_BASE_US5 (AT91_CAST(AT91PS_USART) 0xFFFD8000)
+#define AT91C_BASE_PDC_SSC0 (AT91_CAST(AT91PS_PDC) 0xFFFBC100)
+#define AT91C_BASE_SSC0 (AT91_CAST(AT91PS_SSC) 0xFFFBC000)
+#define AT91C_BASE_PDC_SPI0 (AT91_CAST(AT91PS_PDC) 0xFFFC8100)
+#define AT91C_BASE_SPI0 (AT91_CAST(AT91PS_SPI) 0xFFFC8000)
+#define AT91C_BASE_PDC_SPI1 (AT91_CAST(AT91PS_PDC) 0xFFFCC100)
+#define AT91C_BASE_SPI1 (AT91_CAST(AT91PS_SPI) 0xFFFCC000)
+#define AT91C_BASE_PDC_ADC (AT91_CAST(AT91PS_PDC) 0xFFFE0100)
+#define AT91C_BASE_ADC (AT91_CAST(AT91PS_ADC) 0xFFFE0000)
+#define AT91C_BASE_EMACB (AT91_CAST(AT91PS_EMAC) 0xFFFC4000)
+#define AT91C_BASE_UDP (AT91_CAST(AT91PS_UDP) 0xFFFA4000)
+#define AT91C_BASE_UHP (AT91_CAST(AT91PS_UHP) 0x00500000)
+#define AT91C_BASE_ISI (AT91_CAST(AT91PS_ISI) 0xFFFC0000)
+
+
+
+
+
+#define AT91C_IROM (0x00100000)
+#define AT91C_IROM_SIZE (0x00008000)
+
+#define AT91C_IRAM_1 (0x00200000)
+#define AT91C_IRAM_1_SIZE (0x00001000)
+
+#define AT91C_IRAM_2 (0x00300000)
+#define AT91C_IRAM_2_SIZE (0x00001000)
+
+#define AT91C_IRAM_MIN (0x00300000)
+#define AT91C_IRAM_MIN_SIZE (0x00001000)
+
+#define AT91C_EBI_CS0 (0x10000000)
+#define AT91C_EBI_CS0_SIZE (0x10000000)
+
+#define AT91C_EBI_CS1 (0x20000000)
+#define AT91C_EBI_CS1_SIZE (0x10000000)
+
+#define AT91C_EBI_SDRAM (0x20000000)
+#define AT91C_EBI_SDRAM_SIZE (0x10000000)
+
+#define AT91C_EBI_SDRAM_16BIT (0x20000000)
+#define AT91C_EBI_SDRAM_16BIT_SIZE (0x02000000)
+
+#define AT91C_EBI_SDRAM_32BIT (0x20000000)
+#define AT91C_EBI_SDRAM_32BIT_SIZE (0x04000000)
+
+#define AT91C_EBI_CS2 (0x30000000)
+#define AT91C_EBI_CS2_SIZE (0x10000000)
+
+#define AT91C_EBI_CS3 (0x40000000)
+#define AT91C_EBI_CS3_SIZE (0x10000000)
+
+#define AT91C_EBI_SM (0x40000000)
+#define AT91C_EBI_SM_SIZE (0x10000000)
+
+#define AT91C_EBI_CS4 (0x50000000)
+#define AT91C_EBI_CS4_SIZE (0x10000000)
+
+#define AT91C_EBI_CF0 (0x50000000)
+#define AT91C_EBI_CF0_SIZE (0x10000000)
+
+#define AT91C_EBI_CS5 (0x60000000)
+#define AT91C_EBI_CS5_SIZE (0x10000000)
+
+#define AT91C_EBI_CF1 (0x60000000)
+#define AT91C_EBI_CF1_SIZE (0x10000000)
+
+#define AT91C_EBI_CS6 (0x70000000)
+#define AT91C_EBI_CS6_SIZE (0x10000000)
+
+#define AT91C_EBI_CS7 (0x80000000)
+#define AT91C_EBI_CS7_SIZE (0x10000000)
+# 70 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h" 2
+# 86 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h"
+#define BOARD_NAME "AT91SAM9260-EK"
+
+#define at91sam9260ek 
+# 101 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h"
+#define BOARD_MAINOSC 18432000
+
+
+#define BOARD_MCK ((18432000 * 97 / 9) / 2)
+
+
+
+
+
+
+#define ADC_MAX_CK_10BIT 5000000
+
+#define ADC_STARTUP_TIME_MAX 15
+
+#define ADC_TRACK_HOLD_TIME_MIN 1200
+# 125 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h"
+#define BOARD_USB_BMATTRIBUTES USBConfigurationDescriptor_SELFPOWERED_NORWAKEUP
+# 190 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h"
+#define PIN_PCK0 {1 << 1, AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_PERIPH_B, PIO_DEFAULT}
+
+
+#define PINS_DBGU {(1<<14) | (1<<15), AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_DEFAULT}
+
+
+
+#define PIN_LED_0 {1 << 30, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_OUTPUT_0, PIO_DEFAULT}
+
+
+#define PIN_LED_1 {1 << 31, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_OUTPUT_1, PIO_DEFAULT}
+
+#define PINS_LEDS PIN_LED_0, PIN_LED_1
+
+#define LED_POWER 0
+
+#define LED_DS1 1
+
+
+#define PIN_PUSHBUTTON_1 {1 << 30, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_INPUT, PIO_PULLUP}
+
+#define PIN_PUSHBUTTON_2 {1 << 31, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_INPUT, PIO_PULLUP}
+
+#define PINS_PUSHBUTTONS PIN_PUSHBUTTON_1, PIN_PUSHBUTTON_2
+
+#define PUSHBUTTON_BP1 0
+
+#define PUSHBUTTON_BP2 1
+
+#define JOYSTICK_LEFT 0
+
+#define JOYSTICK_RIGHT 1
+
+
+#define PIN_USART0_TXD {1 << 4, AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_DEFAULT}
+
+#define PIN_USART0_RXD {1 << 5, AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_DEFAULT}
+
+#define PIN_USART0_RTS {1 << 26, AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_DEFAULT}
+
+#define PIN_USART0_CTS {1 << 27, AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_DEFAULT}
+
+#define PIN_USART0_SCK {1 << 31, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_A, PIO_DEFAULT}
+
+
+#define PIN_SPI0_MISO {1 << 0, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_A, PIO_PULLUP}
+
+#define PIN_SPI0_MOSI {1 << 1, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_A, PIO_PULLUP}
+
+#define PIN_SPI0_SPCK {1 << 2, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_A, PIO_PULLUP}
+
+#define PINS_SPI0 PIN_SPI0_MISO, PIN_SPI0_MOSI, PIN_SPI0_SPCK
+
+#define PIN_SPI0_NPCS0 {AT91C_PA3_SPI0_NPCS0, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_A, PIO_PULLUP}
+
+#define PIN_SPI0_NPCS1 {AT91C_PC11_SPI0_NPCS1, AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_PERIPH_B, PIO_PULLUP}
+
+
+#define PIN_SPI1_MISO {1 << 0, AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_PULLUP}
+
+#define PIN_SPI1_MOSI {1 << 1, AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_DEFAULT}
+
+#define PIN_SPI1_SPCK {1 << 2, AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_DEFAULT}
+
+#define PINS_SPI1 PIN_SPI1_MISO, PIN_SPI1_MOSI, PIN_SPI1_SPCK
+
+#define PIN_SPI1_NPCS0 {1 << 3, AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_DEFAULT}
+
+
+#define PINS_SSC_TX { (1 << 16) | (1 << 17) | (1 << 18), AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_DEFAULT}
+
+
+
+#define PIN_USB_VBUS {1 << 5, AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_INPUT, PIO_DEFAULT}
+
+
+#define PINS_MCI {0x0000003B, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_B, PIO_PULLUP}, {1 << 8, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_A, PIO_DEFAULT}
+
+
+
+
+#define PIN_ADC_ADC0 {1 << 0, AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_INPUT, PIO_DEFAULT}
+
+#define PIN_ADC_ADC1 {1 << 1, AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_INPUT, PIO_DEFAULT}
+
+#define PIN_ADC_ADC2 {1 << 2, AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_INPUT, PIO_DEFAULT}
+
+#define PIN_ADC_ADC3 {1 << 3, AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_INPUT, PIO_DEFAULT}
+
+#define PINS_ADC PIN_ADC_ADC0, PIN_ADC_ADC1, PIN_ADC_ADC2, PIN_ADC_ADC3
+
+
+#define PINS_TWI {0x01800000, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_A, PIO_DEFAULT}
+# 359 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h"
+#define BOARD_AT45_A_SPI_BASE AT91C_BASE_SPI0
+
+#define BOARD_AT45_A_SPI_ID AT91C_ID_SPI0
+
+#define BOARD_AT45_A_SPI_PINS PINS_SPI0
+
+#define BOARD_AT45_A_SPI 0
+
+#define BOARD_AT45_A_NPCS 0
+
+#define BOARD_AT45_A_NPCS_PIN PIN_SPI0_NPCS0
+
+
+#define BOARD_AT45_B_SPI_BASE AT91C_BASE_SPI0
+
+#define BOARD_AT45_B_SPI_ID AT91C_ID_SPI0
+
+#define BOARD_AT45_B_SPI_PINS PINS_SPI0
+
+#define BOARD_AT45_B_SPI 0
+
+#define BOARD_AT45_B_NPCS 1
+
+#define BOARD_AT45_B_NPCS_PIN PIN_SPI0_NPCS1
+
+
+#define BOARD_AT26_A_SPI_BASE AT91C_BASE_SPI0
+
+#define BOARD_AT26_A_SPI_ID AT91C_ID_SPI0
+
+#define BOARD_AT26_A_SPI_PINS PINS_SPI0
+
+#define BOARD_AT26_A_SPI 0
+
+#define BOARD_AT26_A_NPCS 0
+
+#define BOARD_AT26_A_NPCS_PIN PIN_SPI0_NPCS0
+
+
+#define BOARD_AT45_SSC_BASE AT91C_BASE_SSC0
+
+#define BOARD_AT45_SSC_ID AT91C_ID_SSC0
+
+#define BOARD_AT45_SSC_PIN PIN_SSC0
+
+#define BOARD_AT45_NPCS 0
+
+#define BOARD_SD_MCI_BASE AT91C_BASE_MCI
+
+#define BOARD_SD_MCI_ID AT91C_ID_MCI
+
+#define BOARD_SD_PINS PINS_MCI
+
+#define BOARD_SD_SLOT MCI_SD_SLOTB
+
+
+#define BOARD_SD_SPI_BASE AT91C_BASE_SPI0
+
+#define BOARD_SD_SPI_ID AT91C_ID_SPI0
+
+#define BOARD_SD_SPI_PINS PINS_SPI0, PIN_SPI0_NPCS0
+
+#define BOARD_SD_NPCS 0
+
+
+
+#define BOARD_AT73C213_SPI AT91C_BASE_SPI1
+
+#define BOARD_AT73C213_SPI_ID AT91C_ID_SPI1
+
+#define BOARD_AT73C213_SPI_NPCS 0
+
+#define BOARD_AT73C213_SPI_PINS PINS_SPI1, PIN_SPI1_NPCS0
+
+#define BOARD_AT73C213_SSC AT91C_BASE_SSC0
+
+#define BOARD_AT73C213_SSC_ID AT91C_ID_SSC0
+
+#define BOARD_AT73C213_SSC_PINS PINS_SSC_TX
+
+#define BOARD_AT73C213_MCK PIN_PCK0
+
+
+#define BOARD_EMAC_PHY_ADDR 0
+
+#define BOARD_EMAC_PHY_COMP_DM9161 1
+
+#define BOARD_EMAC_POWER_ALWAYS_ON 
+
+#define BOARD_EMAC_MODE_RMII 1
+
+#define BOARD_EMAC_PINS { (1<<19)|(1<<13)|(1<<12)|(1<<16)|(1<<15)|(1<<14) |(1<<17)|(1<<18)|(1<<20)|(1<<21)|(1<<7), AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_A, PIO_DEFAULT}, { (1<<11)|(1<<10)|(1<<26)|(1<<25)|(1<<27)|(1<<22) |(1<<29)|(1<<28), AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_B, PIO_DEFAULT}
+
+
+
+
+
+
+#define BOARD_EMAC_PIN_TEST {(1<<17), AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_OUTPUT_0, PIO_DEFAULT}
+#define BOARD_EMAC_PIN_RMII {(1<<29), AT91C_BASE_PIOA, AT91C_ID_PIOB, PIO_OUTPUT_1, PIO_DEFAULT}
+
+
+
+#define BOARD_EMAC_PINS_PHYAD {(1<<14)|(1<<15), AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_OUTPUT_1, PIO_DEFAULT}, {(1<<26)|(1<<25)|(1<<28), AT91C_BASE_PIOA, AT91C_ID_PIOB, PIO_OUTPUT_0, PIO_DEFAULT}
+
+
+
+#define BOARD_EMAC_PIN_10BT {(1<<27), AT91C_BASE_PIOA, AT91C_ID_PIOB, PIO_OUTPUT_0, PIO_DEFAULT}
+#define BOARD_EMAC_PIN_RPTR {(1<<18), AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_OUTPUT_0, PIO_DEFAULT}
+
+#define BOARD_EMAC_RST_PINS BOARD_EMAC_PINS_PHYAD, BOARD_EMAC_PIN_TEST, BOARD_EMAC_PIN_RMII, BOARD_EMAC_PIN_10BT, BOARD_EMAC_PIN_RPTR
+
+
+
+#define BOARD_EMAC_RUN_PINS BOARD_EMAC_PINS
+
+
+
+#define BOARD_CAPTOR_OV9650 
+#define BOARD_ISI_PIO_CTRL1 {(1<<4), AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_OUTPUT_0, PIO_DEFAULT}
+#define BOARD_ISI_PIO_CTRL2 {(1<<19), AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_OUTPUT_0, PIO_DEFAULT}
+#define BOARD_ISI_TWCK {(1<<24), AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_A, PIO_DEFAULT}
+#define BOARD_ISI_TWD {(1<<23), AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_PERIPH_A, PIO_DEFAULT}
+
+#define BOARD_ISI_MCK {(1<<31), AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_A, PIO_DEFAULT}
+#define BOARD_ISI_VSYNC {(1<<29), AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_B, PIO_DEFAULT}
+#define BOARD_ISI_HSYNC {(1<<30), AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_B, PIO_DEFAULT}
+#define BOARD_ISI_PCK {(1<<28), AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_B, PIO_DEFAULT}
+#define BOARD_ISI_PINS_DATA {(1<<20)|(1<<21)|(1<<22)|(1<<23)|(1<<24)|(1<<25)|(1<<26)|(1<<27)| (1<<10)|(1<<11)|(1<<12)|(1<<13), AT91C_BASE_PIOB, AT91C_ID_PIOB, PIO_PERIPH_B, PIO_DEFAULT}
+# 516 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h"
+#define BOARD_SDRAM_SIZE (64*1024*1024)
+
+#define PINS_SDRAM {0xFFFF0000, AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_PERIPH_A, PIO_DEFAULT}
+
+#define BOARD_SDRAM_BUSWIDTH 32
+
+
+#define PINS_NANDFLASH BOARD_NF_CE_PIN, BOARD_NF_RB_PIN
+
+#define BOARD_NF_CE_PIN {1 << 14, AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_OUTPUT_1, PIO_DEFAULT}
+
+#define BOARD_NF_RB_PIN {1 << 13, AT91C_BASE_PIOC, AT91C_ID_PIOC, PIO_INPUT, PIO_PULLUP}
+
+#define BOARD_NF_COMMAND_ADDR 0x40400000
+
+#define BOARD_NF_ADDRESS_ADDR 0x40200000
+
+#define BOARD_NF_DATA_ADDR 0x40000000
+
+
+#define BOARD_NORFLASH_ADDR 0x10000000
+
+#define BOARD_NORFLASH_DFT_BUS_SIZE 16
+# 552 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h"
+#define PIN_SMARTCARD_CONNECT {1 << 5, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_INPUT, PIO_DEFAULT}
+
+#define PIN_ISO7816_RSTMC {1 << 7, AT91C_BASE_PIOA, AT91C_ID_PIOA, PIO_OUTPUT_0, PIO_DEFAULT}
+
+#define PINS_ISO7816 PIN_USART0_TXD, PIN_USART0_SCK, PIN_ISO7816_RSTMC
+# 565 "../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9260-ek/board.h"
+#define BOARD_ID_TWI_EEPROM AT91C_ID_TWI
+#define BOARD_BASE_TWI_EEPROM AT91C_BASE_TWI
+#define BOARD_PINS_TWI_EEPROM PINS_TWI
+
+
+#define BOARD_PIN_USART_RXD PIN_USART0_RXD
+#define BOARD_PIN_USART_TXD PIN_USART0_TXD
+#define BOARD_PIN_USART_CTS PIN_USART0_CTS
+#define BOARD_PIN_USART_RTS PIN_USART0_RTS
+#define BOARD_USART_BASE AT91C_BASE_US0
+#define BOARD_ID_USART AT91C_ID_US0
+# 35 "at91sam9260_boot.x" 2
+
+
+
+
+
+#define IRQ_STACK_SIZE 8*3*4
+
+#define ARM_MODE_ABT 0x17
+#define ARM_MODE_FIQ 0x11
+#define ARM_MODE_IRQ 0x12
+#define ARM_MODE_SVC 0x13
+
+#define I_BIT 0x80
+#define F_BIT 0x40
+
+
+
+
+
+            .align 4
+            .arm
+
+            .extern vPortYieldProcessor
+
+
+
+            .section .vectors, "a", %progbits
+
+resetVector:
+        ldr pc, =resetHandler
+undefVector:
+        b undefVector
+swiVector:
+        ldr pc, swiHandler
+prefetchAbortVector:
+        b prefetchAbortVector
+dataAbortVector:
+        b dataAbortVector
+reservedVector:
+        b reservedVector
+irqVector:
+        ldr pc, [pc, #-0xF20]
+fiqVector:
+
+
+
+
+
+fiqHandler:
+        b fiqHandler
+# 124 "at91sam9260_boot.x"
+swiHandler:
+        .word vPortYieldProcessor
+
+
+
+
+            .section .text
+            .global entry
+
+entry:
+resetHandler:
+
+
+        ldr r0, =resetVector
+
+
+     ldr pc, =1f
+
+
+1:
+        ldr r0, =_efixed
+        ldr r1, =_sprerelocate
+        ldr r2, =_eprerelocate
+1:
+        cmp r1, r2
+        ldrcc r3, [r0], #4
+        strcc r3, [r1], #4
+        bcc 1b
+
+
+        ldr sp, =_sstack
+        stmfd sp!, {r0}
+     ldr r0, =LowLevelInit
+        blx r0
+
+
+
+        ldmfd sp!, {r0}
+        ldr r1, =_spostrelocate
+        ldr r2, =_epostrelocate
+1:
+        cmp r1, r2
+        ldrcc r3, [r0], #4
+        strcc r3, [r1], #4
+        bcc 1b
+
+
+     ldr r0, =_szero
+        ldr r1, =_ezero
+        mov r2, #0
+1:
+        cmp r0, r1
+        strcc r2, [r0], #4
+        bcc 1b
+
+
+
+
+        msr CPSR_c, #0x12 | 0x80 | 0x40
+        ldr sp, =_sstack
+        sub r4, sp, #8*3*4
+
+
+        msr CPSR_c, #0x13 | 0x40
+        mov sp, r4
+
+
+
+        ldr r0, =main
+        blx r0
+
+
+1:
+        b 1b

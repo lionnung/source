@@ -1,0 +1,1102 @@
+Archive member included because of file (symbol)
+
+c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_udivsi3.o)
+                              dlmalloc.o (__aeabi_uidiv)
+c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_dvmd_tls.o)
+                              c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_addsubdf3.o)
+                              main.o (__aeabi_dsub)
+c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_muldivdf3.o)
+                              main.o (__aeabi_dmul)
+c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_cmpdf2.o)
+                              main.o (__aeabi_dcmpgt)
+c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memcpy.o)
+                              dlmalloc.o (memcpy)
+c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memset.o)
+                              dlmalloc.o (memset)
+c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strcpy.o)
+                              driver/motor.o (strcpy)
+c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strncpy.o)
+                              ../../Source/tasks.o (strncpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+finish              0x4               driver/controlISR.o
+xQueueRegistry      0x50              ../../Source/queue.o
+ribbon              0x1f40            driver/controlISR.o
+motor               0x50              driver/motor.o
+dummy               0x4               driver/control.o
+gap                 0x1f40            driver/controlISR.o
+ccc                 0x4               driver/controlISR.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sram0            0x00200000         0x00004000         w !xr
+sram1            0x00300000         0x00004000         w !xr
+sdram            0x20000000         0x00200000         w !xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+LOAD ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+LOAD serial/serialISR.o
+LOAD driver/controlISR.o
+LOAD main.o
+LOAD dlmalloc.o
+LOAD libc_stubs.o
+LOAD serial/serial.o
+LOAD driver/motor.o
+LOAD driver/tph.o
+LOAD driver/io.o
+LOAD driver/control.o
+LOAD ../../Source/list.o
+LOAD ../../Source/queue.o
+LOAD ../../Source/tasks.o
+LOAD ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+LOAD ../../Source/portable/MemMang/heap_3.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+LOAD ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+START GROUP
+LOAD c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a
+LOAD c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a
+END GROUP
+
+.fixed          0x20000000     0x95c0
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sfixed = .
+ *(.text*)
+ .text          0x20000000       0xc0 C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+                0x20000000                entry
+ .text          0x200000c0      0x2a4 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+                0x200000c0                vPortISRStartFirstTask
+                0x2000011c                vPortYieldProcessor
+                0x200001c8                vPreemptiveTick
+                0x2000028c                vPortDisableInterruptsFromThumb
+                0x200002a4                vPortEnableInterruptsFromThumb
+                0x200002bc                vPortEnterCritical
+                0x200002fc                vPortExitCritical
+ .text          0x20000364      0x244 serial/serialISR.o
+                0x20000364                vSerialISRCreateQueues
+                0x200003e4                vUART_ISR_Wrapper
+                0x2000048c                vUART_ISR_Handler
+ .text          0x200005a8      0x438 driver/controlISR.o
+                0x200005a8                vMotor_Timer_ISR
+                0x200008ac                vHeating_Timer_ISR
+                0x20000954                vImage_ISR
+ .text          0x200009e0      0x358 main.o
+                0x200009e0                main
+ .text          0x20000d38     0x16b0 dlmalloc.o
+                0x20000d38                sbrk
+                0x20000d9c                mem_malloc_init
+                0x20000fec                malloc
+                0x200015d0                free
+                0x200018b8                realloc
+                0x20001f7c                memalign
+                0x200020c4                valloc
+                0x200020e4                pvalloc
+                0x20002114                calloc
+                0x20002224                cfree
+                0x2000223c                malloc_trim
+                0x2000231c                malloc_usable_size
+                0x20002378                mallopt
+ .text          0x200023e8       0xa0 libc_stubs.o
+                0x200023e8                _sbrk
+                0x200023fc                _write
+                0x20002414                _close
+                0x20002428                _fstat
+                0x20002444                _isatty
+                0x20002458                _lseek
+                0x20002470                _read
+ .text          0x20002488      0x16c serial/serial.o
+                0x20002488                xSerialPortInitMinimal
+                0x20002524                xSerialGetChar
+                0x2000255c                vSerialPutString
+                0x20002598                xSerialPutChar
+                0x200025e4                vSerialClose
+ .text          0x200025f4      0x360 driver/motor.o
+ .text          0x20002954      0x53c driver/tph.o
+ .text          0x20002e90      0x1d0 driver/io.o
+ .text          0x20003060      0x200 driver/control.o
+                0x20003060                print_init
+                0x200031ac                start_print
+ .text          0x20003260      0x154 ../../Source/list.o
+                0x20003260                vListInitialise
+                0x2000329c                vListInitialiseItem
+                0x200032b0                vListInsertEnd
+                0x200032fc                vListInsert
+                0x20003368                vListRemove
+ .text          0x200033b4      0xc2c ../../Source/queue.o
+                0x200033b4                xQueueCreate
+                0x200034a4                xQueueCreateMutex
+                0x20003550                xQueueGiveMutexRecursive
+                0x200035c8                xQueueTakeMutexRecursive
+                0x20003650                xQueueCreateCountingSemaphore
+                0x200036ac                xQueueGenericSend
+                0x20003818                xQueueGenericSendFromISR
+                0x2000390c                xQueueGenericReceive
+                0x20003ad8                xQueueReceiveFromISR
+                0x20003bcc                uxQueueMessagesWaiting
+                0x20003c1c                uxQueueMessagesWaitingFromISR
+                0x20003c64                vQueueDelete
+                0x20003e84                xQueueIsQueueEmptyFromISR
+                0x20003efc                xQueueIsQueueFullFromISR
+                0x20003f50                vQueueAddToRegistry
+ .text          0x20003fe0     0x1354 ../../Source/tasks.o
+                0x20003fe0                xTaskGenericCreate
+                0x200041e4                vTaskDelete
+                0x2000427c                vTaskDelayUntil
+                0x20004368                vTaskDelay
+                0x200043bc                uxTaskPriorityGet
+                0x200043f0                vTaskPrioritySet
+                0x2000451c                vTaskSuspend
+                0x200045b4                xTaskIsTaskSuspended
+                0x20004628                vTaskResume
+                0x200046e8                xTaskResumeFromISR
+                0x200047bc                vTaskStartScheduler
+                0x20004848                vTaskEndScheduler
+                0x20004864                vTaskSuspendAll
+                0x2000487c                xTaskResumeAll
+                0x200049a4                xTaskGetTickCount
+                0x200049c8                xTaskGetTickCountFromISR
+                0x200049e8                uxTaskGetNumberOfTasks
+                0x200049fc                vTaskIncrementTick
+                0x20004b5c                vTaskSwitchContext
+                0x20004c24                vTaskPlaceOnEventList
+                0x20004cb8                xTaskRemoveFromEventList
+                0x20004d8c                vTaskSetTimeOutState
+                0x20004de4                xTaskCheckForTimeOut
+                0x20004ec0                vTaskMissedYield
+                0x2000516c                uxTaskGetStackHighWaterMark
+                0x200051c4                xTaskGetCurrentTaskHandle
+                0x200051e0                vTaskPriorityInherit
+                0x200052b8                vTaskPriorityDisinherit
+ .text          0x20005334      0x184 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+                0x20005334                pxPortInitialiseStack
+                0x20005460                xPortStartScheduler
+                0x20005474                vPortEndScheduler
+ .text          0x200054b8       0x4c ../../Source/portable/MemMang/heap_3.o
+                0x200054b8                pvPortMalloc
+                0x200054e0                vPortFree
+ .text          0x20005504      0x170 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+                0x20005504                defaultSpuriousHandler
+                0x2000550c                defaultFiqHandler
+                0x20005514                defaultIrqHandler
+                0x2000551c                LowLevelInit
+ .text          0x20005674      0x4f8 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+                0x20005674                BOARD_RemapRom
+                0x2000568c                BOARD_RemapRam
+                0x200056a4                BOARD_ConfigureSdram
+                0x20005810                BOARD_ConfigureSdram48MHz
+                0x2000597c                BOARD_ConfigureNandFlash
+                0x200059fc                BOARD_ConfigureNandFlash48MHz
+                0x20005a74                BOARD_ConfigureNorFlash
+                0x20005af0                BOARD_ConfigureNorFlash48MHz
+ .text          0x20005b6c      0x308 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+                0x20005b6c                ADC_Initialize
+                0x20005d88                ADC_GetConvertedData
+                0x20005df4                ADC_IsInterruptMasked
+                0x20005e10                ADC_IsStatusSet
+                0x20005e2c                ADC_IsChannelInterruptStatusSet
+ .text          0x20005e74       0xa4 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+                0x20005e74                IRQ_ConfigureIT
+                0x20005ec8                IRQ_EnableIT
+                0x20005ef0                IRQ_DisableIT
+ .text          0x20005f18      0x2e4 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+                0x20006060                PIO_Configure
+                0x20006160                PIO_Set
+                0x20006178                PIO_Clear
+                0x20006190                PIO_Get
+                0x200061d4                PIO_GetOutputDataStatus
+ .text          0x200061fc      0x104 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+                0x200061fc                PIT_Init
+                0x20006238                PIT_SetPIV
+                0x2000625c                PIT_Enable
+                0x20006278                PIT_EnableIT
+                0x20006294                PIT_DisableIT
+                0x200062b0                PIT_GetMode
+                0x200062c4                PIT_GetStatus
+                0x200062d8                PIT_GetPIIR
+                0x200062ec                PIT_GetPIVR
+ .text          0x20006300      0x1cc ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+                0x20006300                PMC_DisableProcessorClock
+                0x20006320                PMC_EnablePeripheral
+                0x2000639c                PMC_DisablePeripheral
+                0x20006418                PMC_EnableAllPeripherals
+                0x2000644c                PMC_DisableAllPeripherals
+                0x2000647c                PMC_IsAllPeriphEnabled
+                0x2000649c                PMC_IsPeriphEnabled
+                0x200064c0                PMC_CPUInIdleMode
+ .text          0x200064cc      0x1f4 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+                0x200064cc                SPI_Enable
+                0x200064e0                SPI_Disable
+                0x200064f4                SPI_Configure
+                0x20006530                SPI_ConfigureNPCS
+                0x20006550                SPI_Write
+                0x200065a0                SPI_WriteBuffer
+                0x2000660c                SPI_IsFinished
+                0x20006630                SPI_Read
+                0x20006658                SPI_ReadBuffer
+ .text          0x200066c0       0xfc ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+                0x200066c0                TC_Configure
+                0x200066e8                TC_Start
+                0x200066fc                TC_Stop
+                0x20006710                TC_FindMckDivisor
+ .text          0x200067bc      0x340 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+                0x200067bc                USART_Configure
+                0x20006804                USART_SetTransmitterEnabled
+                0x20006830                USART_SetReceiverEnabled
+                0x2000685c                USART_Write
+                0x200068c4                USART_WriteBuffer
+                0x2000693c                USART_Read
+                0x20006998                USART_ReadBuffer
+                0x20006a0c                USART_IsDataAvailable
+                0x20006a34                USART_SetIrdaFilter
+                0x20006a80                USART_PutChar
+                0x20006abc                USART_IsRxReady
+                0x20006ad4                USART_GetChar
+ .text          0x20006afc      0x194 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+                0x20006afc                LED_Configure
+                0x20006b3c                LED_Set
+                0x20006bac                LED_Clear
+                0x20006c1c                LED_Toggle
+ .text          0x20006c90      0x6f8 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+                0x20006c90                PutChar
+                0x20006cb0                PutString
+                0x20006cec                PutUnsignedInt
+                0x20006d94                PutSignedInt
+                0x20006ea0                PutHexa
+                0x20006f9c                vsnprintf
+                0x200071d8                snprintf
+                0x2000720c                vsprintf
+                0x20007230                vfprintf
+                0x2000729c                vprintf
+                0x200072c8                fprintf
+                0x200072fc                printf
+                0x2000732c                sprintf
+                0x20007360                puts
+ .text          0x20007388      0x4e0 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+                0x20007388                fputc
+                0x200073d4                fputs
+                0x20007420                putchar
+                0x20007484                TRACE_DumpFrame
+                0x200074cc                TRACE_DumpMemory
+                0x20007644                TRACE_GetInteger
+                0x2000771c                TRACE_GetIntegerMinMax
+                0x20007784                TRACE_GetHexa32
+ .text          0x20007868      0x11c c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_udivsi3.o)
+                0x20007868                __aeabi_uidiv
+                0x20007868                __udivsi3
+                0x20007964                __aeabi_uidivmod
+ .text          0x20007984        0x4 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_dvmd_tls.o)
+                0x20007984                __aeabi_idiv0
+                0x20007984                __aeabi_ldiv0
+ .text          0x20007988      0x41c c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_addsubdf3.o)
+                0x20007988                __aeabi_drsub
+                0x20007990                __aeabi_dsub
+                0x20007990                __subdf3
+                0x20007994                __aeabi_dadd
+                0x20007994                __adddf3
+                0x20007ca4                __floatunsidf
+                0x20007ca4                __aeabi_ui2d
+                0x20007cc8                __floatsidf
+                0x20007cc8                __aeabi_i2d
+                0x20007cf0                __aeabi_f2d
+                0x20007cf0                __extendsfdf2
+                0x20007d30                __floatundidf
+                0x20007d30                __aeabi_ul2d
+                0x20007d44                __floatdidf
+                0x20007d44                __aeabi_l2d
+ .text          0x20007da4      0x49c c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_muldivdf3.o)
+                0x20007da4                __aeabi_dmul
+                0x20007da4                __muldf3
+                0x20008034                __divdf3
+                0x20008034                __aeabi_ddiv
+ .text          0x20008240      0x144 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_cmpdf2.o)
+                0x20008240                __gtdf2
+                0x20008240                __gedf2
+                0x20008248                __ltdf2
+                0x20008248                __ledf2
+                0x20008250                __nedf2
+                0x20008250                __eqdf2
+                0x20008250                __cmpdf2
+                0x200082d8                __aeabi_cdrcmple
+                0x200082f4                __aeabi_cdcmpeq
+                0x200082f4                __aeabi_cdcmple
+                0x2000830c                __aeabi_dcmpeq
+                0x20008324                __aeabi_dcmplt
+                0x2000833c                __aeabi_dcmple
+                0x20008354                __aeabi_dcmpge
+                0x2000836c                __aeabi_dcmpgt
+ .text          0x20008384       0xfc c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memcpy.o)
+                0x20008384                memcpy
+ .text          0x20008480       0x8c c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memset.o)
+                0x20008480                memset
+ .text          0x2000850c       0x10 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strcpy.o)
+                0x2000850c                strcpy
+ .text          0x2000851c       0x6c c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strncpy.o)
+                0x2000851c                strncpy
+ .text.stub     0x20008588        0x8 linker stubs
+ *(.rodata*)
+ .rodata        0x20008590       0x30 main.o
+ .rodata        0x200085c0       0x78 driver/motor.o
+ .rodata        0x20008638       0x6c driver/tph.o
+ .rodata        0x200086a4       0x4c driver/io.o
+ .rodata        0x200086f0       0x20 driver/control.o
+ .rodata        0x20008710       0x48 ../../Source/queue.o
+ .rodata        0x20008758       0x50 ../../Source/tasks.o
+ .rodata        0x200087a8       0x18 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .rodata        0x200087c0      0x104 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .rodata        0x200088c4       0x14 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .rodata        0x200088d8      0x140 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .rodata        0x20008a18       0x14 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .rodata        0x20008a2c       0xb8 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .rodata        0x20008ae4       0x1c ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .rodata        0x20008b00       0xa8 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .rodata        0x20008ba8       0xdc ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.data)
+ .data          0x20008c84        0x0 C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+ .data          0x20008c84        0x4 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+                0x20008c84                ulCriticalNesting
+ .data          0x20008c88        0x0 serial/serialISR.o
+ .data          0x20008c88        0x0 driver/controlISR.o
+ .data          0x20008c88        0x0 main.o
+ .data          0x20008c88      0x414 dlmalloc.o
+ .data          0x2000909c        0x0 libc_stubs.o
+ .data          0x2000909c        0x0 serial/serial.o
+ .data          0x2000909c       0x40 driver/motor.o
+                0x2000909c                motor_timer
+                0x200090b8                m63877_ops
+ .data          0x200090dc       0x90 driver/tph.o
+                0x200090dc                strobe1_timer
+                0x200090f8                strobe2_timer
+                0x20009114                tph
+ .data          0x2000916c       0x1c driver/io.o
+                0x2000916c                adc
+ .data          0x20009188        0x0 driver/control.o
+ .data          0x20009188        0x0 ../../Source/list.o
+ .data          0x20009188        0x0 ../../Source/queue.o
+ .data          0x20009188        0x4 ../../Source/tasks.o
+ .data          0x2000918c        0x0 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .data          0x2000918c        0x0 ../../Source/portable/MemMang/heap_3.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .data          0x2000918c        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ *fill*         0x2000918c        0x4 00
+ .data          0x20009190      0x430 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+                0x20009190                r
+                0x200095b8                _impure_ptr
+ .data          0x200095c0        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+ .data          0x200095c0        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_udivsi3.o)
+ .data          0x200095c0        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_dvmd_tls.o)
+ .data          0x200095c0        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_addsubdf3.o)
+ .data          0x200095c0        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_muldivdf3.o)
+ .data          0x200095c0        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_cmpdf2.o)
+ .data          0x200095c0        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memcpy.o)
+ .data          0x200095c0        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memset.o)
+ .data          0x200095c0        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strcpy.o)
+ .data          0x200095c0        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strncpy.o)
+ *(.CP15_*)
+                0x200095c0                . = ALIGN (0x4)
+                0x200095c0                _efixed = .
+
+.vfp11_veneer   0x200095c0        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x200095c0        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.prerelocate    0x00300000        0x0 load address 0x200095c0
+                0x00300000                . = ALIGN (0x4)
+                0x00300000                _sprerelocate = .
+                0x00300000                . = ALIGN (0x4)
+                0x00300000                _eprerelocate = .
+
+.postrelocate   0x00200000       0x28 load address 0x200095c0
+                0x00200000                . = ALIGN (0x4)
+                0x00200000                _spostrelocate = .
+ *(.vectors)
+ .vectors       0x00200000       0x28 C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+ *(.ramfunc)
+                0x00200028                . = ALIGN (0x4)
+                0x00200028                _epostrelocate = .
+
+.bss            0x200095c0     0x40d4
+                0x200095c0                _szero = .
+ *(.bss)
+ .bss           0x200095c0        0x0 C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+ .bss           0x200095c0        0x0 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .bss           0x200095c0        0x8 serial/serialISR.o
+ .bss           0x200095c8       0x10 driver/controlISR.o
+ .bss           0x200095d8        0x4 main.o
+ .bss           0x200095dc       0x48 dlmalloc.o
+                0x200095dc                mem_malloc_start
+                0x200095e0                mem_malloc_end
+                0x200095e4                mem_malloc_brk
+ .bss           0x20009624        0x0 libc_stubs.o
+ .bss           0x20009624        0x8 serial/serial.o
+ .bss           0x2000962c        0x0 driver/motor.o
+ .bss           0x2000962c        0x0 driver/tph.o
+ .bss           0x2000962c        0x0 driver/io.o
+ .bss           0x2000962c        0x0 driver/control.o
+ .bss           0x2000962c        0x0 ../../Source/list.o
+ .bss           0x2000962c        0x0 ../../Source/queue.o
+ .bss           0x2000962c      0x13c ../../Source/tasks.o
+                0x2000962c                pxCurrentTCB
+ .bss           0x20009768        0x0 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .bss           0x20009768        0x0 ../../Source/portable/MemMang/heap_3.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .bss           0x20009768        0x0 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+ .bss           0x20009768        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_udivsi3.o)
+ .bss           0x20009768        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_dvmd_tls.o)
+ .bss           0x20009768        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x20009768        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x20009768        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x20009768        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memcpy.o)
+ .bss           0x20009768        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memset.o)
+ .bss           0x20009768        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strcpy.o)
+ .bss           0x20009768        0x0 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strncpy.o)
+ *(.common)
+ *(COMMON)
+ COMMON         0x20009768     0x3e88 driver/controlISR.o
+                0x20009768                finish
+                0x2000976c                ribbon
+                0x2000b6ac                gap
+                0x2000d5ec                ccc
+ COMMON         0x2000d5f0       0x50 driver/motor.o
+                0x2000d5f0                motor
+ COMMON         0x2000d640        0x4 driver/control.o
+                0x2000d640                dummy
+ COMMON         0x2000d644       0x50 ../../Source/queue.o
+                0x2000d644                xQueueRegistry
+                0x2000d694                . = ALIGN (0x4)
+                0x2000d694                _ezero = .
+                0x201ffffc                . = 0x201ffffc
+                0x201ffffc                _sstack = .
+                0x20200000                . = (ALIGN (0x4) + 0x4)
+                0x20200000                _sheap = .
+                0x202ffffc                _eheap = ((. + 0x100000) - 0x4)
+                0x202ffffc                . = _eheap
+                0x20300000                . = (ALIGN (0x4) + 0x4)
+                0x20300000                end = .
+OUTPUT(RTOSDemo.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x30
+ .ARM.attributes
+                0x00000000       0x24 C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+ .ARM.attributes
+                0x00000024       0x34 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .ARM.attributes
+                0x00000058       0x34 serial/serialISR.o
+ .ARM.attributes
+                0x0000008c       0x34 driver/controlISR.o
+ .ARM.attributes
+                0x000000c0       0x34 main.o
+ .ARM.attributes
+                0x000000f4       0x34 dlmalloc.o
+ .ARM.attributes
+                0x00000128       0x34 libc_stubs.o
+ .ARM.attributes
+                0x0000015c       0x34 serial/serial.o
+ .ARM.attributes
+                0x00000190       0x34 driver/motor.o
+ .ARM.attributes
+                0x000001c4       0x34 driver/tph.o
+ .ARM.attributes
+                0x000001f8       0x34 driver/io.o
+ .ARM.attributes
+                0x0000022c       0x34 driver/control.o
+ .ARM.attributes
+                0x00000260       0x34 ../../Source/list.o
+ .ARM.attributes
+                0x00000294       0x34 ../../Source/queue.o
+ .ARM.attributes
+                0x000002c8       0x34 ../../Source/tasks.o
+ .ARM.attributes
+                0x000002fc       0x34 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .ARM.attributes
+                0x00000330       0x34 ../../Source/portable/MemMang/heap_3.o
+ .ARM.attributes
+                0x00000364       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .ARM.attributes
+                0x00000398       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .ARM.attributes
+                0x000003cc       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .ARM.attributes
+                0x00000400       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .ARM.attributes
+                0x00000434       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .ARM.attributes
+                0x00000468       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .ARM.attributes
+                0x0000049c       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .ARM.attributes
+                0x000004d0       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .ARM.attributes
+                0x00000504       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .ARM.attributes
+                0x00000538       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .ARM.attributes
+                0x0000056c       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .ARM.attributes
+                0x000005a0       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .ARM.attributes
+                0x000005d4       0x34 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+ .ARM.attributes
+                0x00000608       0x1a c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000622       0x18 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000063a       0x1a c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000654       0x1a c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x0000066e       0x1a c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x00000688       0x34 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000006bc       0x34 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000006f0       0x34 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000724       0x34 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strncpy.o)
+
+.comment        0x00000000       0x2a
+ .comment       0x00000000       0x2a ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+                                 0x2b (size before relaxing)
+ .comment       0x00000000       0x2b serial/serialISR.o
+ .comment       0x00000000       0x2b driver/controlISR.o
+ .comment       0x00000000       0x2b main.o
+ .comment       0x00000000       0x2b dlmalloc.o
+ .comment       0x00000000       0x2b libc_stubs.o
+ .comment       0x00000000       0x2b serial/serial.o
+ .comment       0x00000000       0x2b driver/motor.o
+ .comment       0x00000000       0x2b driver/tph.o
+ .comment       0x00000000       0x2b driver/io.o
+ .comment       0x00000000       0x2b driver/control.o
+ .comment       0x00000000       0x2b ../../Source/list.o
+ .comment       0x00000000       0x2b ../../Source/queue.o
+ .comment       0x00000000       0x2b ../../Source/tasks.o
+ .comment       0x00000000       0x2b ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .comment       0x00000000       0x2b ../../Source/portable/MemMang/heap_3.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .comment       0x00000000       0x2b ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+
+.debug_line     0x00000000     0x8532
+ .debug_line    0x00000000       0x7a C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+ .debug_line    0x0000007a      0x56b ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .debug_line    0x000005e5      0x590 serial/serialISR.o
+ .debug_line    0x00000b75      0x5af driver/controlISR.o
+ .debug_line    0x00001124      0x570 main.o
+ .debug_line    0x00001694      0x53f dlmalloc.o
+ .debug_line    0x00001bd3      0x30f libc_stubs.o
+ .debug_line    0x00001ee2      0x612 serial/serial.o
+ .debug_line    0x000024f4      0x683 driver/motor.o
+ .debug_line    0x00002b77      0x6ed driver/tph.o
+ .debug_line    0x00003264      0x5cd driver/io.o
+ .debug_line    0x00003831      0x582 driver/control.o
+ .debug_line    0x00003db3      0x56f ../../Source/list.o
+ .debug_line    0x00004322      0x80b ../../Source/queue.o
+ .debug_line    0x00004b2d      0x9e3 ../../Source/tasks.o
+ .debug_line    0x00005510      0x61d ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .debug_line    0x00005b2d      0x561 ../../Source/portable/MemMang/heap_3.o
+ .debug_line    0x0000608e      0x1c3 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .debug_line    0x00006251      0x1f3 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .debug_line    0x00006444      0x520 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .debug_line    0x00006964      0x138 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .debug_line    0x00006a9c      0x1b1 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .debug_line    0x00006c4d      0x163 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .debug_line    0x00006db0      0x4df ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .debug_line    0x0000728f      0x17f ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .debug_line    0x0000740e      0x15a ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .debug_line    0x00007568      0x4fd ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .debug_line    0x00007a65      0x185 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .debug_line    0x00007bea      0x3e5 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .debug_line    0x00007fcf      0x563 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+
+.debug_info     0x00000000     0xc861
+ .debug_info    0x00000000       0x56 C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+ .debug_info    0x00000056      0x413 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .debug_info    0x00000469      0x55c serial/serialISR.o
+ .debug_info    0x000009c5      0xd5d driver/controlISR.o
+ .debug_info    0x00001722      0x551 main.o
+ .debug_info    0x00001c73      0xb2d dlmalloc.o
+ .debug_info    0x000027a0      0x3ae libc_stubs.o
+ .debug_info    0x00002b4e      0x432 serial/serial.o
+ .debug_info    0x00002f80      0xa90 driver/motor.o
+ .debug_info    0x00003a10      0xc6e driver/tph.o
+ .debug_info    0x0000467e      0x810 driver/io.o
+ .debug_info    0x00004e8e      0xc1e driver/control.o
+ .debug_info    0x00005aac      0x2aa ../../Source/list.o
+ .debug_info    0x00005d56      0x91a ../../Source/queue.o
+ .debug_info    0x00006670      0xe14 ../../Source/tasks.o
+ .debug_info    0x00007484      0x161 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .debug_info    0x000075e5       0xe1 ../../Source/portable/MemMang/heap_3.o
+ .debug_info    0x000076c6      0x504 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .debug_info    0x00007bca      0xaa1 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .debug_info    0x0000866b      0x5fa ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .debug_info    0x00008c65      0x272 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .debug_info    0x00008ed7      0x706 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .debug_info    0x000095dd      0x193 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .debug_info    0x00009770      0x33b ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .debug_info    0x00009aab      0x5a3 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .debug_info    0x0000a04e      0x225 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .debug_info    0x0000a273      0x53d ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .debug_info    0x0000a7b0      0x402 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .debug_info    0x0000abb2      0xebc ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .debug_info    0x0000ba6e      0xdf3 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+
+.debug_abbrev   0x00000000     0x2244
+ .debug_abbrev  0x00000000       0x12 C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+ .debug_abbrev  0x00000012      0x11b ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .debug_abbrev  0x0000012d      0x103 serial/serialISR.o
+ .debug_abbrev  0x00000230      0x1ae driver/controlISR.o
+ .debug_abbrev  0x000003de      0x172 main.o
+ .debug_abbrev  0x00000550      0x176 dlmalloc.o
+ .debug_abbrev  0x000006c6       0xc0 libc_stubs.o
+ .debug_abbrev  0x00000786       0xf3 serial/serial.o
+ .debug_abbrev  0x00000879      0x152 driver/motor.o
+ .debug_abbrev  0x000009cb      0x16b driver/tph.o
+ .debug_abbrev  0x00000b36      0x153 driver/io.o
+ .debug_abbrev  0x00000c89      0x193 driver/control.o
+ .debug_abbrev  0x00000e1c       0xb8 ../../Source/list.o
+ .debug_abbrev  0x00000ed4      0x16e ../../Source/queue.o
+ .debug_abbrev  0x00001042      0x182 ../../Source/tasks.o
+ .debug_abbrev  0x000011c4       0xe9 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .debug_abbrev  0x000012ad       0x9b ../../Source/portable/MemMang/heap_3.o
+ .debug_abbrev  0x00001348       0xb8 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .debug_abbrev  0x00001400      0x150 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .debug_abbrev  0x00001550      0x124 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .debug_abbrev  0x00001674       0xb0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .debug_abbrev  0x00001724      0x154 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .debug_abbrev  0x00001878       0xbd ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .debug_abbrev  0x00001935       0xe4 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .debug_abbrev  0x00001a19       0xe9 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .debug_abbrev  0x00001b02       0xcb ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .debug_abbrev  0x00001bcd      0x124 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .debug_abbrev  0x00001cf1       0xe4 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .debug_abbrev  0x00001dd5      0x248 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .debug_abbrev  0x0000201d      0x227 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+
+.debug_aranges  0x00000000      0x3c8
+ .debug_aranges
+                0x00000000       0x28 C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+ .debug_aranges
+                0x00000028       0x20 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .debug_aranges
+                0x00000048       0x20 serial/serialISR.o
+ .debug_aranges
+                0x00000068       0x20 driver/controlISR.o
+ .debug_aranges
+                0x00000088       0x20 main.o
+ .debug_aranges
+                0x000000a8       0x20 dlmalloc.o
+ .debug_aranges
+                0x000000c8       0x20 libc_stubs.o
+ .debug_aranges
+                0x000000e8       0x20 serial/serial.o
+ .debug_aranges
+                0x00000108       0x20 driver/motor.o
+ .debug_aranges
+                0x00000128       0x20 driver/tph.o
+ .debug_aranges
+                0x00000148       0x20 driver/io.o
+ .debug_aranges
+                0x00000168       0x20 driver/control.o
+ .debug_aranges
+                0x00000188       0x20 ../../Source/list.o
+ .debug_aranges
+                0x000001a8       0x20 ../../Source/queue.o
+ .debug_aranges
+                0x000001c8       0x20 ../../Source/tasks.o
+ .debug_aranges
+                0x000001e8       0x20 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .debug_aranges
+                0x00000208       0x20 ../../Source/portable/MemMang/heap_3.o
+ .debug_aranges
+                0x00000228       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .debug_aranges
+                0x00000248       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .debug_aranges
+                0x00000268       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .debug_aranges
+                0x00000288       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .debug_aranges
+                0x000002a8       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .debug_aranges
+                0x000002c8       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .debug_aranges
+                0x000002e8       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .debug_aranges
+                0x00000308       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .debug_aranges
+                0x00000328       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .debug_aranges
+                0x00000348       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .debug_aranges
+                0x00000368       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .debug_aranges
+                0x00000388       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .debug_aranges
+                0x000003a8       0x20 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+
+.debug_ranges   0x00000000       0x50
+ .debug_ranges  0x00000000       0x20 C:\DOCUME~1\lion\LOCALS~1\Temp\ccx0u6nu.o
+ .debug_ranges  0x00000020       0x30 dlmalloc.o
+
+.debug_macinfo  0x00000000   0x307f7f
+ .debug_macinfo
+                0x00000000    0x1f0b4 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .debug_macinfo
+                0x0001f0b4    0x1f970 serial/serialISR.o
+ .debug_macinfo
+                0x0003ea24    0x1fae5 driver/controlISR.o
+ .debug_macinfo
+                0x0005e509    0x1f1eb main.o
+ .debug_macinfo
+                0x0007d6f4     0x3999 dlmalloc.o
+ .debug_macinfo
+                0x0008108d     0x4f78 libc_stubs.o
+ .debug_macinfo
+                0x00086005    0x1f22b serial/serial.o
+ .debug_macinfo
+                0x000a5230    0x1fa7e driver/motor.o
+ .debug_macinfo
+                0x000c4cae    0x1fbcc driver/tph.o
+ .debug_macinfo
+                0x000e487a    0x1feee driver/io.o
+ .debug_macinfo
+                0x00104768    0x1fe33 driver/control.o
+ .debug_macinfo
+                0x0012459b    0x1ed57 ../../Source/list.o
+ .debug_macinfo
+                0x001432f2    0x1fa53 ../../Source/queue.o
+ .debug_macinfo
+                0x00162d45    0x1fcdc ../../Source/tasks.o
+ .debug_macinfo
+                0x00182a21    0x1f1cf ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .debug_macinfo
+                0x001a1bf0    0x1f0f6 ../../Source/portable/MemMang/heap_3.o
+ .debug_macinfo
+                0x001c0ce6    0x19c80 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .debug_macinfo
+                0x001da966    0x19d85 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .debug_macinfo
+                0x001f46eb    0x1d47a ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .debug_macinfo
+                0x00211b65    0x19b2a ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .debug_macinfo
+                0x0022b68f    0x19d10 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .debug_macinfo
+                0x0024539f    0x19ae1 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .debug_macinfo
+                0x0025ee80    0x1d00e ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .debug_macinfo
+                0x0027be8e    0x19c22 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .debug_macinfo
+                0x00295ab0    0x19ae0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .debug_macinfo
+                0x002af590    0x1cfec ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .debug_macinfo
+                0x002cc57c    0x19d1d ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .debug_macinfo
+                0x002e6299     0x4cb5 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .debug_macinfo
+                0x002eaf4e    0x1d031 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+
+.debug_frame    0x00000000     0x2098
+ .debug_frame   0x00000000       0x98 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .debug_frame   0x00000098       0x58 serial/serialISR.o
+ .debug_frame   0x000000f0       0x88 driver/controlISR.o
+ .debug_frame   0x00000178       0xb8 main.o
+ .debug_frame   0x00000230      0x1d0 dlmalloc.o
+ .debug_frame   0x00000400       0xf0 libc_stubs.o
+ .debug_frame   0x000004f0       0xb0 serial/serial.o
+ .debug_frame   0x000005a0      0x1b0 driver/motor.o
+ .debug_frame   0x00000750      0x210 driver/tph.o
+ .debug_frame   0x00000960       0x90 driver/io.o
+ .debug_frame   0x000009f0       0x50 driver/control.o
+ .debug_frame   0x00000a40       0xb0 ../../Source/list.o
+ .debug_frame   0x00000af0      0x2b0 ../../Source/queue.o
+ .debug_frame   0x00000da0      0x480 ../../Source/tasks.o
+ .debug_frame   0x00001220       0x88 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .debug_frame   0x000012a8       0x50 ../../Source/portable/MemMang/heap_3.o
+ .debug_frame   0x000012f8       0x84 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .debug_frame   0x0000137c      0x108 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .debug_frame   0x00001484       0xb0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .debug_frame   0x00001534       0x70 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .debug_frame   0x000015a4      0x134 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .debug_frame   0x000016d8      0x114 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .debug_frame   0x000017ec       0xfc ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .debug_frame   0x000018e8      0x130 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .debug_frame   0x00001a18       0x90 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .debug_frame   0x00001aa8      0x190 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .debug_frame   0x00001c38       0x90 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .debug_frame   0x00001cc8      0x1d0 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .debug_frame   0x00001e98      0x130 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+ .debug_frame   0x00001fc8       0x20 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001fe8       0x34 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x0000201c       0x2c c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-memset.o)
+ .debug_frame   0x00002048       0x20 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strcpy.o)
+ .debug_frame   0x00002068       0x30 c:/program files/codesourcery/sourcery g++ lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb\libc.a(lib_a-strncpy.o)
+
+.debug_loc      0x00000000     0x3348
+ .debug_loc     0x00000000       0x84 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .debug_loc     0x00000084       0x58 serial/serialISR.o
+ .debug_loc     0x000000dc       0x84 driver/controlISR.o
+ .debug_loc     0x00000160      0x11c main.o
+ .debug_loc     0x0000027c      0x314 dlmalloc.o
+ .debug_loc     0x00000590      0x188 libc_stubs.o
+ .debug_loc     0x00000718      0x118 serial/serial.o
+ .debug_loc     0x00000830      0x2d8 driver/motor.o
+ .debug_loc     0x00000b08      0x380 driver/tph.o
+ .debug_loc     0x00000e88       0xe0 driver/io.o
+ .debug_loc     0x00000f68       0x72 driver/control.o
+ .debug_loc     0x00000fda      0x118 ../../Source/list.o
+ .debug_loc     0x000010f2      0x498 ../../Source/queue.o
+ .debug_loc     0x0000158a      0x7b0 ../../Source/tasks.o
+ .debug_loc     0x00001d3a       0xc8 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .debug_loc     0x00001e02       0x70 ../../Source/portable/MemMang/heap_3.o
+ .debug_loc     0x00001e72       0xbc ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .debug_loc     0x00001f2e      0x1a8 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .debug_loc     0x000020d6      0x118 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .debug_loc     0x000021ee       0xa8 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .debug_loc     0x00002296      0x1f8 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .debug_loc     0x0000248e      0x1a4 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .debug_loc     0x00002632      0x184 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .debug_loc     0x000027b6      0x1f8 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .debug_loc     0x000029ae       0xe0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .debug_loc     0x00002a8e      0x2a0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .debug_loc     0x00002d2e       0xe0 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .debug_loc     0x00002e0e      0x342 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .debug_loc     0x00003150      0x1f8 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+
+.debug_pubnames
+                0x00000000     0x11b9
+ .debug_pubnames
+                0x00000000       0xe3 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .debug_pubnames
+                0x000000e3       0x59 serial/serialISR.o
+ .debug_pubnames
+                0x0000013c       0x73 driver/controlISR.o
+ .debug_pubnames
+                0x000001af       0x1b main.o
+ .debug_pubnames
+                0x000001ca       0xf6 dlmalloc.o
+ .debug_pubnames
+                0x000002c0       0x5e libc_stubs.o
+ .debug_pubnames
+                0x0000031e       0x79 serial/serial.o
+ .debug_pubnames
+                0x00000397       0x3b driver/motor.o
+ .debug_pubnames
+                0x000003d2       0x3e driver/tph.o
+ .debug_pubnames
+                0x00000410       0x1a driver/io.o
+ .debug_pubnames
+                0x0000042a       0x3b driver/control.o
+ .debug_pubnames
+                0x00000465       0x71 ../../Source/list.o
+ .debug_pubnames
+                0x000004d6      0x1ae ../../Source/queue.o
+ .debug_pubnames
+                0x00000684      0x2ab ../../Source/tasks.o
+ .debug_pubnames
+                0x0000092f       0x5a ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .debug_pubnames
+                0x00000989       0x31 ../../Source/portable/MemMang/heap_3.o
+ .debug_pubnames
+                0x000009ba       0x6a ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .debug_pubnames
+                0x00000a24       0xeb ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .debug_pubnames
+                0x00000b0f       0x90 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .debug_pubnames
+                0x00000b9f       0x49 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .debug_pubnames
+                0x00000be8       0x66 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .debug_pubnames
+                0x00000c4e       0xa2 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .debug_pubnames
+                0x00000cf0       0xe7 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .debug_pubnames
+                0x00000dd7       0xae ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .debug_pubnames
+                0x00000e85       0x52 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .debug_pubnames
+                0x00000ed7      0x117 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .debug_pubnames
+                0x00000fee       0x4d ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .debug_pubnames
+                0x0000103b       0xdf ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .debug_pubnames
+                0x0000111a       0x9f ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+
+.debug_pubtypes
+                0x00000000      0xe94
+ .debug_pubtypes
+                0x00000000       0x50 ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+ .debug_pubtypes
+                0x00000050       0x63 serial/serialISR.o
+ .debug_pubtypes
+                0x000000b3       0xce driver/controlISR.o
+ .debug_pubtypes
+                0x00000181       0x7a main.o
+ .debug_pubtypes
+                0x000001fb       0x6d dlmalloc.o
+ .debug_pubtypes
+                0x00000268       0xaa libc_stubs.o
+ .debug_pubtypes
+                0x00000312       0x69 serial/serial.o
+ .debug_pubtypes
+                0x0000037b       0x90 driver/motor.o
+ .debug_pubtypes
+                0x0000040b       0x9d driver/tph.o
+ .debug_pubtypes
+                0x000004a8       0x70 driver/io.o
+ .debug_pubtypes
+                0x00000518       0xdc driver/control.o
+ .debug_pubtypes
+                0x000005f4       0x7a ../../Source/list.o
+ .debug_pubtypes
+                0x0000066e      0x103 ../../Source/queue.o
+ .debug_pubtypes
+                0x00000771      0x10c ../../Source/tasks.o
+ .debug_pubtypes
+                0x0000087d       0x33 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+ .debug_pubtypes
+                0x000008b0       0x1d ../../Source/portable/MemMang/heap_3.o
+ .debug_pubtypes
+                0x000008cd       0xae ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+ .debug_pubtypes
+                0x0000097b       0xcc ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+ .debug_pubtypes
+                0x00000a47       0x4d ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+ .debug_pubtypes
+                0x00000a94       0x30 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+ .debug_pubtypes
+                0x00000ac4       0x55 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+ .debug_pubtypes
+                0x00000b19       0x32 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+ .debug_pubtypes
+                0x00000b4b       0x30 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+ .debug_pubtypes
+                0x00000b7b       0x4d ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+ .debug_pubtypes
+                0x00000bc8       0x2d ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+ .debug_pubtypes
+                0x00000bf5       0x33 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+ .debug_pubtypes
+                0x00000c28       0x46 ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+ .debug_pubtypes
+                0x00000c6e      0x11e ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+ .debug_pubtypes
+                0x00000d8c      0x108 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+
+.debug_str      0x00000000     0x332a
+ .debug_str     0x00000000      0x26e ../../Source/portable/GCC/ARM9_AT91SAM9/portISR.o
+                                0x2a7 (size before relaxing)
+ .debug_str     0x0000026e      0x164 serial/serialISR.o
+                                0x32a (size before relaxing)
+ .debug_str     0x000003d2      0x336 driver/controlISR.o
+                                0x569 (size before relaxing)
+ .debug_str     0x00000708      0x205 main.o
+                                0x2e6 (size before relaxing)
+ .debug_str     0x0000090d      0x31d dlmalloc.o
+                                0x3d1 (size before relaxing)
+ .debug_str     0x00000c2a      0x114 libc_stubs.o
+                                0x1ef (size before relaxing)
+ .debug_str     0x00000d3e       0xb5 serial/serial.o
+                                0x2bd (size before relaxing)
+ .debug_str     0x00000df3      0x2ca driver/motor.o
+                                0x674 (size before relaxing)
+ .debug_str     0x000010bd      0x1cd driver/tph.o
+                                0x596 (size before relaxing)
+ .debug_str     0x0000128a       0xc5 driver/io.o
+                                0x442 (size before relaxing)
+ .debug_str     0x0000134f       0x37 driver/control.o
+                                0x5df (size before relaxing)
+ .debug_str     0x00001386      0x12b ../../Source/list.o
+                                0x1f8 (size before relaxing)
+ .debug_str     0x000014b1      0x3da ../../Source/queue.o
+                                0x585 (size before relaxing)
+ .debug_str     0x0000188b      0x6b5 ../../Source/tasks.o
+                                0x8a4 (size before relaxing)
+ .debug_str     0x00001f40       0xa5 ../../Source/portable/GCC/ARM9_AT91SAM9/port.o
+                                0x19b (size before relaxing)
+ .debug_str     0x00001fe5       0x53 ../../Source/portable/MemMang/heap_3.o
+                                0x10d (size before relaxing)
+ .debug_str     0x00002038      0x1be ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_lowlevel.o
+                                0x325 (size before relaxing)
+ .debug_str     0x000021f6      0x4d6 ../../Demo/Common/drivers/Atmel/at91libv18/boards/at91sam9g20-ek/board_memories.o
+                                0x69a (size before relaxing)
+ .debug_str     0x000026cc       0xe0 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/adc/adc.o
+                                0x3b1 (size before relaxing)
+ .debug_str     0x000027ac       0x73 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/irq/aic.o
+                                0x17b (size before relaxing)
+ .debug_str     0x0000281f       0xfa ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pio/pio.o
+                                0x358 (size before relaxing)
+ .debug_str     0x00002919       0xbb ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pit/pit.o
+                                0x139 (size before relaxing)
+ .debug_str     0x000029d4       0xf6 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/pmc/pmc.o
+                                0x289 (size before relaxing)
+ .debug_str     0x00002aca       0xd8 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/spi/spi.o
+                                0x2cc (size before relaxing)
+ .debug_str     0x00002ba2       0x84 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/tc/tc.o
+                                0x132 (size before relaxing)
+ .debug_str     0x00002c26      0x153 ../../Demo/Common/drivers/Atmel/at91libv18/peripherals/usart/usart.o
+                                0x302 (size before relaxing)
+ .debug_str     0x00002d79       0x6a ../../Demo/Common/drivers/Atmel/at91libv18/utility/led.o
+                                0x226 (size before relaxing)
+ .debug_str     0x00002de3      0x466 ../../Demo/Common/drivers/Atmel/at91libv18/utility/stdio.o
+                                0x5b3 (size before relaxing)
+ .debug_str     0x00003249       0xe1 ../../Demo/Common/drivers/Atmel/at91libv18/utility/trace.o
+                                0x65a (size before relaxing)
