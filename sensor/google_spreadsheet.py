@@ -76,7 +76,7 @@ DHT_PIN = 4
 # Then use the File -> Share... command in the spreadsheet to share it with read
 # and write acess to the email address above.  If you don't do this step then the
 # updates to the sheet will fail!
-GDOCS_OAUTH_JSON       = '/home/pi/Downloads/My Pi-40b20d54ceaf.json'
+GDOCS_OAUTH_JSON       = '/home/pi/Downloads/my-pi-146005-7d07bd554de3.json'
 
 # Google Docs spreadsheet name.
 GDOCS_SPREADSHEET_NAME = '1MitMA7-IRWZGl8g-D1ef9CXoVHpoz0tnY2WVwtyQUJI'
@@ -87,7 +87,7 @@ FREQUENCY_SECONDS      = 60
 def login_open_sheet(oauth_key_file, spreadsheet):
     """Connect to Google Docs spreadsheet and return the first worksheet."""
     try:
-        scope = ['https://spreadsheets.google.com/feeds']
+        scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
         credentials = ServiceAccountCredentials.from_json_keyfile_name(oauth_key_file, scope)
         gc = gspread.authorize(credentials)
         #worksheet = gc.open(spreadsheet).sheet1
@@ -202,7 +202,7 @@ while True:
 
     humidity = round(humidity, 3)
     temp = round(temp, 3)
-    
+
     if last_humidity is not None:
         if abs(last_humidity - humidity) >= 30.0 or abs(last_temp - temp) >= 5.0:
             continue
@@ -303,11 +303,14 @@ while True:
             print('Connection fail')
             worksheet = None
 
-        worksheet.append_row((datetime.datetime.now().date(), datetime.datetime.now().time(), temp, humidity, Dustdensity, mq, int(not GPIO.input(MQ_PIN)), ms, int(not GPIO.input(MS_PIN))))
-    except:
+        _date = '{0}'.format(datetime.datetime.now().date())
+        _time = '{0}'.format(datetime.datetime.now().time())
+        worksheet.append_row((_date, _time, temp, humidity, Dustdensity, mq, int(not GPIO.input(MQ_PIN)), ms, int(not GPIO.input(MS_PIN))))
+    except Exception as ex:
         # Error appending data, most likely because credentials are stale.
         # Null out the worksheet so a login is performed at the top of the loop.
         print('Append error, logging in again')
+        print(ex)
         worksheet = None
 
         file = open('gspread.dat', 'a')
@@ -318,6 +321,6 @@ while True:
         time.sleep(FREQUENCY_SECONDS)
         continue
 
-    # Wait 30 seconds before continuing
+    # Wait 60 seconds before continuing
     print('Wrote a row to {0}'.format(GDOCS_SPREADSHEET_NAME))
     time.sleep(FREQUENCY_SECONDS)

@@ -1,0 +1,23 @@
+Installing Samba on Pi
+https://www.makeuseof.com/set-up-network-shared-folder-ubuntu-with-samba/
+
+/dev/serial0
+https://dumbcatnote.blogspot.com/2020/04/raspberry-pi-enable-serial-port.html
+
+Disabling the Console
+https://spellfoundry.com/2016/05/29/configuring-gpio-serial-port-raspbian-jessie-including-pi-3-4/
+
+Interface
+I2C
+Serial Port
+
+Localisation Options
+Timezone
+
+pip3 install Adafruit_DHT
+pip3 install gspread
+pip3 install oauth2client
+pip3 install Adafruit_ADS1x15
+
+nohup ./led.py &
+nohup ./monitor.sh &
